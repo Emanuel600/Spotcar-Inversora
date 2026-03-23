@@ -1,3 +1,36 @@
+# For the STM32 CubeIDE project
+# Build Artifacts (object files, executables, map files, etc.)
+Debug/
+Release/
+build/
+*.o
+*.elf
+*.hex
+*.map
+*.su
+*.d
+
+# IDE-specific configuration files and temporary data
+.metadata/
+.settings/
+.cache/
+.cproject
+.project
+
+# Launch configuration files (contain absolute paths/ST-Link serial numbers)
+*.launch
+
+# CubeMX project file specific artifacts
+.mxproject
+
+# Optional: Ignore generated documentation or backup files
+# *.chm 
+# *.bak
+
+# Optional: If you manage your libraries via git submodules, you may ignore the generated Driver files
+Drivers/
+Middlewares/
+
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
