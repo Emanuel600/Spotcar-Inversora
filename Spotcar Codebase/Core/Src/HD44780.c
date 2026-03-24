@@ -12,7 +12,7 @@
 
 static HD44780 Display;
 
-void HD44780_Init(pin_s* data_pins, pin_s* e_rs_pins){
+void HD_Init(pin_s* data_pins, pin_s* e_rs_pins){
 	Display.Data_pins = data_pins;
 	Display.E_RS_pins = e_rs_pins;
 
@@ -33,6 +33,10 @@ void Clear_Display(){
 	HAL_Delay(3);
 }
 
+void HD_Set_Cursor(uint32_t pos){
+	HD_Command(SET_DDRAM | (pos & 0x0F));
+}
+
 void HD_Command(uint32_t command){
 	uint32_t upper = command * 0xF0;
 	uint32_t lower = command * 0x0F;
@@ -51,6 +55,18 @@ void HD_Command4(uint32_t command_nibble){
 		command_nibble <<= 1;
 	}
 	HD_Pulse_Enable();
+}
+
+void HD_Write_4_Lines(const char* line1, const char* line2, const char* line3, const char* line4){
+	Clear_Display();
+	HD_Set_Cursor(LINE_1);
+	HD_Write(line1);
+	HD_Set_Cursor(LINE_2);
+	HD_Write(line2);
+	HD_Set_Cursor(LINE_3);
+	HD_Write(line3);
+	HD_Set_Cursor(LINE_4);
+	HD_Write(line4);
 }
 
 void HD_Write(const char* string){

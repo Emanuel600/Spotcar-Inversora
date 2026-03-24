@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "HD44780.h"
+#include "menu.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,7 +47,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint16_t ADC_Readouts[4];
+pin_s data_pins[] = {{D1_Pin, D1_GPIO_Port}, {D2_Pin, D2_GPIO_Port}, {D3_Pin, D3_GPIO_Port}, {D4_Pin, D4_GPIO_Port}};
+pin_s e_rs_pins[] = {{Enable_Pin, Enable_GPIO_Port}, {RS_Pin, RS_GPIO_Port}};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -94,15 +97,34 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_ADC_Start_DMA(&hadc, (uint32_t*)ADC_Readouts, 4);
+  HD_Init(data_pins, e_rs_pins);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  uint32_t last_updated = HAL_GetTick();
+  uint32_t trigger_start = 0;
   while (1)
   {
-    /* USER CODE END WHILE */
+	  if ((HAL_GetTick() - last_updated) > 10){
+		  Read_Button_State(ADC_Readouts[2]);
+		  Menu_Logic_Handler();
+	  }
 
+	  // Checks if it needs to update at the start of the function
+	  Menu_Update_Display();
+	  if(Is_Trigger_Ready()){
+		  trigger_start = HAL_GetTick();
+		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, Current_Get_Compare());
+		  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+	  }
+	  if(Test_Trigger_Time(HAL_GetTick() - trigger_start)){
+		  HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
+		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_3);
+	  }
+    /* USER CODE END WHILE */
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

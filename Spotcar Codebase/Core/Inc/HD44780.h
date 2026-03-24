@@ -42,8 +42,8 @@
 
 
 typedef struct pin_s {
-	GPIO_TypeDef* port;
 	uint16_t pin;
+	GPIO_TypeDef* port;
 } pin_s;
 
 typedef struct HD44780 {
@@ -56,6 +56,8 @@ void delay_us(uint32_t delay);
 void HD_Init(pin_s* data_pins, pin_s* e_rs_pins);
 
 void HD_Set_Cursor(uint32_t pos);
+
+void HD_Write_4_Lines(const char* line1, const char* line2, const char* line3, const char* line4);
 
 void HD_Write(const char* data);
 
