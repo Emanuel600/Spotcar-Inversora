@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 2.0,
-          "width": 2.0
+          "drill": 0.8,
+          "height": 1.6,
+          "width": 1.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -192,7 +192,8 @@
         1.0,
         1.5,
         2.0,
-        2.5
+        2.5,
+        3.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -224,6 +225,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.8
+        },
+        {
+          "diameter": 1.6,
+          "drill": 0.82
         }
       ],
       "zones_allow_external_fillets": true
@@ -553,6 +562,12 @@
       "310V": [
         "HVLC"
       ],
+      "Net-(Cx2-Pad1)": [
+        "HV"
+      ],
+      "Net-(Cx2-Pad2)": [
+        "HV"
+      ],
       "Net-(J1-Pin_1)": [
         "HV"
       ],
@@ -568,6 +583,9 @@
       "Net-(T1-AA)": [
         "MV"
       ],
+      "PWM": [
+        "MVI"
+      ],
       "T+": [
         "MVLC"
       ],
@@ -577,7 +595,7 @@
     },
     "netclass_patterns": [
       {
-        "netclass": "MV",
+        "netclass": "MVI",
         "pattern": "T-"
       }
     ]
@@ -713,14 +731,6 @@
     [
       "e27abe51-96c0-4fdf-ba00-b5a281cd0e9c",
       "Root"
-    ],
-    [
-      "ab91e0b2-24ce-46a7-a9c1-e095892cda5b",
-      "Driver"
-    ],
-    [
-      "edb802c9-cbc1-4370-88dd-d6a88cde47a7",
-      "Driver1"
     ]
   ],
   "text_variables": {}
