@@ -4827,7 +4827,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 73.66) (xy 66.04 73.66)
+			(xy 57.15 73.66) (xy 69.85 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4877,16 +4877,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 72.39) (xy 69.85 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ebef293-19d8-4d38-a002-05eaa8110fa4")
-	)
-	(wire
-		(pts
 			(xy 170.18 83.82) (xy 166.37 83.82)
 		)
 		(stroke
@@ -4924,16 +4914,6 @@
 			(type default)
 		)
 		(uuid "434f1f03-f496-437a-b173-4afb62f08109")
-	)
-	(wire
-		(pts
-			(xy 69.85 78.74) (xy 82.55 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46729dfa-e117-41c6-8b93-f26890926a22")
 	)
 	(wire
 		(pts
@@ -5054,6 +5034,16 @@
 			(type default)
 		)
 		(uuid "592bc81c-8c13-422f-9aa3-85194cf25945")
+	)
+	(wire
+		(pts
+			(xy 66.04 66.04) (xy 66.04 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bf336d4-206f-47cf-94fa-be03e56ec622")
 	)
 	(wire
 		(pts
@@ -5427,6 +5417,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 78.74) (xy 82.55 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6d767fa-455f-4602-aad7-3c23dec3d622")
+	)
+	(wire
+		(pts
 			(xy 138.43 81.28) (xy 139.7 81.28)
 		)
 		(stroke
@@ -5497,16 +5497,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 67.31) (xy 69.85 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b43e0bd0-de60-482e-9622-3f781932f4ad")
-	)
-	(wire
-		(pts
 			(xy 215.9 82.55) (xy 217.17 82.55)
 		)
 		(stroke
@@ -5574,16 +5564,6 @@
 			(type default)
 		)
 		(uuid "c857518f-1592-4b84-be79-5dc97580bed6")
-	)
-	(wire
-		(pts
-			(xy 66.04 66.04) (xy 66.04 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c93a791e-cf1e-491b-b289-f6505c46ec98")
 	)
 	(wire
 		(pts
@@ -5867,16 +5847,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 72.39) (xy 66.04 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f22218d1-1573-4fd7-aa5b-19a47510c0fc")
-	)
-	(wire
-		(pts
 			(xy 147.32 80.01) (xy 147.32 81.28)
 		)
 		(stroke
@@ -5887,7 +5857,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 67.31) (xy 69.85 58.42)
+			(xy 69.85 58.42) (xy 69.85 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5914,16 +5884,6 @@
 			(type default)
 		)
 		(uuid "face1838-b400-41d0-9486-d346d0f12939")
-	)
-	(wire
-		(pts
-			(xy 69.85 72.39) (xy 66.04 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd5ee082-9428-4dd6-b52e-0f73c64577d8")
 	)
 	(global_label "T+"
 		(shape input)
