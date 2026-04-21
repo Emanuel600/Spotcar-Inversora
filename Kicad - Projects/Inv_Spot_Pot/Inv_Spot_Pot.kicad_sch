@@ -1643,23 +1643,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "T"
-				(at 0 1.27 0)
+			(property "Reference" "T3"
+				(at 0 5.334 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "EEL22 67:7:6:6"
+				(at 0 2.794 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Transformer_THT:Custom_Transformer-10P-EEL22_EE30_7"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2131,7 +2131,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2149,7 +2149,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2167,7 +2167,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6599,6 +6599,16 @@
 	)
 	(wire
 		(pts
+			(xy 19.05 139.7) (xy 19.05 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4639e12a-051d-4ac4-8fd8-bb6f863647d8")
+	)
+	(wire
+		(pts
 			(xy 118.11 50.8) (xy 118.11 53.34)
 		)
 		(stroke
@@ -6686,6 +6696,16 @@
 			(type default)
 		)
 		(uuid "4f78bbc5-1be8-4ebe-bea4-edef401b59a7")
+	)
+	(wire
+		(pts
+			(xy 19.05 132.08) (xy 19.05 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "535237f8-484f-4d00-b318-ad1f77cbeb2d")
 	)
 	(wire
 		(pts
@@ -7296,6 +7316,16 @@
 			(type default)
 		)
 		(uuid "a8209d2b-2f26-4f88-8ea5-0668e821d34a")
+	)
+	(wire
+		(pts
+			(xy 19.05 129.54) (xy 24.13 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa386c3f-06a5-4bab-af12-5dbf4ba6657d")
 	)
 	(wire
 		(pts
@@ -10247,7 +10277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "15V"
+		(property "Value" "7V5"
 			(at 144.78 133.3499 90)
 			(effects
 				(font
@@ -10518,7 +10548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "7V5"
+		(property "Value" "15V"
 			(at 160.02 127 0)
 			(effects
 				(font
@@ -10660,7 +10690,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Transformer_THT:Custom_Transformer-10P-EEL22_EE30_7"
 			(at 91.44 129.54 0)
 			(effects
 				(font
@@ -10702,7 +10732,7 @@
 		(pin "6"
 			(uuid "7533792b-2f79-4c85-8fa7-a87a9b0950ed")
 		)
-		(pin "5"
+		(pin "9"
 			(uuid "443de296-1343-4928-8517-b8b93defc913")
 		)
 		(pin "7"
@@ -10776,6 +10806,72 @@
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
 					(reference "HS2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 19.05 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61c082ce-c035-4828-91c1-5b2c6aeea2db")
+		(property "Reference" "#PWR022"
+			(at 19.05 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 19.05 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 19.05 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 19.05 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bcfed903-3a05-49a4-b290-84ef73cadb8d")
+		)
+		(instances
+			(project "Inv_Spot_Pot"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -11231,7 +11327,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 22.352 146.05 90)
 			(effects
 				(font
@@ -11268,6 +11364,75 @@
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 19.05 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b235163-e768-4853-ba50-cfb702e35a29")
+		(property "Reference" "C10"
+			(at 16.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "47u"
+			(at 16.51 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+			(at 20.0152 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 19.05 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "363a166a-5868-449a-8f07-4526e7134291")
+		)
+		(pin "1"
+			(uuid "8a1c1576-8689-4390-9171-2070aae7b062")
+		)
+		(instances
+			(project "Inv_Spot_Pot"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -11575,7 +11740,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 22.352 135.89 90)
 			(effects
 				(font
@@ -13049,7 +13214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "15V"
+		(property "Value" "7V5"
 			(at 154.94 127 0)
 			(effects
 				(font
@@ -13520,7 +13685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "7V5"
+		(property "Value" "15V"
 			(at 144.78 140.9699 90)
 			(effects
 				(font
