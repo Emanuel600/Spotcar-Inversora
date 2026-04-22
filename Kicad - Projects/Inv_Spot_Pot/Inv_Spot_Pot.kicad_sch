@@ -5648,12 +5648,6 @@
 		(uuid "0de61df5-e47a-44be-b4f2-7998aae53661")
 	)
 	(junction
-		(at 52.07 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14c272e5-34bb-4da3-9d24-d0acfc9a02bc")
-	)
-	(junction
 		(at 195.58 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5670,6 +5664,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1cb68d4a-818d-4605-b1fe-7f61a2ec3960")
+	)
+	(junction
+		(at 73.66 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "230ea14a-5d5f-4425-a02e-fe8450df2802")
 	)
 	(junction
 		(at 127 133.35)
@@ -5864,10 +5864,10 @@
 		(uuid "d3cdb81b-a2fe-4f4a-a305-a4e58a45b4b0")
 	)
 	(junction
-		(at 73.66 58.42)
+		(at 52.07 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d8357430-4e23-4680-9452-924da9d660ec")
+		(uuid "d6bcc529-e0e2-43cc-8ab3-e409145cfeff")
 	)
 	(junction
 		(at 134.62 60.96)
@@ -6206,6 +6206,16 @@
 			(type default)
 		)
 		(uuid "1e065d16-d9bf-4e14-a762-091c44c66ec0")
+	)
+	(wire
+		(pts
+			(xy 41.91 58.42) (xy 43.18 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f40bbd9-2d96-4c49-9b71-2b2822322e1f")
 	)
 	(wire
 		(pts
@@ -6679,6 +6689,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 58.42) (xy 52.07 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e53de99-4b43-44d6-98e8-fa381db2f809")
+	)
+	(wire
+		(pts
 			(xy 190.5 113.03) (xy 191.77 113.03)
 		)
 		(stroke
@@ -6736,6 +6756,16 @@
 			(type default)
 		)
 		(uuid "578f1c45-0f16-41ca-b55b-568526e6caf1")
+	)
+	(wire
+		(pts
+			(xy 52.07 58.42) (xy 73.66 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "587d588d-256a-4345-81cc-116733e5671b")
 	)
 	(wire
 		(pts
@@ -7016,16 +7046,6 @@
 			(type default)
 		)
 		(uuid "764fee7f-8b44-41e9-9302-62c184952d91")
-	)
-	(wire
-		(pts
-			(xy 52.07 58.42) (xy 57.15 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "771d8495-a8e6-4fa2-a75a-fb588c07f419")
 	)
 	(wire
 		(pts
@@ -7589,16 +7609,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 58.42) (xy 73.66 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce05baab-14a1-4652-ab54-d947889f7eab")
-	)
-	(wire
-		(pts
 			(xy 247.65 115.57) (xy 245.11 115.57)
 		)
 		(stroke
@@ -8036,16 +8046,6 @@
 			(type default)
 		)
 		(uuid "fc76cb66-99e4-4777-bbf1-60f0267075c1")
-	)
-	(wire
-		(pts
-			(xy 41.91 58.42) (xy 52.07 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fda2ad00-5fa3-4e85-856d-2202832526e9")
 	)
 	(wire
 		(pts
@@ -10054,7 +10054,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 60.96 58.42 90)
+		(at 46.99 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10063,7 +10063,7 @@
 		(fields_autoplaced yes)
 		(uuid "3fae691b-4e17-462b-b05a-3d1f514d3ebb")
 		(property "Reference" "F1"
-			(at 60.96 52.07 90)
+			(at 46.99 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10071,7 +10071,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 60.96 54.61 90)
+			(at 46.99 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10079,7 +10079,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Schurter_CQM_Inline_P20.60x5.00mm_D1.00mm_Horizontal"
-			(at 60.96 60.198 90)
+			(at 46.99 60.198 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10088,7 +10088,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.96 58.42 0)
+			(at 46.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10097,7 +10097,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 60.96 58.42 0)
+			(at 46.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
