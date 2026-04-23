@@ -4980,23 +4980,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "TR"
-				(at 0 6.35 0)
+			(property "Reference" "TR1"
+				(at -1.2701 6.35 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "TR60_FC"
-				(at 0 -6.35 0)
+				(at 1.2699 6.35 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Transformer_THT:Current_Transformer-1_200-21x20"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5224,7 +5226,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5242,7 +5244,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5260,7 +5262,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5278,7 +5280,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8746,7 +8748,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Varistor:RV_Disc_D7mm_W3.4mm_P5mm"
+		(property "Footprint" "Varistor:RV_Disc_D21.5mm_W5.6mm_P10mm"
 			(at 50.292 62.23 90)
 			(effects
 				(font
@@ -12717,7 +12719,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c86b9cc2-7bdb-4486-8109-134c4bfbafe8")
 		(property "Reference" "J4"
 			(at 172.72 121.2849 90)
