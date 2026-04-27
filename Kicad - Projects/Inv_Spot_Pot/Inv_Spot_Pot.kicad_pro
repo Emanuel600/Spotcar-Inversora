@@ -605,6 +605,12 @@
       "Net-(Cx2-Pad2)": [
         "HV"
       ],
+      "Net-(D2-A)": [
+        "HVLC"
+      ],
+      "Net-(D2-K)": [
+        "HVLC"
+      ],
       "Net-(J1-Pin_1)": [
         "HV"
       ],

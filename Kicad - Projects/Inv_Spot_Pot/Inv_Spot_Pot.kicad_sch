@@ -2131,7 +2131,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9469,6 +9469,41 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 78.74 113.03 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "468bde23-be17-45e5-bbd0-98ebc5e3e4b2")
+		(property "Classes da rede" "HVLC"
+			(at 81.28 112.3315 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -68.58 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 76.2 39.37 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9526,6 +9561,41 @@
 		)
 		(property "Component Class" ""
 			(at 11.43 -20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 80.01 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3698031-a5f7-4dbe-8af2-3ec40f785d19")
+		(property "Classes da rede" "HVLC"
+			(at 80.7085 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -67.31 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12394,7 +12464,7 @@
 		(pin "10"
 			(uuid "1157e9cd-f70a-4b27-a5e3-00a5859e86c4")
 		)
-		(pin "2"
+		(pin "4"
 			(uuid "afac15c4-afcf-4a42-994d-1cf2ed6139d9")
 		)
 		(instances
