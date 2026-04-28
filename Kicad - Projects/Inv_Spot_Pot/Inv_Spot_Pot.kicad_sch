@@ -1340,7 +1340,7 @@
 					)
 				)
 				(circle
-					(center 3.048 -10.414)
+					(center 2.794 -23.114)
 					(radius 0.3592)
 					(stroke
 						(width 0)
@@ -1351,7 +1351,7 @@
 					)
 				)
 				(circle
-					(center 3.048 -17.526)
+					(center 3.048 -10.414)
 					(radius 0.3592)
 					(stroke
 						(width 0)
