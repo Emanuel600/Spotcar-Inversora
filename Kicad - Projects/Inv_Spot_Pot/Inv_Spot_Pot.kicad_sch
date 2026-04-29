@@ -958,7 +958,7 @@
 			)
 			(symbol "Pulse_Transformer-4_Windings_0_1"
 				(circle
-					(center -4.318 -3.81)
+					(center -3.302 -24.384)
 					(radius 0.3592)
 					(stroke
 						(width 0)
@@ -969,7 +969,7 @@
 					)
 				)
 				(circle
-					(center -3.302 -24.384)
+					(center -3.048 -11.43)
 					(radius 0.3592)
 					(stroke
 						(width 0)
@@ -1340,7 +1340,7 @@
 					)
 				)
 				(circle
-					(center 2.794 -23.114)
+					(center 2.794 -18.034)
 					(radius 0.3592)
 					(stroke
 						(width 0)
@@ -1351,7 +1351,7 @@
 					)
 				)
 				(circle
-					(center 3.048 -10.414)
+					(center 3.048 -5.334)
 					(radius 0.3592)
 					(stroke
 						(width 0)
@@ -1364,7 +1364,7 @@
 			)
 			(symbol "Pulse_Transformer-4_Windings_1_1"
 				(pin passive line
-					(at -10.16 -2.54 0)
+					(at -10.16 -25.4 0)
 					(length 7.62)
 					(name ""
 						(effects
@@ -1382,7 +1382,7 @@
 					)
 				)
 				(pin passive line
-					(at -10.16 -12.7 0)
+					(at -10.16 -15.24 0)
 					(length 7.62)
 					(name ""
 						(effects
@@ -1400,7 +1400,7 @@
 					)
 				)
 				(pin passive line
-					(at -10.16 -15.24 0)
+					(at -10.16 -12.7 0)
 					(length 7.62)
 					(name ""
 						(effects
@@ -1418,7 +1418,7 @@
 					)
 				)
 				(pin passive line
-					(at -10.16 -25.4 0)
+					(at -10.16 -2.54 0)
 					(length 7.62)
 					(name ""
 						(effects
@@ -1436,7 +1436,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -11.43 180)
+					(at 10.16 -16.51 180)
 					(length 7.62)
 					(name ""
 						(effects
@@ -1454,7 +1454,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -3.81 180)
+					(at 10.16 -24.13 180)
 					(length 7.62)
 					(name ""
 						(effects
@@ -1472,7 +1472,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -16.51 180)
+					(at 10.16 -3.81 180)
 					(length 7.62)
 					(name ""
 						(effects
@@ -1490,7 +1490,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -24.13 180)
+					(at 10.16 -11.43 180)
 					(length 7.62)
 					(name ""
 						(effects
@@ -6019,12 +6019,6 @@
 		(uuid "2e9a1c12-5d47-4552-8d68-52f5c8e2f01d")
 	)
 	(junction
-		(at 260.35 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "31ed5cd5-15f6-4e31-9810-2549298a830c")
-	)
-	(junction
 		(at 64.77 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6227,6 +6221,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "996ec3cf-50d8-48b8-8e0b-ff0e63d46742")
+	)
+	(junction
+		(at 260.35 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99e68770-077c-4a5c-aed1-7b18427a0b09")
 	)
 	(junction
 		(at 111.76 118.11)
@@ -7380,16 +7380,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 48.26) (xy 248.92 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5194280b-6ba6-4d18-bf1f-1a8480c04b56")
-	)
-	(wire
-		(pts
 			(xy 106.68 44.45) (xy 90.17 44.45)
 		)
 		(stroke
@@ -7960,6 +7950,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 38.1) (xy 250.19 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8696194d-1629-44d0-ae00-81eddf6d779d")
+	)
+	(wire
+		(pts
 			(xy 143.51 166.37) (xy 143.51 167.64)
 		)
 		(stroke
@@ -8150,16 +8150,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 38.1) (xy 260.35 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93596046-580d-434f-b57a-02a8b2913c67")
-	)
-	(wire
-		(pts
 			(xy 237.49 152.4) (xy 237.49 147.32)
 		)
 		(stroke
@@ -8307,6 +8297,16 @@
 			(type default)
 		)
 		(uuid "ace2b7af-425b-4cea-b28f-ccf3ac91fd1e")
+	)
+	(wire
+		(pts
+			(xy 260.35 48.26) (xy 260.35 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae780e70-e90b-4786-8ed6-bd797e99f0c6")
 	)
 	(wire
 		(pts
@@ -8527,6 +8527,16 @@
 			(type default)
 		)
 		(uuid "c20914c3-abe5-45e1-b38d-d394ff404852")
+	)
+	(wire
+		(pts
+			(xy 248.92 48.26) (xy 260.35 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c241736f-c8f3-4e97-83cf-c890a2cd3dfd")
 	)
 	(wire
 		(pts
@@ -8957,16 +8967,6 @@
 			(type default)
 		)
 		(uuid "e359b38f-c276-4a0f-858c-647e65136491")
-	)
-	(wire
-		(pts
-			(xy 260.35 38.1) (xy 260.35 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3db9fb5-803c-4f2d-909d-c59102b0e172")
 	)
 	(wire
 		(pts
@@ -9468,7 +9468,7 @@
 	)
 	(global_label "~{PWM1}"
 		(shape input)
-		(at 250.19 48.26 0)
+		(at 250.19 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9478,7 +9478,7 @@
 		)
 		(uuid "948c64f7-259f-4413-a660-a19e23f318da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 258.5575 48.26 0)
+			(at 258.5575 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
