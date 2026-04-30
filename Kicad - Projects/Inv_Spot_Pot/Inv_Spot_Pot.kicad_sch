@@ -3025,7 +3025,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Transformer_1P_2S"
+		(symbol "Device:Transformer_1P_1S"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -3036,7 +3036,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "T"
-				(at 0 12.7 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3045,8 +3045,8 @@
 					)
 				)
 			)
-			(property "Value" "Transformer_1P_2S"
-				(at 0 -12.7 0)
+			(property "Value" "Transformer_1P_1S"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3077,7 +3077,7 @@
 					)
 				)
 			)
-			(property "Description" "Transformer, single primary, dual secondary"
+			(property "Description" "Transformer, single primary, single secondary"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3099,7 +3099,7 @@
 					)
 				)
 			)
-			(symbol "Transformer_1P_2S_0_1"
+			(symbol "Transformer_1P_1S_0_1"
 				(arc
 					(start -1.27 3.81)
 					(mid -1.656 2.9336)
@@ -3198,7 +3198,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.508 -10.16) (xy -0.508 10.16)
+						(xy -0.635 5.08) (xy -0.635 -5.08)
 					)
 					(stroke
 						(width 0)
@@ -3210,32 +3210,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 10.16) (xy 0.508 -10.16)
+						(xy 0.635 -5.08) (xy 0.635 5.08)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.2954 8.89)
-					(mid 1.6457 9.7917)
-					(end 2.54 10.16)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.2954 6.35)
-					(mid 1.6457 7.2517)
-					(end 2.54 7.62)
 					(stroke
 						(width 0)
 						(type default)
@@ -3257,9 +3233,9 @@
 					)
 				)
 				(arc
-					(start 1.2954 -3.81)
-					(mid 1.6457 -2.9083)
-					(end 2.54 -2.54)
+					(start 1.2954 1.27)
+					(mid 1.6457 2.1717)
+					(end 2.54 2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -3269,45 +3245,9 @@
 					)
 				)
 				(arc
-					(start 1.2954 -6.35)
-					(mid 1.6457 -5.4483)
-					(end 2.54 -5.08)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.2954 -8.89)
-					(mid 1.6457 -7.9883)
-					(end 2.54 -7.62)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.54 7.6454)
-					(mid 1.6599 8.0099)
-					(end 1.2954 8.89)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.54 5.1054)
-					(mid 1.6599 5.4699)
-					(end 1.2954 6.35)
+					(start 1.2954 -1.27)
+					(mid 1.6457 -0.3683)
+					(end 2.54 0)
 					(stroke
 						(width 0)
 						(type default)
@@ -3329,9 +3269,9 @@
 					)
 				)
 				(arc
-					(start 2.54 -5.0546)
-					(mid 1.6599 -4.6901)
-					(end 1.2954 -3.81)
+					(start 2.54 0.0254)
+					(mid 1.6599 0.3899)
+					(end 1.2954 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -3341,9 +3281,9 @@
 					)
 				)
 				(arc
-					(start 2.54 -7.5946)
-					(mid 1.6599 -7.2301)
-					(end 1.2954 -6.35)
+					(start 2.54 -2.5146)
+					(mid 1.6599 -2.1501)
+					(end 1.2954 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -3353,9 +3293,21 @@
 					)
 				)
 				(arc
-					(start 2.54 -10.1346)
-					(mid 1.6599 -9.7701)
-					(end 1.2954 -8.89)
+					(start 1.3208 -3.81)
+					(mid 1.6711 -2.9085)
+					(end 2.5654 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.5654 -5.0546)
+					(mid 1.6851 -4.6902)
+					(end 1.3208 -3.81)
 					(stroke
 						(width 0)
 						(type default)
@@ -3365,7 +3317,7 @@
 					)
 				)
 			)
-			(symbol "Transformer_1P_2S_1_1"
+			(symbol "Transformer_1P_1S_1_1"
 				(pin passive line
 					(at -10.16 5.08 0)
 					(length 7.62)
@@ -3403,7 +3355,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 10.16 180)
+					(at 10.16 -5.08 180)
 					(length 7.62)
 					(name "SA"
 						(effects
@@ -3421,7 +3373,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 2.54 180)
+					(at 10.16 5.08 180)
 					(length 7.62)
 					(name "SB"
 						(effects
@@ -3431,42 +3383,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -2.54 180)
-					(length 7.62)
-					(name "SC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -10.16 180)
-					(length 7.62)
-					(name "SD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6856,16 +6772,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 83.82) (xy 233.68 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c44d19e-9aa3-4874-acfe-aa08f49563bd")
-	)
-	(wire
-		(pts
 			(xy 92.71 33.02) (xy 92.71 34.29)
 		)
 		(stroke
@@ -7963,16 +7869,6 @@
 			(type default)
 		)
 		(uuid "7280948b-5934-4ae3-a189-028cbb3d1939")
-	)
-	(wire
-		(pts
-			(xy 232.41 83.82) (xy 233.68 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "730fa2fc-72d1-4c60-a0e3-e5ee7abb5cee")
 	)
 	(wire
 		(pts
@@ -9223,16 +9119,6 @@
 			(type default)
 		)
 		(uuid "e07a7e2e-25cd-40e9-a515-debf9d6d4d8d")
-	)
-	(wire
-		(pts
-			(xy 233.68 88.9) (xy 232.41 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2c364bd-b41f-4e16-ad9d-4fd8927b4645")
 	)
 	(wire
 		(pts
@@ -11851,6 +11737,92 @@
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Transformer_1P_1S")
+		(at 222.25 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23822c31-4574-432a-a846-12e9dc6cb09c")
+		(property "Reference" "T1"
+			(at 222.2627 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Transformer_1P_1S"
+			(at 222.2627 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Transformer_THT:Transformer_Toroid_THT_7032"
+			(at 222.25 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Transformer, single primary, single secondary"
+			(at 222.25 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "afab8a05-1146-4ce6-b105-e507f822671f")
+		)
+		(pin "4"
+			(uuid "02986f52-4080-4da7-8eb9-f8da324aef98")
+		)
+		(pin "2"
+			(uuid "e2f7cf3a-b9f7-4cb6-a996-ddbf35965a7b")
+		)
+		(pin "3"
+			(uuid "deb8c748-c69c-46ff-9cbb-a0c7be0db2c6")
+		)
+		(instances
+			(project "Inv_Spot_Pot"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
+					(reference "T1")
 					(unit 1)
 				)
 			)
@@ -16522,98 +16494,6 @@
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Transformer_1P_2S")
-		(at 222.25 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d067827b-d7bb-498c-9b4e-8c585985db7c")
-		(property "Reference" "T1"
-			(at 222.25 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Transformer_1P_2S"
-			(at 222.25 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Transformer_THT:Transformer_Toroid_THT_7032"
-			(at 222.25 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Transformer, single primary, dual secondary"
-			(at 222.25 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "61dfd762-d416-4133-8cc4-3cce1cbedc30")
-		)
-		(pin "6"
-			(uuid "bc84aa3e-ca97-444c-b3b6-7b0b14982356")
-		)
-		(pin "5"
-			(uuid "076c4519-8ec1-4a73-9e4e-e0dd859db8bb")
-		)
-		(pin "4"
-			(uuid "2080438e-ae0a-41bc-a216-4d6cd9112222")
-		)
-		(pin "1"
-			(uuid "d63e0eb9-b494-42f6-88c1-d870ee274ad4")
-		)
-		(pin "2"
-			(uuid "250f6cd2-4ea4-4c20-8661-4d714fb74c22")
-		)
-		(instances
-			(project "Inv_Spot_Pot"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "T1")
 					(unit 1)
 				)
 			)
