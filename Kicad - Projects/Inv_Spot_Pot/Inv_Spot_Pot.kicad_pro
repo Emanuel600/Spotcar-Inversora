@@ -585,6 +585,12 @@
       "Gate": [
         "MVI"
       ],
+      "Net-(CY1-Pad1)": [
+        "HV"
+      ],
+      "Net-(CY2-Pad2)": [
+        "HV"
+      ],
       "Net-(Cx1-Pad1)": [
         "HV"
       ],
