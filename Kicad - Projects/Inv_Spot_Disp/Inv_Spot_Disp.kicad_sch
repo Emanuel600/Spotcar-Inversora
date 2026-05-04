@@ -4627,6 +4627,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 107.95) (xy 275.59 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a71b626-c19a-464b-84d5-8cdfe2918882")
+	)
+	(wire
+		(pts
 			(xy 256.54 152.4) (xy 256.54 153.67)
 		)
 		(stroke
@@ -4704,6 +4714,16 @@
 			(type default)
 		)
 		(uuid "25f994ed-2dad-4bd9-80d9-8552da88a6c7")
+	)
+	(wire
+		(pts
+			(xy 267.97 105.41) (xy 273.05 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a9bda14-7964-49be-a892-4bf3b8abcde7")
 	)
 	(wire
 		(pts
@@ -5207,6 +5227,16 @@
 	)
 	(wire
 		(pts
+			(xy 275.59 107.95) (xy 275.59 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "839fbf1f-cfd2-4208-8ee1-968952302f77")
+	)
+	(wire
+		(pts
 			(xy 26.67 62.23) (xy 26.67 63.5)
 		)
 		(stroke
@@ -5284,16 +5314,6 @@
 			(type default)
 		)
 		(uuid "89100dc6-921b-4504-b765-f53a0fe4236c")
-	)
-	(wire
-		(pts
-			(xy 267.97 107.95) (xy 274.32 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a74b871-8912-485b-a6b2-99dd0784beb0")
 	)
 	(wire
 		(pts
@@ -5434,16 +5454,6 @@
 			(type default)
 		)
 		(uuid "9a97789d-c87b-4d6e-a119-7391e7e2dcef")
-	)
-	(wire
-		(pts
-			(xy 267.97 105.41) (xy 274.32 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9aff9aab-bf41-4be5-af80-cebe5a05e0f7")
 	)
 	(wire
 		(pts
@@ -5594,16 +5604,6 @@
 			(type default)
 		)
 		(uuid "a843d908-5a3d-4948-8442-0bd6ee91675b")
-	)
-	(wire
-		(pts
-			(xy 274.32 105.41) (xy 274.32 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8c975c6-a160-40fb-8e00-4473423c9de1")
 	)
 	(wire
 		(pts
@@ -5967,7 +5967,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 107.95) (xy 274.32 109.22)
+			(xy 273.05 105.41) (xy 273.05 109.22)
 		)
 		(stroke
 			(width 0)
@@ -10675,7 +10675,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 274.32 109.22 0)
+		(at 273.05 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10686,7 +10686,7 @@
 		(fields_autoplaced yes)
 		(uuid "79344796-05f4-451d-b212-ca1a4d0cee0b")
 		(property "Reference" "#PWR019"
-			(at 274.32 115.57 0)
+			(at 273.05 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10697,7 +10697,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 274.32 114.3 0)
+			(at 273.05 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10707,7 +10707,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 109.22 0)
+			(at 273.05 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10718,7 +10718,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 109.22 0)
+			(at 273.05 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10729,7 +10729,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 274.32 109.22 0)
+			(at 273.05 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13729,7 +13729,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 274.32 104.14 0)
+		(at 275.59 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13740,7 +13740,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6cf658d-dcbc-409a-b7af-9f90d004d89a")
 		(property "Reference" "#PWR018"
-			(at 274.32 107.95 0)
+			(at 275.59 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13751,7 +13751,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 274.32 99.06 0)
+			(at 275.59 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13761,7 +13761,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 104.14 0)
+			(at 275.59 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13772,7 +13772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 104.14 0)
+			(at 275.59 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13783,7 +13783,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 274.32 104.14 0)
+			(at 275.59 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
