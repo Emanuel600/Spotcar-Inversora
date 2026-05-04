@@ -67,15 +67,15 @@ void Error_Handler(void);
 #define Temp_Sense_GPIO_Port GPIOA
 #define Display_ADC_Pin GPIO_PIN_2
 #define Display_ADC_GPIO_Port GPIOA
-#define Rail_ADC_Pin GPIO_PIN_3
-#define Rail_ADC_GPIO_Port GPIOA
+#define Trigger_Pin GPIO_PIN_4
+#define Trigger_GPIO_Port GPIOA
 #define D1_Pin GPIO_PIN_5
 #define D1_GPIO_Port GPIOA
-#define D2_Pin GPIO_PIN_6
-#define D2_GPIO_Port GPIOA
-#define D3_Pin GPIO_PIN_7
+#define D2_Pin GPIO_PIN_1
+#define D2_GPIO_Port GPIOB
+#define D3_Pin GPIO_PIN_9
 #define D3_GPIO_Port GPIOA
-#define D4_Pin GPIO_PIN_9
+#define D4_Pin GPIO_PIN_10
 #define D4_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */

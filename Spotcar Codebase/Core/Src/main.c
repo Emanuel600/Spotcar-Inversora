@@ -125,6 +125,7 @@ int main(void)
 		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_3);
 	  }
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
