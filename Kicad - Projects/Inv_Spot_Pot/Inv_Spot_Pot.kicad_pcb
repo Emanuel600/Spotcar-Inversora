@@ -26854,6 +26854,14 @@
 		(net "Gate1")
 		(uuid "ffbcd35f-d510-4f32-a55a-2468e300f03d")
 	)
+	(via
+		(at 101.2 95.425)
+		(size 1.6)
+		(drill 0.82)
+		(layers "F.Cu" "B.Cu")
+		(net "Gate")
+		(uuid "f1bad28c-c5df-4cfb-8b23-125ae7ca62ce")
+	)
 	(segment
 		(start 101.2 94.136038)
 		(end 104.173019 91.163019)
@@ -26869,6 +26877,14 @@
 		(layer "B.Cu")
 		(net "Gate")
 		(uuid "95294743-f0a0-4b01-9ad6-42e4e03c6126")
+	)
+	(segment
+		(start 101.2 95.425)
+		(end 101.2 94.136038)
+		(width 1.5)
+		(layer "B.Cu")
+		(net "Gate")
+		(uuid "a911122e-5e91-4b7b-b98a-089f0d978f78")
 	)
 	(segment
 		(start 105.075 101.875)
@@ -26896,7 +26912,7 @@
 	)
 	(segment
 		(start 101.2 98.05)
-		(end 101.2 94.136038)
+		(end 101.2 95.425)
 		(width 1.5)
 		(layer "B.Cu")
 		(net "Gate")
