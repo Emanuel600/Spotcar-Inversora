@@ -10861,7 +10861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W3.0mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
+		(property "Footprint" "Capacitor_THT:C_Rect_L11.0mm_W5.3mm_P10.00mm_MKT"
 			(at 175.5648 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -12175,7 +12175,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W3.0mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
+		(property "Footprint" "Capacitor_THT:C_Rect_L11.0mm_W5.3mm_P10.00mm_MKT"
 			(at 157.1752 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -12257,7 +12257,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W3.0mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
+		(property "Footprint" "Capacitor_THT:C_Rect_L11.0mm_W5.3mm_P10.00mm_MKT"
 			(at 175.5648 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -15964,7 +15964,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W3.0mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
+		(property "Footprint" "Capacitor_THT:C_Rect_L11.0mm_W5.3mm_P10.00mm_MKT"
 			(at 157.1752 45.72 0)
 			(hide yes)
 			(show_name no)
