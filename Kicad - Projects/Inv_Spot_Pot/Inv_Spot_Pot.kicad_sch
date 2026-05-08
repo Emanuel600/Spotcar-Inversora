@@ -11518,7 +11518,7 @@
 				)
 			)
 		)
-		(property "Value" "K7"
+		(property "Value" "SS16"
 			(at 104.4575 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11528,7 +11528,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SOD-128"
 			(at 104.14 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -12501,7 +12501,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Schurter_CQM_Inline_P20.60x5.00mm_D1.00mm_Horizontal"
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Bel_FC-203-22_Lateral_P17.80x5.00mm_D1.17mm_Horizontal"
 			(at 35.56 33.528 90)
 			(hide yes)
 			(show_name no)
@@ -13305,7 +13305,7 @@
 				)
 			)
 		)
-		(property "Value" "K7"
+		(property "Value" "SS16"
 			(at 252.4125 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13315,7 +13315,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SOD-128"
 			(at 252.73 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -14584,7 +14584,7 @@
 				)
 			)
 		)
-		(property "Value" "K7"
+		(property "Value" "SS16"
 			(at 252.4125 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14594,7 +14594,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
 			(at 252.73 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -15063,7 +15063,7 @@
 				)
 			)
 		)
-		(property "Value" "K7"
+		(property "Value" "SS16"
 			(at 209.2325 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15073,7 +15073,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
 			(at 209.55 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -15474,7 +15474,7 @@
 				)
 			)
 		)
-		(property "Value" "K7"
+		(property "Value" "SS16"
 			(at 104.4575 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15484,7 +15484,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
 			(at 104.14 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -16441,7 +16441,7 @@
 				)
 			)
 		)
-		(property "Value" "K7"
+		(property "Value" "SS16"
 			(at 209.2325 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16451,7 +16451,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
 			(at 209.55 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -16711,7 +16711,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
 			(at 64.77 119.38 0)
 			(hide yes)
 			(show_name no)
