@@ -4283,18 +4283,6 @@
 		)
 		(uuid "d7d8e9a7-19ad-4433-a729-3366488d0460")
 	)
-	(rectangle
-		(start 17.145 93.98)
-		(end 60.96 116.84)
-		(stroke
-			(width 0)
-			(type dash_dot)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "d8d975b4-d769-422c-bcd2-d1ecb09b87e0")
-	)
 	(text "Programming Line"
 		(exclude_from_sim no)
 		(at 148.336 91.186 0)
@@ -4385,16 +4373,6 @@
 		)
 		(uuid "a264b07a-8d65-4747-9350-1cf52c1e2485")
 	)
-	(text "Temperature Sense - Input"
-		(exclude_from_sim no)
-		(at 40.64 92.964 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "acdcabe6-8576-4358-a470-36a35240c179")
-	)
 	(text "Current Sense - Input"
 		(exclude_from_sim no)
 		(at 76.2 129.54 0)
@@ -4434,12 +4412,6 @@
 			)
 		)
 		(uuid "e7ffaeb4-60d1-4a58-adca-4d46c77d37d4")
-	)
-	(junction
-		(at 40.64 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ca5454f-50c4-4cf6-abb7-c303eb0cc75c")
 	)
 	(junction
 		(at 209.55 143.51)
@@ -5123,16 +5095,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 102.87) (xy 31.75 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dba5a4a-09d5-4db7-8e62-3e59ffdeb50e")
-	)
-	(wire
-		(pts
 			(xy 200.66 62.23) (xy 201.93 62.23)
 		)
 		(stroke
@@ -5200,16 +5162,6 @@
 			(type default)
 		)
 		(uuid "6b3feb16-0164-4d8d-9543-a9cfebb9b74f")
-	)
-	(wire
-		(pts
-			(xy 40.64 100.33) (xy 45.72 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c2fe608-4136-4507-bc7a-17a1cb619d6f")
 	)
 	(wire
 		(pts
@@ -5863,16 +5815,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 109.22) (xy 40.64 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcf9a414-f10d-4b42-aa82-f73177daf56e")
-	)
-	(wire
-		(pts
 			(xy 217.17 110.49) (xy 210.82 110.49)
 		)
 		(stroke
@@ -5883,16 +5825,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 102.87) (xy 31.75 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c287041d-d9e8-4a98-a246-7a2ee68b03cf")
-	)
-	(wire
-		(pts
 			(xy 130.81 29.21) (xy 132.08 29.21)
 		)
 		(stroke
@@ -5900,16 +5832,6 @@
 			(type default)
 		)
 		(uuid "c2bceb17-4903-4e8c-9c11-ed3c70bfeeb2")
-	)
-	(wire
-		(pts
-			(xy 27.94 100.33) (xy 40.64 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c50c7423-e222-4f24-a206-f7695a5425a1")
 	)
 	(wire
 		(pts
@@ -6110,16 +6032,6 @@
 			(type default)
 		)
 		(uuid "d7297c0c-17af-4cb3-8bb9-18785771c839")
-	)
-	(wire
-		(pts
-			(xy 40.64 100.33) (xy 40.64 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8bb33ee-8e06-494b-bed9-16e603e34fd5")
 	)
 	(wire
 		(pts
@@ -6994,30 +6906,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "Temp_Sense"
-		(shape input)
-		(at 45.72 100.33 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d33c0826-d8e3-4770-a9c5-afb28260e9ec")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.1351 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -10028,84 +9916,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.64 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54a245a5-235f-49b0-b4e3-f92d82a19fe6")
-		(property "Reference" "#PWR035"
-			(at 40.64 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 40.64 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "83631762-ccba-4f43-9496-c4fc0cbdda50")
-		)
-		(instances
-			(project "Inv_Spot_Disp"
-				(path "/016976b8-e488-405d-b5a2-1b3e7431e7ce"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 232.41 41.91 0)
 		(unit 1)
 		(body_style 1)
@@ -10177,84 +9987,6 @@
 			(project "Inv_Spot_Disp"
 				(path "/016976b8-e488-405d-b5a2-1b3e7431e7ce"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 31.75 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60b825f0-fe82-4516-9c2f-68d3ef307e41")
-		(property "Reference" "#PWR034"
-			(at 31.75 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 31.75 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "385d56ce-fe07-420b-849a-88e8873f0d66")
-		)
-		(instances
-			(project "Inv_Spot_Disp"
-				(path "/016976b8-e488-405d-b5a2-1b3e7431e7ce"
-					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -11031,7 +10763,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 226.06 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -12446,88 +12178,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 40.64 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "adc1e194-e76d-4263-adfd-f30560fdaa5f")
-		(property "Reference" "C7"
-			(at 44.45 104.1399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "104"
-			(at 44.45 106.6799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 41.6052 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 40.64 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1fb5ddf8-f183-4b07-aacc-fb83b7ca4aa1")
-		)
-		(pin "2"
-			(uuid "b67360f0-e5a8-48b7-a5ee-cfc3c65cce70")
-		)
-		(instances
-			(project "Inv_Spot_Disp"
-				(path "/016976b8-e488-405d-b5a2-1b3e7431e7ce"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 256.54 143.51 0)
 		(unit 1)
@@ -13731,87 +13381,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 22.86 100.33 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3b3076e-dac6-47b3-8ddd-df5d43f15541")
-		(property "Reference" "J6"
-			(at 23.495 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Temp_Sense"
-			(at 23.495 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical"
-			(at 22.86 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 22.86 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "827d27f8-9b19-4a5e-a03c-7bd5ba79740d")
-		)
-		(pin "2"
-			(uuid "cb548f6f-f0ce-4d52-bfeb-ea6d12566ed0")
-		)
-		(instances
-			(project "Inv_Spot_Disp"
-				(path "/016976b8-e488-405d-b5a2-1b3e7431e7ce"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 194.31 111.76 0)
 		(unit 1)
@@ -14562,7 +14131,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 262.89 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -14726,7 +14295,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 158.75 105.41 0)
 			(hide yes)
 			(show_name no)

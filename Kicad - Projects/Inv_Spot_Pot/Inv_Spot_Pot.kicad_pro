@@ -621,6 +621,9 @@
       "Net-(T1-AA)": [
         "HVLC"
       ],
+      "Net-(T1-AB)": [
+        "HVLC"
+      ],
       "PWM": [
         "MVI"
       ],
@@ -820,7 +823,7 @@
         "uuid": "e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
       }
     ],
-    "used_designators": "T1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
