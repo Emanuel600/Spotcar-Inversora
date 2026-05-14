@@ -4462,6 +4462,12 @@
 		(uuid "7580a95a-acc3-4d75-ae33-4120b1ac4856")
 	)
 	(junction
+		(at 41.91 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8addd091-c96c-47ea-b2f0-e97af9240518")
+	)
+	(junction
 		(at 77.47 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5025,6 +5031,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 152.4) (xy 44.45 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539327bb-fb46-48fa-a689-9cc630596847")
+	)
+	(wire
+		(pts
 			(xy 73.66 149.86) (xy 73.66 152.4)
 		)
 		(stroke
@@ -5185,6 +5201,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 161.29) (xy 41.91 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71082863-782a-4fd0-bd32-cc100287e40e")
+	)
+	(wire
+		(pts
 			(xy 194.31 102.87) (xy 194.31 101.6)
 		)
 		(stroke
@@ -5192,6 +5218,16 @@
 			(type default)
 		)
 		(uuid "71d8856c-5b66-436a-afc9-89cfb0dc7b1b")
+	)
+	(wire
+		(pts
+			(xy 41.91 152.4) (xy 41.91 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "721261ef-b23b-4be9-9bd4-dd2e6c85e31c")
 	)
 	(wire
 		(pts
@@ -6085,6 +6121,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 162.56) (xy 38.1 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ae8e51-f48c-463a-8b40-20178b9d9022")
+	)
+	(wire
+		(pts
 			(xy 120.65 172.72) (xy 120.65 173.99)
 		)
 		(stroke
@@ -6215,7 +6261,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 152.4) (xy 44.45 152.4)
+			(xy 38.1 152.4) (xy 41.91 152.4)
 		)
 		(stroke
 			(width 0)
@@ -7164,7 +7210,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56"
+		(property "Value" "100"
 			(at 35.56 158.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9134,6 +9180,87 @@
 			(project "Inv_Spot_Disp"
 				(path "/016976b8-e488-405d-b5a2-1b3e7431e7ce"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 41.91 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "466983bf-a99a-4739-98b0-c80bac87127e")
+		(property "Reference" "R13"
+			(at 44.45 156.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100"
+			(at 44.45 158.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 40.132 157.48 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 41.91 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d6f8bb10-f7f8-4cd4-b457-4f70e007024c")
+		)
+		(pin "1"
+			(uuid "adf86f7f-b835-4f36-997b-c24b106a8e1d")
+		)
+		(instances
+			(project "Inv_Spot_Disp"
+				(path "/016976b8-e488-405d-b5a2-1b3e7431e7ce"
+					(reference "R13")
 					(unit 1)
 				)
 			)

@@ -63,8 +63,6 @@ void Error_Handler(void);
 #define RS_GPIO_Port GPIOF
 #define Current_Sense_Pin GPIO_PIN_0
 #define Current_Sense_GPIO_Port GPIOA
-#define Temp_Sense_Pin GPIO_PIN_1
-#define Temp_Sense_GPIO_Port GPIOA
 #define Display_ADC_Pin GPIO_PIN_2
 #define Display_ADC_GPIO_Port GPIOA
 #define Trigger_Pin GPIO_PIN_4
