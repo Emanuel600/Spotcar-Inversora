@@ -96,6 +96,7 @@ int main(void)
   MX_ADC_Init();
   MX_TIM1_Init();
   MX_TIM3_Init();
+  MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
   HAL_ADC_Start_DMA(&hadc, (uint32_t*)ADC_Readouts, 4);
   HD_Init(data_pins, e_rs_pins);

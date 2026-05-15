@@ -6,6 +6,7 @@
  *
  * @brief	
  */
+#include <string.h>
 
 #include "menu.h"
 #include "main.h"
@@ -17,6 +18,11 @@ static Menu_State menu_state = SELECT_MENU;
 static uint32_t current;
 static uint32_t timer_value = 0;
 static uint32_t update_flag = 1;
+
+static const char* Decimal_to_String[] = {
+        "000", "010", "020", "030", "040", "050", "060", "070", "080", "090", "100",
+        "110", "120", "130", "140", "150", "160", "170", "180", "190", "200"
+    };
 
 void Read_Button_State(uint32_t ADC_reading){
 	if(ADC_reading > 3700){ // No button pressed
@@ -90,20 +96,24 @@ void Menu_Update_Display(){
 			HD_Write_4_Lines("Estrela", "Arruela", "Ponteira de Cobre", "Carvao");
 			break;
 		case CURRENT_MENU:
-			HD_Write_4_Lines("Escolha a Corrente", "I =                +", "                   -", "Cancelar");
+			const char* current_string = Decimal_to_String[current];
+			char current_line[21]   = "I =             ";
+			strcat(current_line, current_string);
+			strcat(current_line, "+");
+			HD_Write_4_Lines("Escolha a Corrente", current_line, "                   -", "Cancelar");
 		}
 	}
 }
 
 void Increase_Current(){
-	if(current < 200){
-		current += 10;
+	if(current < 20){
+		current ++;
 	}
 }
 
 void Decrease_Current(){
-	if(current > 10){
-		current -= 10;
+	if(current > 1){
+		current --;
 	}
 }
 
