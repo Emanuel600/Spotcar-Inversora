@@ -105,6 +105,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   uint32_t last_updated = HAL_GetTick();
   uint32_t trigger_start = 0;
+  uint32_t Pulse = 0;
   while (1)
   {
 	  if ((HAL_GetTick() - last_updated) > 10){
@@ -116,13 +117,15 @@ int main(void)
 	  Menu_Update_Display();
 	  if(Is_Trigger_Ready()){
 		  trigger_start = HAL_GetTick();
-		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3, Current_Get_Compare());
-		  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
-		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+		  Pulse = Current_Get_Compare();
+		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
+		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
+		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
 	  }
 	  if(Test_Trigger_Time(HAL_GetTick() - trigger_start)){
-		  HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
-		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_3);
+		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
+		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
 	  }
     /* USER CODE END WHILE */
 
