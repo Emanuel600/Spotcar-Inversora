@@ -156,5 +156,11 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 }
 
 /* USER CODE BEGIN 1 */
+void ADC_Calibrate(ADC_HandleTypeDef* hadc) {
+  // 1. Ensure ADC is disabled
+  HAL_ADC_Stop(hadc);
 
+  // 2. Start calibration, already waits for completion
+  HAL_ADCEx_Calibration_Start(hadc);
+}
 /* USER CODE END 1 */

@@ -98,7 +98,8 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
-  HAL_ADC_Start_DMA(&hadc, (uint32_t*)ADC_Readouts, 4);
+  ADC_Calibrate(&hadc);
+  HAL_ADC_Start_DMA(&hadc, (uint32_t*)ADC_Readouts, 2);
   HD_Init(data_pins, e_rs_pins);
   /* USER CODE END 2 */
 
@@ -110,13 +111,14 @@ int main(void)
   while (1)
   {
 	  if ((HAL_GetTick() - last_updated) > 10){
-		  Read_Button_State(ADC_Readouts[2]);
+		  Read_Button_State(ADC_Readouts[1]);
 		  Menu_Logic_Handler();
 	  }
 
 	  // Checks if it needs to update at the start of the function
 	  Menu_Update_Display();
 	  if(Is_Trigger_Ready()){
+		  ADC_Calibrate(&hadc);
 		  trigger_start = HAL_GetTick();
 		  Pulse = Current_Get_Compare();
 		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
