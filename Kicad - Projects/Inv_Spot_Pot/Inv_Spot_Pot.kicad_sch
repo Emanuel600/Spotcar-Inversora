@@ -2612,6 +2612,171 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Polyfuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 2.54)
+					(end 0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -5764,12 +5929,6 @@
 		(uuid "4d592404-573b-47dd-906a-39cb87ebb94c")
 	)
 	(junction
-		(at 160.02 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04845c61-3994-428b-8499-28820ca187ab")
-	)
-	(junction
 		(at 81.28 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5912,6 +6071,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5918f5a3-c1b2-4b89-9613-51ccf8cab8a3")
+	)
+	(junction
+		(at 160.02 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "599835c7-0471-4d01-ab8f-5e2f489d9ee2")
 	)
 	(junction
 		(at 115.57 99.06)
@@ -6200,16 +6365,6 @@
 			(type default)
 		)
 		(uuid "0281e0cd-fa0d-4b02-adaf-ea98bd422d6c")
-	)
-	(wire
-		(pts
-			(xy 158.75 97.79) (xy 160.02 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02bc60d3-4208-484f-b014-ca31d4705663")
 	)
 	(wire
 		(pts
@@ -6520,16 +6675,6 @@
 			(type default)
 		)
 		(uuid "19e26a99-f2bb-4a52-92dd-4aad201ca7c5")
-	)
-	(wire
-		(pts
-			(xy 160.02 100.33) (xy 160.02 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a0b9d92-7e91-4302-a204-a41b1cbb7488")
 	)
 	(wire
 		(pts
@@ -7013,7 +7158,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 92.71) (xy 160.02 97.79)
+			(xy 160.02 88.9) (xy 160.02 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7580,16 +7725,6 @@
 			(type default)
 		)
 		(uuid "723ee07c-431c-4868-a31a-63fc677f6ac0")
-	)
-	(wire
-		(pts
-			(xy 158.75 100.33) (xy 160.02 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "725d28d9-31fa-43bf-8b48-8e4771919d3e")
 	)
 	(wire
 		(pts
@@ -8520,6 +8655,16 @@
 			(type default)
 		)
 		(uuid "ce60f07c-3e3c-4821-a59f-f43cf2f22e0d")
+	)
+	(wire
+		(pts
+			(xy 160.02 99.06) (xy 160.02 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ced26084-8142-48ae-bc84-291e6773727d")
 	)
 	(wire
 		(pts
@@ -10768,6 +10913,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 160.02 95.25 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ee635de-3119-487b-b575-0ba8f027af48")
+		(property "Reference" "F2"
+			(at 157.48 93.9799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Polyfuse"
+			(at 157.48 96.5199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 158.75 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 160.02 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6d3038f8-44e4-4ffc-88e3-12e90b564a61")
+		)
+		(pin "2"
+			(uuid "e010bba7-cd5e-44c9-89a7-27b689c195e0")
+		)
+		(instances
+			(project "Inv_Spot_Pot"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 81.28 35.56 0)
 		(unit 1)
@@ -12272,7 +12500,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Bel_FC-203-22_Lateral_P17.80x5.00mm_D1.17mm_Horizontal"
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Schurter_CQM_Inline_P20.60x5.00mm_D1.00mm_Horizontal"
 			(at 35.56 33.528 90)
 			(hide yes)
 			(show_name no)
@@ -13298,7 +13526,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 160.02 92.71 0)
+		(at 160.02 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13309,7 +13537,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c91cf8f-d131-4c4d-8eeb-ddd57ccdceec")
 		(property "Reference" "#PWR018"
-			(at 160.02 96.52 0)
+			(at 160.02 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13320,7 +13548,7 @@
 			)
 		)
 		(property "Value" "15V"
-			(at 160.02 87.63 0)
+			(at 160.02 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13330,7 +13558,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 92.71 0)
+			(at 160.02 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13341,7 +13569,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 92.71 0)
+			(at 160.02 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13352,7 +13580,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 160.02 92.71 0)
+			(at 160.02 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17093,87 +17321,6 @@
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
 					(reference "HS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 153.67 97.79 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ee0f799f-eca9-4976-aaab-32bfc164b6fc")
-		(property "Reference" "J5"
-			(at 152.4 97.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "ThSw"
-			(at 152.4 100.3299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 153.67 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 153.67 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a8662343-a04c-4206-8f9e-248ebc297257")
-		)
-		(pin "1"
-			(uuid "9c831829-89e4-488d-99d5-0cf8b3c59762")
-		)
-		(instances
-			(project "Inv_Spot_Pot"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "J5")
 					(unit 1)
 				)
 			)
