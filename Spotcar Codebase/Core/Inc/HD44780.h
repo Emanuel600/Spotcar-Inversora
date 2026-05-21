@@ -40,12 +40,6 @@
 #define LINE_3				0x14
 #define LINE_4				0x54
 
-
-typedef struct pin_s {
-	uint16_t pin;
-	GPIO_TypeDef* port;
-} pin_s;
-
 typedef struct HD44780 {
 	pin_s* Data_pins; // Only 4 bits
 	pin_s* E_RS_pins; // Enable/RS pins

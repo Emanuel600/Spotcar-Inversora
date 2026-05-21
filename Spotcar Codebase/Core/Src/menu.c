@@ -15,6 +15,8 @@
 static Button_State button_state;
 static Menu_State menu_state = SELECT_MENU;
 
+static pin_s Trigger;
+
 static uint32_t current;
 static uint32_t timer_value = 0;
 static uint32_t update_flag = 1;
@@ -35,15 +37,18 @@ void Read_Button_State(uint32_t ADC_reading){
 		button_state = BUTTON_3;
 	} else if (ADC_reading > 800){
 		button_state = BUTTON_4;
-	} else {
+	}
+
+	if(HAL_GPIO_ReadPin(Trigger.port, Trigger.pin) == GPIO_PIN_SET){
 		button_state = TRIGGER;
 	}
+
 }
 
 void Menu_Logic_Handler(){
 	switch (menu_state){
 	case SELECT_MENU:
-		current = 10;
+		current = 1;
 		switch (button_state){
 		case BUTTON_1:
 			timer_value = STAR_POINT_TIME;
@@ -105,27 +110,32 @@ void Menu_Update_Display(){
 	}
 }
 
-void Increase_Current(){
+inline void Increase_Current(){
 	if(current < 20){
 		current ++;
 	}
 }
 
-void Decrease_Current(){
+inline void Decrease_Current(){
 	if(current > 1){
 		current --;
 	}
 }
 
-uint32_t Current_Get_Compare(){
+inline uint32_t Current_Get_Compare(){
 	return (current>>1)*3;
 }
 
-uint32_t Test_Trigger_Time(uint32_t time){
+inline uint32_t Test_Trigger_Time(uint32_t time){
 	return (time >= timer_value);
 }
 
-uint32_t Is_Trigger_Ready(){
+inline uint32_t Is_Trigger_Ready(){
 	return (menu_state != SELECT_MENU) & (button_state == TRIGGER);
+}
+
+inline void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port){
+	Trigger.pin = pin;
+	Trigger.port = port;
 }
 

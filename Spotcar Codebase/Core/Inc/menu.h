@@ -31,6 +31,8 @@ typedef enum Menu_State {
 	CURRENT_MENU
 } Menu_State;
 
+void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port);
+
 void Read_Button_State(uint32_t ADC_reading);
 
 void Menu_Logic_Handler();
