@@ -123,7 +123,7 @@ inline void Decrease_Current(){
 }
 
 inline uint32_t Current_Get_Compare(){
-	return (current>>1)*3;
+	return current*15;
 }
 
 inline uint32_t Test_Trigger_Time(uint32_t time){
