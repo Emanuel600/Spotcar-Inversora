@@ -107,6 +107,6 @@ void HD_Pulse_Enable(){
 }
 
 void delay_us(uint32_t delay){
-	TIM3->CNT = 0;
-	while (TIM3->CNT < delay);
+	TIM14->CNT = 0;
+	while (TIM14->CNT < delay);
 }
