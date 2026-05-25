@@ -122,6 +122,10 @@ inline void Decrease_Current(){
 	}
 }
 
+inline uint32_t Get_Target_Current(){
+	return current;
+}
+
 inline uint32_t Current_Get_Compare(){
 	return current*15;
 }

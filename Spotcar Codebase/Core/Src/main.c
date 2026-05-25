@@ -47,9 +47,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint16_t ADC_Readouts[4];
+uint16_t ADC_Readouts[2];
 pin_s data_pins[] = {{D1_Pin, D1_GPIO_Port}, {D2_Pin, D2_GPIO_Port}, {D3_Pin, D3_GPIO_Port}, {D4_Pin, D4_GPIO_Port}};
 pin_s e_rs_pins[] = {{Enable_Pin, Enable_GPIO_Port}, {RS_Pin, RS_GPIO_Port}};
+
+uint32_t triggered = 0;
+static uint32_t s_current = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -113,22 +116,40 @@ int main(void)
 	  if ((HAL_GetTick() - last_updated) > 10){
 		  Read_Button_State(ADC_Readouts[1]);
 		  Menu_Logic_Handler();
+		  // Trigger
+		  if(Is_Trigger_Ready() & (triggered==0)){
+		  		  ADC_Calibrate(&hadc);
+		  		  trigger_start = HAL_GetTick();
+		  		  Pulse = Current_Get_Compare();
+		  		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
+		  		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
+		  		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+		  		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+		  		  triggered = 1;
+		  }
+		  last_updated = HAL_GetTick();
 	  }
 
 	  // Checks if it needs to update at the start of the function
 	  Menu_Update_Display();
-	  if(Is_Trigger_Ready()){
-		  ADC_Calibrate(&hadc);
-		  trigger_start = HAL_GetTick();
-		  Pulse = Current_Get_Compare();
-		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
-		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
-		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-	  }
+	  // Stops trigger if gone over time
 	  if(Test_Trigger_Time(HAL_GetTick() - trigger_start)){
-		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
-		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
+	  		  		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
+	  		  		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
+	  		  		  triggered = 0;
+	  		  }
+	  // Adjusts PWM for more or less current
+	   if(((HAL_GetTick() - last_updated) > 2) & (triggered==1)){
+		   // Adjusts by a percent of the total
+		  (s_current < Get_Target_Current()) ? (Pulse = Pulse + 3) : (Pulse = Pulse - 3);
+		  // Clamp pulse width
+		  if (Pulse > 300){
+			  Pulse = 300;
+		  } else if (Pulse < 9){
+			  Pulse = 9;
+		  }
+		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
+  		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
 	  }
     /* USER CODE END WHILE */
 
@@ -178,7 +199,9 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
+	 s_current = (ADC_Readouts[0]*3300*124)>>10;
+}
 /* USER CODE END 4 */
 
 /**

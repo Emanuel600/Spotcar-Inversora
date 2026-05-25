@@ -43,10 +43,14 @@ void Increase_Current();
 
 void Decrease_Current();
 
-uint32_t Is_Trigger_Ready();
+uint32_t Get_Target_Current();
 
 uint32_t Current_Get_Compare();
 
 uint32_t Test_Trigger_Time(uint32_t time);
+
+uint32_t Is_Trigger_Ready();
+
+void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port);
 
 #endif /* INC_MENU_H_ */
