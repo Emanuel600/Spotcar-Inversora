@@ -140,8 +140,9 @@ int main(void)
 	  		  }
 	  // Adjusts PWM for more or less current
 	   if(((HAL_GetTick() - last_updated) > 2) & (triggered==1)){
-		   // Adjusts by a percent of the total
-		  (s_current < Get_Target_Current()) ? (Pulse = Pulse + 3) : (Pulse = Pulse - 3);
+		   // Adjusts Current Proportionally to Current Error
+		  int32_t adjustment = 3*((int32_t)Get_Target_Current() - (int32_t)s_current)>>12;
+		  Pulse += adjustment;
 		  // Clamp pulse width
 		  if (Pulse > 300){
 			  Pulse = 300;

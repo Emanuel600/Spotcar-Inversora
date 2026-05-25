@@ -29,13 +29,13 @@ static const char* Decimal_to_String[] = {
 void Read_Button_State(uint32_t ADC_reading){
 	if(ADC_reading > 3700){ // No button pressed
 		button_state = NO_BUTTON;
-	} else if (ADC_reading > 2700){
+	} else if (ADC_reading > 2800){
 		button_state = BUTTON_1;
 	} else if (ADC_reading > 2200){
 		button_state = BUTTON_2;
 	} else if (ADC_reading > 1600){
 		button_state = BUTTON_3;
-	} else if (ADC_reading > 800){
+	} else if (ADC_reading > 1000){
 		button_state = BUTTON_4;
 	}
 
