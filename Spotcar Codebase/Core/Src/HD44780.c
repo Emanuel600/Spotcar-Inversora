@@ -38,8 +38,8 @@ void HD_Set_Cursor(uint32_t pos){
 }
 
 void HD_Command(uint32_t command){
-	uint32_t upper = command * 0xF0;
-	uint32_t lower = command * 0x0F;
+	uint32_t upper = command & 0xF0;
+	uint32_t lower = command & 0x0F;
 
 	HAL_GPIO_WritePin(Display.E_RS_pins[1].port, Display.E_RS_pins[1].pin, GPIO_PIN_RESET);
 

@@ -48,7 +48,7 @@
 
 /* USER CODE BEGIN PV */
 uint16_t ADC_Readouts[2];
-pin_s data_pins[] = {{D1_Pin, D1_GPIO_Port}, {D2_Pin, D2_GPIO_Port}, {D3_Pin, D3_GPIO_Port}, {D4_Pin, D4_GPIO_Port}};
+pin_s data_pins[] = {{D4_Pin, D4_GPIO_Port}, {D5_Pin, D5_GPIO_Port}, {D6_Pin, D6_GPIO_Port}, {D7_Pin, D7_GPIO_Port}};
 pin_s e_rs_pins[] = {{Enable_Pin, Enable_GPIO_Port}, {RS_Pin, RS_GPIO_Port}};
 
 uint32_t triggered = 0;
