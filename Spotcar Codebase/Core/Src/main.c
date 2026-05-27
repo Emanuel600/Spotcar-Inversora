@@ -108,6 +108,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  HD_Write_4_Lines(\
+		  " Spotcar Inversora ", \
+		  "     V8 Brasil     ", \
+		  "  @V8BrasilOficial  ", \
+		  "   (48) 3341-8600   ");
+  HAL_Delay(2000);
   uint32_t last_updated = HAL_GetTick();
   uint32_t trigger_start = 0;
   uint32_t Pulse = 0;
@@ -205,7 +211,7 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
-	 s_current = (ADC_Readouts[0]*3300*124)>>10;
+	 s_current = (ADC_Readouts[0]*3300*124)>>12;
 }
 /* USER CODE END 4 */
 

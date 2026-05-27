@@ -41,8 +41,6 @@ void HD_Command(uint32_t command){
 	uint32_t upper = command & 0xF0;
 	uint32_t lower = command & 0x0F;
 
-	HAL_GPIO_WritePin(Display.E_RS_pins[1].port, Display.E_RS_pins[1].pin, GPIO_PIN_RESET);
-
 	HD_Command4(upper);
 	HD_Command4(lower);
 	delay_us(60);
@@ -52,7 +50,7 @@ void HD_Command4(uint32_t command_nibble){
 	HAL_GPIO_WritePin(Display.E_RS_pins[1].port, Display.E_RS_pins[1].pin, GPIO_PIN_RESET);
 	for(uint32_t counter = 0; counter < 4; counter--){
 		HAL_GPIO_WritePin(Display.Data_pins[counter].port, Display.Data_pins[counter].pin, (command_nibble & 0x01));
-		command_nibble <<= 1;
+		command_nibble >>= 1;
 	}
 	HD_Pulse_Enable();
 }
@@ -81,8 +79,6 @@ void HD_Write8(char data){
 	uint32_t upper = data * 0xF0;
 	uint32_t lower = data * 0x0F;
 
-	HAL_GPIO_WritePin(Display.E_RS_pins[1].port, Display.E_RS_pins[1].pin, GPIO_PIN_SET);
-
 	HD_Write4(upper);
 	HD_Write4(lower);
 	delay_us(60);
@@ -92,7 +88,7 @@ void HD_Write4(char data_nibble){
 	HAL_GPIO_WritePin(Display.E_RS_pins[1].port, Display.E_RS_pins[1].pin, GPIO_PIN_SET);
 	for(uint32_t counter = 0; counter < 4; counter--){
 		HAL_GPIO_WritePin(Display.Data_pins[counter].port, Display.Data_pins[counter].pin, (data_nibble & 0x01));
-		data_nibble <<= 1;
+		data_nibble >>= 1;
 	}
 	HD_Pulse_Enable();
 }
