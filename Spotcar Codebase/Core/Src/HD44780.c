@@ -15,17 +15,20 @@ static HD44780 Display;
 void HD_Init(pin_s* data_pins, pin_s* e_rs_pins){
 	Display.Data_pins = data_pins;
 	Display.E_RS_pins = e_rs_pins;
-
+	// Command to set to 8 bits must be sent thrice, to ensure its in 8-bit mode
 	HD_Command(FUNCTION_SET | DL_8_BITS);
 	HAL_Delay(5);
 	HD_Command(FUNCTION_SET | DL_8_BITS);
 	HAL_Delay(1);
 	HD_Command(FUNCTION_SET | DL_8_BITS);
 	HAL_Delay(1);
+	// Sets it to 4-bit mode with 2 lines
 	HD_Command(FUNCTION_SET | TWO_LINES);
-
+	// Turn on and set display
 	HD_Command(DISPLAY_ON_OFF | SET_DISPLAY);
 	Clear_Display();
+	// Set entry mode
+	HD_Command(ENTRY_MODE_SET | CURSOR_INC);
 }
 
 void Clear_Display(){
@@ -34,7 +37,7 @@ void Clear_Display(){
 }
 
 void HD_Set_Cursor(uint32_t pos){
-	HD_Command(SET_DDRAM | (pos & 0x0F));
+	HD_Command(SET_DDRAM | (pos & 0xFF));
 }
 
 void HD_Command(uint32_t command){
