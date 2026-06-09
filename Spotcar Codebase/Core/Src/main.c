@@ -115,35 +115,37 @@ int main(void)
 		  "   (48) 3341-8600   ");
   HAL_Delay(2000);
   uint32_t last_updated = HAL_GetTick();
+  uint32_t last_trigger_check = HAL_GetTick();
   uint32_t trigger_start = 0;
   uint32_t Pulse = 0;
   while (1)
   {
-	  if ((HAL_GetTick() - last_updated) > 10){
+	  if ((HAL_GetTick() - last_updated) > 100){
 		  Read_Button_State(ADC_Readouts[1]);
 		  Menu_Logic_Handler();
-		  // Trigger
-		  if(Is_Trigger_Ready() & (triggered==0)){
-		  		  ADC_Calibrate(&hadc);
-		  		  trigger_start = HAL_GetTick();
-		  		  Pulse = Current_Get_Compare();
-		  		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
-		  		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
-		  		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-		  		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-		  		  triggered = 1;
-		  }
+
 		  last_updated = HAL_GetTick();
 	  }
 
 	  // Checks if it needs to update at the start of the function
 	  Menu_Update_Display();
+	  // Trigger
+	  if(((HAL_GetTick() - last_trigger_check) > 10) & (Is_Trigger_Ready() & (triggered==0))){
+	  		ADC_Calibrate(&hadc);
+	  		trigger_start = HAL_GetTick();
+	  		Pulse = Current_Get_Compare();
+	  		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
+	  		__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
+	  		HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+	  		HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+	  		triggered = 1;
+	  }
 	  // Stops trigger if gone over time
 	  if(Test_Trigger_Time(HAL_GetTick() - trigger_start)){
-	  		  		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
-	  		  		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
-	  		  		  triggered = 0;
-	  		  }
+	  		HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
+	  		HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
+	  		triggered = 0;
+	  }
 	  // Adjusts PWM for more or less current
 	   if(((HAL_GetTick() - last_updated) > 2) & (triggered==1)){
 		   // Adjusts Current Proportionally to Current Error

@@ -16,13 +16,14 @@ void HD_Init(pin_s* data_pins, pin_s* e_rs_pins){
 	Display.Data_pins = data_pins;
 	Display.E_RS_pins = e_rs_pins;
 	// Command to set to 8 bits must be sent thrice, to ensure its in 8-bit mode
-	HD_Command(FUNCTION_SET | DL_8_BITS);
+	HD_Command4((FUNCTION_SET | DL_8_BITS)>>4);
 	HAL_Delay(5);
-	HD_Command(FUNCTION_SET | DL_8_BITS);
+	HD_Command4((FUNCTION_SET | DL_8_BITS)>>4);
 	HAL_Delay(1);
-	HD_Command(FUNCTION_SET | DL_8_BITS);
+	HD_Command4((FUNCTION_SET | DL_8_BITS)>>4);
 	HAL_Delay(1);
 	// Sets it to 4-bit mode with 2 lines
+	HD_Command(FUNCTION_SET | TWO_LINES);
 	HD_Command(FUNCTION_SET | TWO_LINES);
 	// Turn on and set display
 	HD_Command(DISPLAY_ON_OFF | SET_DISPLAY);

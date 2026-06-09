@@ -27,9 +27,8 @@ static const char* Decimal_to_String[] = {
     };
 
 void Read_Button_State(uint32_t ADC_reading){
-	if(ADC_reading > 3700){ // No button pressed
-		button_state = NO_BUTTON;
-	} else if (ADC_reading > 2800){
+	button_state = NO_BUTTON;
+	if ((ADC_reading < 3700) & (ADC_reading > 2800)){
 		button_state = BUTTON_1;
 	} else if (ADC_reading > 2200){
 		button_state = BUTTON_2;
@@ -38,11 +37,6 @@ void Read_Button_State(uint32_t ADC_reading){
 	} else if (ADC_reading > 1000){
 		button_state = BUTTON_4;
 	}
-
-	if(HAL_GPIO_ReadPin(Trigger.port, Trigger.pin) == GPIO_PIN_SET){
-		button_state = TRIGGER;
-	}
-
 }
 
 void Menu_Logic_Handler(){
@@ -78,10 +72,12 @@ void Menu_Logic_Handler(){
 		switch (button_state){
 		case BUTTON_2:
 			Increase_Current();
+			menu_state = ADJUST_MENU;
 			update_flag = 1;
 			break;
 		case BUTTON_3:
 			Decrease_Current();
+			menu_state = ADJUST_MENU;
 			update_flag = 1;
 			break;
 		case BUTTON_4:
@@ -91,7 +87,25 @@ void Menu_Logic_Handler(){
 		default:
 			break;
 		}
+		case ADJUST_MENU:
+				switch (button_state){
+				case BUTTON_2:
+					Increase_Current();
+					update_flag = 1;
+					break;
+				case BUTTON_3:
+					Decrease_Current();
+					update_flag = 1;
+					break;
+				case BUTTON_4:
+					menu_state = SELECT_MENU;
+					update_flag = 1;
+					break;
+				default:
+					break;
+				}
 	}
+	button_state = NO_BUTTON;
 }
 
 void Menu_Update_Display(){
@@ -101,11 +115,14 @@ void Menu_Update_Display(){
 			HD_Write_4_Lines("Estrela", "Arruela", "Ponteira de Cobre", "Carvao");
 			break;
 		case CURRENT_MENU:
-			const char* current_string = Decimal_to_String[current];
-			char current_line[21]   = "I =             ";
-			strcat(current_line, current_string);
-			strcat(current_line, "+");
-			HD_Write_4_Lines("Escolha a Corrente", current_line, "                   -", "Cancelar");
+			HD_Write_4_Lines("Escolha a Corrente", "I = 10  A", "                   -", "Cancelar");
+			break;
+		case ADJUST_MENU:
+			HD_Set_Cursor(LINE_2 + 4);
+			HD_Write(Decimal_to_String[current]);
+			break;
+		default:
+			break;
 		}
 	}
 }
@@ -135,7 +152,7 @@ inline uint32_t Test_Trigger_Time(uint32_t time){
 }
 
 inline uint32_t Is_Trigger_Ready(){
-	return (menu_state != SELECT_MENU) & (button_state == TRIGGER);
+	return ((menu_state != SELECT_MENU) & (HAL_GPIO_ReadPin(Trigger.port, Trigger.pin) == GPIO_PIN_SET));
 }
 
 inline void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port){

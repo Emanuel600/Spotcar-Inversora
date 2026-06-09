@@ -28,7 +28,8 @@ typedef enum Button_State {
 
 typedef enum Menu_State {
 	SELECT_MENU,
-	CURRENT_MENU
+	CURRENT_MENU,
+	ADJUST_MENU,
 } Menu_State;
 
 void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port);
@@ -50,7 +51,5 @@ uint32_t Current_Get_Compare();
 uint32_t Test_Trigger_Time(uint32_t time);
 
 uint32_t Is_Trigger_Ready();
-
-void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port);
 
 #endif /* INC_MENU_H_ */
