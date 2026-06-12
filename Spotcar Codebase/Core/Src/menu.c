@@ -28,7 +28,9 @@ static const char* Decimal_to_String[] = {
 
 void Read_Button_State(uint32_t ADC_reading){
 	button_state = NO_BUTTON;
-	if ((ADC_reading < 3700) & (ADC_reading > 2800)){
+	if (ADC_reading > 3700){
+		button_state = NO_BUTTON;
+	} else if (ADC_reading > 2800){
 		button_state = BUTTON_1;
 	} else if (ADC_reading > 2200){
 		button_state = BUTTON_2;
@@ -65,6 +67,7 @@ void Menu_Logic_Handler(){
 			update_flag = 1;
 			break;
 		default:
+			update_flag = 0;
 			break;
 		}
 		break;
@@ -85,6 +88,7 @@ void Menu_Logic_Handler(){
 			update_flag = 1;
 			break;
 		default:
+			update_flag = 0;
 			break;
 		}
 		case ADJUST_MENU:
@@ -102,6 +106,7 @@ void Menu_Logic_Handler(){
 					update_flag = 1;
 					break;
 				default:
+					update_flag = 0;
 					break;
 				}
 	}
@@ -115,7 +120,7 @@ void Menu_Update_Display(){
 			HD_Write_4_Lines("Estrela", "Arruela", "Ponteira de Cobre", "Carvao");
 			break;
 		case CURRENT_MENU:
-			HD_Write_4_Lines("Escolha a Corrente", "I = 10  A", "                   -", "Cancelar");
+			HD_Write_4_Lines("Escolha a Corrente", "I = 010 A          +", "                   -", "Cancelar");
 			break;
 		case ADJUST_MENU:
 			HD_Set_Cursor(LINE_2 + 4);

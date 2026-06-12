@@ -127,6 +127,7 @@ int main(void)
 
 		  last_updated = HAL_GetTick();
 	  }
+
 	  // Checks if it needs to update at the start of the function
 	  Menu_Update_Display();
 	  // Trigger
@@ -165,6 +166,7 @@ int main(void)
   		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
 	   }
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
   }
 

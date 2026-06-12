@@ -27,7 +27,7 @@ void HD_Init(pin_s* data_pins, pin_s* e_rs_pins){
 	HD_Command(FUNCTION_SET);
 	HD_Command(FUNCTION_SET | TWO_LINES);
 	// Turn on and set display
-	HD_Command(DISPLAY_ON_OFF | SET_DISPLAY | SET_CURSOR | SET_BLINKING);
+	HD_Command(DISPLAY_ON_OFF | SET_DISPLAY);
 	Clear_Display();
 	// Set entry mode
 	HD_Command(ENTRY_MODE_SET | CURSOR_INC);
