@@ -118,6 +118,7 @@ int main(void)
   uint32_t last_trigger_check = HAL_GetTick();
   uint32_t trigger_start = 0;
   uint32_t Pulse = 0;
+
   while (1)
   {
 	  if ((HAL_GetTick() - last_updated) > 100){
@@ -126,7 +127,6 @@ int main(void)
 
 		  last_updated = HAL_GetTick();
 	  }
-
 	  // Checks if it needs to update at the start of the function
 	  Menu_Update_Display();
 	  // Trigger
@@ -163,11 +163,12 @@ int main(void)
 		  }
 		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
   		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
-	  }
+	   }
     /* USER CODE END WHILE */
-
     /* USER CODE BEGIN 3 */
   }
+
+
   /* USER CODE END 3 */
 }
 

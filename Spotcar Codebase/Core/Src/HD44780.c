@@ -16,6 +16,7 @@ void HD_Init(pin_s* data_pins, pin_s* e_rs_pins){
 	Display.Data_pins = data_pins;
 	Display.E_RS_pins = e_rs_pins;
 	// Command to set to 8 bits must be sent thrice, to ensure its in 8-bit mode
+	HAL_Delay(50);
 	HD_Command4((FUNCTION_SET | DL_8_BITS)>>4);
 	HAL_Delay(5);
 	HD_Command4((FUNCTION_SET | DL_8_BITS)>>4);
@@ -23,10 +24,10 @@ void HD_Init(pin_s* data_pins, pin_s* e_rs_pins){
 	HD_Command4((FUNCTION_SET | DL_8_BITS)>>4);
 	HAL_Delay(1);
 	// Sets it to 4-bit mode with 2 lines
-	HD_Command(FUNCTION_SET | TWO_LINES);
+	HD_Command(FUNCTION_SET);
 	HD_Command(FUNCTION_SET | TWO_LINES);
 	// Turn on and set display
-	HD_Command(DISPLAY_ON_OFF | SET_DISPLAY);
+	HD_Command(DISPLAY_ON_OFF | SET_DISPLAY | SET_CURSOR | SET_BLINKING);
 	Clear_Display();
 	// Set entry mode
 	HD_Command(ENTRY_MODE_SET | CURSOR_INC);
@@ -42,7 +43,7 @@ void HD_Set_Cursor(uint32_t pos){
 }
 
 void HD_Command(uint32_t command){
-	uint32_t upper = command & 0xF0;
+	uint32_t upper = command >> 4;
 	uint32_t lower = command & 0x0F;
 
 	HD_Command4(upper);
@@ -52,7 +53,7 @@ void HD_Command(uint32_t command){
 
 void HD_Command4(uint32_t command_nibble){
 	HAL_GPIO_WritePin(Display.E_RS_pins[1].port, Display.E_RS_pins[1].pin, GPIO_PIN_RESET);
-	for(uint32_t counter = 0; counter < 4; counter--){
+	for(uint32_t counter = 0; counter < 4; counter++){
 		HAL_GPIO_WritePin(Display.Data_pins[counter].port, Display.Data_pins[counter].pin, (command_nibble & 0x01));
 		command_nibble >>= 1;
 	}
@@ -76,12 +77,13 @@ void HD_Write(const char* string){
 
 	while(index<20 && string[index]!='\0'){
 		HD_Write8(string[index]);
+		index++;
 	}
 }
 
 void HD_Write8(char data){
-	uint32_t upper = data * 0xF0;
-	uint32_t lower = data * 0x0F;
+	uint32_t upper = data >> 4;
+	uint32_t lower = data & 0x0F;
 
 	HD_Write4(upper);
 	HD_Write4(lower);
@@ -90,7 +92,7 @@ void HD_Write8(char data){
 
 void HD_Write4(char data_nibble){
 	HAL_GPIO_WritePin(Display.E_RS_pins[1].port, Display.E_RS_pins[1].pin, GPIO_PIN_SET);
-	for(uint32_t counter = 0; counter < 4; counter--){
+	for(uint32_t counter = 0; counter < 4; counter++){
 		HAL_GPIO_WritePin(Display.Data_pins[counter].port, Display.Data_pins[counter].pin, (data_nibble & 0x01));
 		data_nibble >>= 1;
 	}
@@ -107,6 +109,10 @@ void HD_Pulse_Enable(){
 }
 
 void delay_us(uint32_t delay){
-	TIM14->CNT = 0;
-	while (TIM14->CNT < delay);
+	// 48 cycles per microsecond
+	    uint32_t cycles = delay * 48;
+
+	    while (cycles--) {
+	        __NOP(); // 1 cycle per NOP
+	    }
 }
