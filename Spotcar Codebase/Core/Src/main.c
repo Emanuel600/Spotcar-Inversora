@@ -101,19 +101,21 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
-  ADC_Calibrate(&hadc);
+  //ADC_Calibrate(&hadc);
   HAL_ADC_Start_DMA(&hadc, (uint32_t*)ADC_Readouts, 2);
   HD_Init(data_pins, e_rs_pins);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  /*
   HD_Write_4_Lines(\
 		  " Spotcar Inversora ", \
 		  "     V8 Brasil     ", \
 		  "  @V8BrasilOficial  ", \
 		  "   (48) 3341-8600   ");
   HAL_Delay(2000);
+  */
   uint32_t last_updated = HAL_GetTick();
   uint32_t last_trigger_check = HAL_GetTick();
   uint32_t trigger_start = 0;
@@ -132,12 +134,13 @@ int main(void)
 	  Menu_Update_Display();
 	  // Trigger
 	  if(((HAL_GetTick() - last_trigger_check) > 10) & (Is_Trigger_Ready() & (triggered==0))){
-	  		ADC_Calibrate(&hadc);
+	  		//ADC_Calibrate(&hadc);
 	  		trigger_start = HAL_GetTick();
 	  		Pulse = Current_Get_Compare();
 	  		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
 	  		__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
 	  		HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+	  		// __HAL_TIM_SET_COUNTER(&htim3, 0);
 	  		HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
 	  		triggered = 1;
 	  }
@@ -148,6 +151,7 @@ int main(void)
 	  		triggered = 0;
 	  }
 	  // Adjusts PWM for more or less current
+	  /*
 	   if(((HAL_GetTick() - last_updated) > 2) & (triggered==1)){
 		   // Adjusts Current Proportionally to Current Error
 		   int32_t adjustment = 0;
@@ -164,7 +168,7 @@ int main(void)
 		  }
 		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
   		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
-	   }
+	   }*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
