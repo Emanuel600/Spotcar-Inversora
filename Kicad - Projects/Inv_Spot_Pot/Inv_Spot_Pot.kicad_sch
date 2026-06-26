@@ -3502,6 +3502,171 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:BZV55B15"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BZV55B15"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_MiniMELF"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "15V, 500mW, 2%, Zener diode, MiniMELF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "zener diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*MiniMELF*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BZV55B15_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BZV55B15_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Diode_Bridge:KBU4M"
 			(pin_names
 				(offset 0)
@@ -4832,191 +4997,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Reference_Voltage:TL431DBZ"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -2.54 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TL431DBZ"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 0 -4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
-				(at 1.778 -9.144 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Description" "Shunt Regulator, SOT-23"
-				(at 0 -7.112 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode device shunt regulator"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TL431DBZ_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.762) (xy -0.762 0.762) (xy 0.762 0) (xy -0.762 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -0.762) (xy 0.762 -0.762) (xy 0.762 0.762) (xy 0.762 0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TL431DBZ_1_1"
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.54)
-					(name "REF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transformer:TR60_FC"
 			(pin_numbers
 				(hide yes)
@@ -6025,12 +6005,6 @@
 		(uuid "3c849c0a-0f40-4c3e-a6ec-17ddaecb80e3")
 	)
 	(junction
-		(at 115.57 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "414a4429-6f77-426e-921a-3ca887ff420e")
-	)
-	(junction
 		(at 127 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6067,12 +6041,6 @@
 		(uuid "57216aaf-9a53-4426-b6aa-eb23ed6a7225")
 	)
 	(junction
-		(at 143.51 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5918f5a3-c1b2-4b89-9613-51ccf8cab8a3")
-	)
-	(junction
 		(at 160.02 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6091,12 +6059,6 @@
 		(uuid "5d35911a-f8f0-4848-ba76-acc8a2f88206")
 	)
 	(junction
-		(at 124.46 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65dda7bb-4861-43c7-a97c-f3e4ce5e7576")
-	)
-	(junction
 		(at 40.64 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6113,12 +6075,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67a29d03-bf1e-4379-95d4-cd248ac2b78c")
-	)
-	(junction
-		(at 143.51 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6846b19d-af6b-44c0-86f8-ec5355c9faf8")
 	)
 	(junction
 		(at 191.77 49.53)
@@ -6235,12 +6191,6 @@
 		(uuid "ac741a87-a1e8-416f-9eff-5ad927e456fd")
 	)
 	(junction
-		(at 143.51 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae099fa5-c3f4-40fa-9518-8e9a066e183e")
-	)
-	(junction
 		(at 218.44 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6342,6 +6292,12 @@
 		(color 0 0 0 0)
 		(uuid "fb83de34-15c1-42db-b27c-b098438ae6a3")
 	)
+	(junction
+		(at 115.57 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbdf4c34-5569-43e4-b3fa-6a877f303756")
+	)
 	(no_connect
 		(at 30.48 35.56)
 		(uuid "7ad165cf-218e-4089-bd6f-a936e0c4c97d")
@@ -6365,16 +6321,6 @@
 			(type default)
 		)
 		(uuid "0281e0cd-fa0d-4b02-adaf-ea98bd422d6c")
-	)
-	(wire
-		(pts
-			(xy 127 157.48) (xy 143.51 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02c9fb0b-3222-4bb9-9aeb-bbdff437a0eb")
 	)
 	(wire
 		(pts
@@ -6588,16 +6534,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 153.67) (xy 125.73 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1331f172-bab2-4a1a-97a0-80112c247bdd")
-	)
-	(wire
-		(pts
 			(xy 115.57 142.24) (xy 115.57 140.97)
 		)
 		(stroke
@@ -6648,16 +6584,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 167.64) (xy 124.46 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "195feb75-4e94-4384-bd61-7c81f2534f96")
-	)
-	(wire
-		(pts
 			(xy 147.32 44.45) (xy 148.59 44.45)
 		)
 		(stroke
@@ -6685,16 +6611,6 @@
 			(type default)
 		)
 		(uuid "1ccee30e-da89-4d65-b27c-d9766e18f737")
-	)
-	(wire
-		(pts
-			(xy 143.51 153.67) (xy 143.51 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d1d5913-1356-4a84-a468-fa587dbb3fc5")
 	)
 	(wire
 		(pts
@@ -6908,16 +6824,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 167.64) (xy 143.51 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c6e41be-803a-46c1-8b8d-90acff2daae2")
-	)
-	(wire
-		(pts
 			(xy 204.47 49.53) (xy 212.09 49.53)
 		)
 		(stroke
@@ -7025,6 +6931,16 @@
 			(type default)
 		)
 		(uuid "34b122b6-8322-44cf-8748-473b26b8efad")
+	)
+	(wire
+		(pts
+			(xy 115.57 163.83) (xy 115.57 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35ce3dce-dbc3-4b20-a373-2ab177edd17d")
 	)
 	(wire
 		(pts
@@ -7518,16 +7434,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 167.64) (xy 124.46 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "628ec679-d284-4999-b2b5-f4eca8473d28")
-	)
-	(wire
-		(pts
 			(xy 106.68 24.13) (xy 106.68 26.67)
 		)
 		(stroke
@@ -7798,16 +7704,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 151.13) (xy 143.51 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e53647f-e16a-4904-b1c0-11688b7744b7")
-	)
-	(wire
-		(pts
 			(xy 134.62 34.29) (xy 134.62 35.56)
 		)
 		(stroke
@@ -7948,16 +7844,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 166.37) (xy 143.51 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "871ddcdc-b1c1-4ef7-9ed8-c7a965677b41")
-	)
-	(wire
-		(pts
 			(xy 92.71 34.29) (xy 95.25 34.29)
 		)
 		(stroke
@@ -8005,16 +7891,6 @@
 			(type default)
 		)
 		(uuid "896aebb5-359f-404b-8933-28a1d88c50dc")
-	)
-	(wire
-		(pts
-			(xy 115.57 153.67) (xy 124.46 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89779dfa-c4e1-4cda-9907-3ce34b38b48c")
 	)
 	(wire
 		(pts
@@ -8128,6 +8004,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 153.67) (xy 115.57 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "907572de-1b6d-4474-9797-d2737718bc90")
+	)
+	(wire
+		(pts
 			(xy 123.19 31.75) (xy 123.19 34.29)
 		)
 		(stroke
@@ -8208,16 +8094,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 153.67) (xy 134.62 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95ce2a53-2a75-4076-9009-2446baa0a28a")
-	)
-	(wire
-		(pts
 			(xy 237.49 147.32) (xy 234.95 147.32)
 		)
 		(stroke
@@ -8225,16 +8101,6 @@
 			(type default)
 		)
 		(uuid "970a6af9-bdef-476c-b1dd-f47cb24db790")
-	)
-	(wire
-		(pts
-			(xy 124.46 153.67) (xy 124.46 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a07c9cc-ea5c-4d02-b68c-8f26699cdde4")
 	)
 	(wire
 		(pts
@@ -8255,26 +8121,6 @@
 			(type default)
 		)
 		(uuid "9d183193-f49a-4946-afb5-115fecdc9ced")
-	)
-	(wire
-		(pts
-			(xy 143.51 157.48) (xy 143.51 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ea94187-aea2-4e9b-972a-ddcc4a7eb7a8")
-	)
-	(wire
-		(pts
-			(xy 143.51 142.24) (xy 143.51 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a085e13e-9f52-4e78-9fe3-d6fde1e151ef")
 	)
 	(wire
 		(pts
@@ -8475,16 +8321,6 @@
 			(type default)
 		)
 		(uuid "bf7a6316-5cdf-49ed-86cf-d3640af79cc2")
-	)
-	(wire
-		(pts
-			(xy 142.24 153.67) (xy 143.51 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c01ee330-5b7b-47c3-b4d0-0eb05daa8cc2")
 	)
 	(wire
 		(pts
@@ -10208,87 +10044,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 143.51 162.56 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0251d50e-4c92-495b-9eda-bbde09a544c5")
-		(property "Reference" "R10"
-			(at 146.05 161.2899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "3k6"
-			(at 146.05 163.8299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 145.288 162.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 143.51 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "993767e6-5b47-4fc9-97d6-c115e288b889")
-		)
-		(pin "2"
-			(uuid "6b89a5bc-0b89-4c5b-a70c-eda410e843c5")
-		)
-		(instances
-			(project "Inv_Spot_Pot"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Varistor")
 		(at 40.64 35.56 0)
 		(unit 1)
@@ -10420,86 +10175,6 @@
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
 					(reference "RV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 138.43 153.67 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0287b527-f268-4c63-aa57-57cd1db0c77d")
-		(property "Reference" "C4"
-			(at 138.43 146.05 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 138.43 148.59 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 142.24 152.7048 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 138.43 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8a459581-a025-47f6-ace2-8b810c5f06c6")
-		)
-		(pin "1"
-			(uuid "432eb389-75f3-47f7-ad99-bc786e42395c")
-		)
-		(instances
-			(project "Inv_Spot_Pot"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -11906,86 +11581,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 129.54 153.67 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d9738b1-caab-4357-879c-c062fc70012d")
-		(property "Reference" "R9"
-			(at 129.54 147.32 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 129.54 149.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 129.54 155.448 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 129.54 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5a94b719-f403-4d05-99b7-bd70d03a9a90")
-		)
-		(pin "2"
-			(uuid "8e73ec8f-ff8c-49fc-b3e1-93efa700b32c")
-		)
-		(instances
-			(project "Inv_Spot_Pot"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 33.02 140.97 0)
 		(unit 1)
@@ -12870,8 +12465,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:BZV55B15")
+		(at 115.57 160.02 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4790b482-99c5-4197-b29d-7ce9fb89eb21")
+		(property "Reference" "D9"
+			(at 118.11 158.7499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZV55B15"
+			(at 118.11 161.2899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MiniMELF"
+			(at 111.125 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
+			(at 115.57 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "15V, 500mW, 2%, Zener diode, MiniMELF"
+			(at 115.57 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e1809a8-ae6a-4adb-9e0d-78c01a63fa01")
+		)
+		(pin "2"
+			(uuid "825d4ea3-ca34-4caa-9752-77325454c07c")
+		)
+		(instances
+			(project "Inv_Spot_Pot"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 143.51 168.91 0)
+		(at 115.57 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12882,7 +12559,7 @@
 		(fields_autoplaced yes)
 		(uuid "4950e141-fd28-4f46-87ca-c194173ef97d")
 		(property "Reference" "#PWR023"
-			(at 143.51 175.26 0)
+			(at 115.57 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12893,7 +12570,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 143.51 173.99 0)
+			(at 115.57 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12903,7 +12580,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 168.91 0)
+			(at 115.57 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12914,7 +12591,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 168.91 0)
+			(at 115.57 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12925,7 +12602,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 168.91 0)
+			(at 115.57 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12942,93 +12619,6 @@
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
 					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Reference_Voltage:TL431DBZ")
-		(at 124.46 157.48 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4bed7975-e1e6-4d6d-bb1b-32e9e60b1db4")
-		(property "Reference" "U3"
-			(at 121.92 156.2099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TL431DBZ"
-			(at 121.92 158.7499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 119.634 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
-			(at 115.316 155.702 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" "Shunt Regulator, SOT-23"
-			(at 117.348 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "d71872cf-3cbb-4624-8823-ca08ab1cd6c8")
-		)
-		(pin "2"
-			(uuid "a0cab73e-ab92-4d9d-9902-7b30d6b24cb9")
-		)
-		(pin "1"
-			(uuid "b06a4549-3f5f-4648-8586-6d4882a35d9d")
-		)
-		(instances
-			(project "Inv_Spot_Pot"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -15610,84 +15200,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 143.51 142.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b5185e10-363c-4c02-8dce-eddc0b9a2178")
-		(property "Reference" "#PWR010"
-			(at 143.51 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "15V"
-			(at 143.51 137.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 143.51 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "af5f1f86-2244-459f-b0f2-0de90c414049")
-		)
-		(instances
-			(project "Inv_Spot_Pot"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 115.57 104.14 180)
 		(unit 1)
@@ -16084,88 +15596,6 @@
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
 					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 143.51 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c1a8ba44-111a-4e6f-ac1a-9d84f09c7cbc")
-		(property "Reference" "R11"
-			(at 146.05 146.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "18k"
-			(at 146.05 148.5899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 141.732 147.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 143.51 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "076af926-6384-4726-bbc9-298669b120b7")
-		)
-		(pin "2"
-			(uuid "3c4cad69-cdbb-4c45-804f-e08eff5bee75")
-		)
-		(instances
-			(project "Inv_Spot_Pot"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -17914,7 +17344,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "500"
 			(at 114.3 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)

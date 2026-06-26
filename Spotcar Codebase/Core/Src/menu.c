@@ -157,7 +157,7 @@ inline uint32_t Test_Trigger_Time(uint32_t time){
 }
 
 inline uint32_t Is_Trigger_Ready(){
-	return ((menu_state != SELECT_MENU) & (HAL_GPIO_ReadPin(Trigger_GPIO_Port, Trigger_Pin) == GPIO_PIN_SET));
+	return ((menu_state != SELECT_MENU) & (HAL_GPIO_ReadPin(Trigger_GPIO_Port, Trigger_Pin) == GPIO_PIN_RESET));
 }
 
 inline void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port){
