@@ -133,7 +133,7 @@ void Menu_Update_Display(){
 }
 
 inline void Increase_Current(){
-	if(current < 20){
+	if(current < 18){
 		current ++;
 	}
 }
@@ -149,7 +149,7 @@ inline uint32_t Get_Target_Current(){
 }
 
 inline uint32_t Current_Get_Compare(){
-	return current*15;
+	return current*30;
 }
 
 inline uint32_t Test_Trigger_Time(uint32_t time){
