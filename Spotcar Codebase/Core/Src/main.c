@@ -104,6 +104,7 @@ int main(void)
   //ADC_Calibrate(&hadc);
   HAL_ADC_Start_DMA(&hadc, (uint32_t*)ADC_Readouts, 2);
   HD_Init(data_pins, e_rs_pins);
+  HAL_TIM_Base_Start(&htim14);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -133,23 +134,36 @@ int main(void)
 	  // Checks if it needs to update at the start of the function
 	  Menu_Update_Display();
 	  // Trigger
-	  if(((HAL_GetTick() - last_trigger_check) > 10) & (Is_Trigger_Ready() & (triggered==0))){
+	  if(((HAL_GetTick() - last_trigger_check) > 11) & (Is_Trigger_Ready() & (triggered==0))){
 	  		//ADC_Calibrate(&hadc);
-		  // last_trigger_check = HAL_GetTick();
+		  last_trigger_check = HAL_GetTick();
 		  trigger_start = HAL_GetTick();
 		  Pulse = Current_Get_Compare();
+
+		  /// Set interrupt for 'x' milliseconds later
+		  //__HAL_TIM_SET_COUNTER(&htim14, 0);
+		  //__HAL_TIM_SET_COMPARE(&htim14, TIM_CHANNEL_1, Get_Target_Time());
+		  //__HAL_TIM_SET_AUTORELOAD(&htim14, Get_Target_Time()+1);
+		  //HAL_TIM_OC_Start_IT(&htim14, TIM_CHANNEL_1);
+
 		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
 		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
+
+		  __HAL_TIM_SET_COUNTER(&htim1, 0);
+		  __HAL_TIM_SET_COUNTER(&htim3, 0);
+
 		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
 		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
 		  triggered = 1;
 	  }
 	  // Stops trigger if gone over time
-	  if(Test_Trigger_Time(HAL_GetTick() - trigger_start)){
+
+	  if(HAL_GetTick() - trigger_start>10){
 		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
 		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
 		  triggered = 0;
 	  }
+
 	  // Adjusts PWM for more or less current
 	  /*
 	   if(((HAL_GetTick() - trigger_start) > 2) & (triggered==1)){
@@ -222,6 +236,22 @@ void SystemClock_Config(void)
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
 	 s_current = (ADC_Readouts[0]*3300*124)>>12;
 }
+/*
+void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == TIM14 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1)
+    {
+        // The hardware has already automatically stopped counting.
+        // Clean up the software driver flag so it's clean for the next run:
+        HAL_TIM_OC_Stop_IT(htim, TIM_CHANNEL_1);
+
+        // Halt PWM generation from tim1 and tim3
+        HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
+        HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
+        triggered = 0;
+    }
+}
+*/
 /* USER CODE END 4 */
 
 /**

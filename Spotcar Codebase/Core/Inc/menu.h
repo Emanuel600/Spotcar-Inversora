@@ -46,6 +46,8 @@ void Decrease_Current();
 
 uint32_t Get_Target_Current();
 
+uint32_t Get_Target_Time();
+
 uint32_t Current_Get_Compare();
 
 uint32_t Test_Trigger_Time(uint32_t time);

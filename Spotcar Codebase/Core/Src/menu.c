@@ -133,7 +133,7 @@ void Menu_Update_Display(){
 }
 
 inline void Increase_Current(){
-	if(current < 18){
+	if(current < 20){
 		current ++;
 	}
 }
@@ -144,16 +144,20 @@ inline void Decrease_Current(){
 	}
 }
 
+inline uint32_t Get_Target_Time(){
+	return timer_value;
+}
+
 inline uint32_t Get_Target_Current(){
 	return current;
 }
 
 inline uint32_t Current_Get_Compare(){
-	return current*30;
+	return current*15;
 }
 
-inline uint32_t Test_Trigger_Time(uint32_t time){
-	return (time >= timer_value);
+inline uint32_t Get_Target_Pulses(){
+	return (timer_value*40);
 }
 
 inline uint32_t Is_Trigger_Ready(){
