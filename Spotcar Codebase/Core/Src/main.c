@@ -134,8 +134,28 @@ int main(void)
 	  // Checks if it needs to update at the start of the function
 	  Menu_Update_Display();
 	  // Trigger
-	  if(((HAL_GetTick() - last_trigger_check) > 11) & (Is_Trigger_Ready() & (triggered==0))){
+	  if(((HAL_GetTick() - last_trigger_check) > 500) & (Is_Trigger_Ready() & (triggered==0))){
 	  		//ADC_Calibrate(&hadc);
+
+		  // Preaquecer a peça
+
+		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 180*2);
+		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 180*2);
+
+		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+
+		  HAL_Delay(10);
+
+		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
+		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
+
+		  __HAL_TIM_SET_COUNTER(&htim1, 0);
+		  __HAL_TIM_SET_COUNTER(&htim3, 0);
+
+		  HAL_Delay(2);
+
+
 		  last_trigger_check = HAL_GetTick();
 		  trigger_start = HAL_GetTick();
 		  Pulse = Current_Get_Compare();
@@ -149,18 +169,19 @@ int main(void)
 		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
 		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
 
-		  __HAL_TIM_SET_COUNTER(&htim1, 0);
-		  __HAL_TIM_SET_COUNTER(&htim3, 0);
-
 		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
 		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
 		  triggered = 1;
 	  }
 	  // Stops trigger if gone over time
 
-	  if(HAL_GetTick() - trigger_start>10){
+	  if(HAL_GetTick() - trigger_start>50){
 		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
 		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
+
+		  __HAL_TIM_SET_COUNTER(&htim1, 0);
+		  __HAL_TIM_SET_COUNTER(&htim3, 0);
+
 		  triggered = 0;
 	  }
 
