@@ -153,7 +153,7 @@ inline uint32_t Get_Target_Current(){
 }
 
 inline uint32_t Current_Get_Compare(){
-	return current*15*2;
+	return current*15;
 }
 
 inline uint32_t Get_Target_Pulses(){

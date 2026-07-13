@@ -139,8 +139,8 @@ int main(void)
 
 		  // Preaquecer a peça
 
-		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 180*2);
-		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 180*2);
+		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 180);
+		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 180);
 
 		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
 		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
