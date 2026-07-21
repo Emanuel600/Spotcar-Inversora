@@ -12,10 +12,10 @@
 
 #include "main.h"
 
-#define STAR_POINT_TIME 1
-#define WASHER_TIME 3
-#define COPPER_POINTER_TIME 5
-#define COAL_TIME 10
+#define STAR_POINT_TIME 100
+#define WASHER_TIME 200
+#define COPPER_POINTER_TIME 400
+#define COAL_TIME 450
 
 typedef enum Button_State {
 	NO_BUTTON,
@@ -32,7 +32,16 @@ typedef enum Menu_State {
 	ADJUST_MENU,
 } Menu_State;
 
+typedef enum Operation_Mode {
+	OP_ESTRELA,
+	OP_ARRUELA,
+	OP_COBRE,
+	OP_CARVAO
+} Operation_Mode;
+
 void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port);
+
+void Set_Trigger_Time(uint32_t* trigger_time);
 
 void Read_Button_State(uint32_t ADC_reading);
 
@@ -53,5 +62,7 @@ uint32_t Current_Get_Compare();
 uint32_t Test_Trigger_Time(uint32_t time);
 
 uint32_t Is_Trigger_Ready();
+
+Operation_Mode Get_Op_Mode();
 
 #endif /* INC_MENU_H_ */

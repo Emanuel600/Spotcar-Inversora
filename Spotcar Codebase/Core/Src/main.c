@@ -105,6 +105,7 @@ int main(void)
   HAL_ADC_Start_DMA(&hadc, (uint32_t*)ADC_Readouts, 2);
   HD_Init(data_pins, e_rs_pins);
   HAL_TIM_Base_Start(&htim14);
+  Set_Trigger_Pin(Trigger_Pin, Trigger_GPIO_Port);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -121,6 +122,10 @@ int main(void)
   uint32_t last_trigger_check = HAL_GetTick();
   uint32_t trigger_start = 0;
   uint32_t Pulse = 0;
+
+  volatile uint32_t trigger_time = 100;
+
+  Set_Trigger_Time(&trigger_time);
 
   while (1)
   {
@@ -139,13 +144,35 @@ int main(void)
 
 		  // Preaquecer a peça
 
-		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 180);
-		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 180);
+		  Operation_Mode op_mode = Get_Op_Mode();
 
-		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+		  switch (op_mode){
+		  case OP_ESTRELA:
+			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 150);
+			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 150);
 
-		  HAL_Delay(10);
+			  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+			  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+
+			  HAL_Delay(8);
+			  break;
+		  case OP_ARRUELA:
+			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 150);
+			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 150);
+
+			  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+			  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+
+			  HAL_Delay(6);
+
+			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 210);
+			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 210);
+
+			  HAL_Delay(4);
+			  break;
+		  default:
+			  break;
+		  }
 
 		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
 		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
@@ -175,7 +202,7 @@ int main(void)
 	  }
 	  // Stops trigger if gone over time
 
-	  if(HAL_GetTick() - trigger_start>50){
+	  if((HAL_GetTick() - trigger_start) > trigger_time){
 		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
 		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
 
