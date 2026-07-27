@@ -3542,7 +3542,7 @@
 	(footprint "Transformer_THT:Pulse_Transformer-EEL-25_26x20-4_Windings"
 		(layer "F.Cu")
 		(uuid "5d94656e-344e-433f-8eb1-26c170292334")
-		(at 116.65 113.45)
+		(at 112.05 113.325)
 		(property "Reference" "T2"
 			(at 0.95 -2.1 0)
 			(unlocked yes)

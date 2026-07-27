@@ -99,12 +99,10 @@ int main(void)
   MX_ADC_Init();
   MX_TIM1_Init();
   MX_TIM3_Init();
-  MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
   //ADC_Calibrate(&hadc);
   HAL_ADC_Start_DMA(&hadc, (uint32_t*)ADC_Readouts, 2);
   HD_Init(data_pins, e_rs_pins);
-  HAL_TIM_Base_Start(&htim14);
   Set_Trigger_Pin(Trigger_Pin, Trigger_GPIO_Port);
   /* USER CODE END 2 */
 
@@ -178,12 +176,6 @@ int main(void)
 		  last_trigger_check = HAL_GetTick();
 		  trigger_start = HAL_GetTick();
 		  Pulse = Current_Get_Compare();
-
-		  /// Set interrupt for 'x' milliseconds later
-		  //__HAL_TIM_SET_COUNTER(&htim14, 0);
-		  //__HAL_TIM_SET_COMPARE(&htim14, TIM_CHANNEL_1, Get_Target_Time());
-		  //__HAL_TIM_SET_AUTORELOAD(&htim14, Get_Target_Time()+1);
-		  //HAL_TIM_OC_Start_IT(&htim14, TIM_CHANNEL_1);
 
 		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
 		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
