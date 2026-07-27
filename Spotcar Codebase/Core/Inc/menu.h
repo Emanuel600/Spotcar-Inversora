@@ -29,10 +29,12 @@ typedef enum Button_State {
 typedef enum Menu_State {
 	SELECT_MENU,
 	CURRENT_MENU,
-	ADJUST_MENU,
+	ADJUST_I_MENU,
+	ADJUST_T_MENU
 } Menu_State;
 
 typedef enum Operation_Mode {
+	OP_NONE,		// Menu
 	OP_ESTRELA,
 	OP_ARRUELA,
 	OP_COBRE,
@@ -41,7 +43,7 @@ typedef enum Operation_Mode {
 
 void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port);
 
-void Set_Trigger_Time(uint32_t* trigger_time);
+void Set_Trigger_Time(volatile uint32_t* trigger_time);
 
 void Read_Button_State(uint32_t ADC_reading);
 

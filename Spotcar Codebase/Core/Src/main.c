@@ -127,9 +127,15 @@ int main(void)
 
   Set_Trigger_Time(&trigger_time);
 
+  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
+  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
+
+  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+
   while (1)
   {
-	  if ((HAL_GetTick() - last_updated) > 100){
+	  if ((HAL_GetTick() - last_updated) > 200){
 		  Read_Button_State(ADC_Readouts[1]);
 		  Menu_Logic_Handler();
 
@@ -148,40 +154,26 @@ int main(void)
 
 		  switch (op_mode){
 		  case OP_ESTRELA:
-			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 150);
-			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 150);
+			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 225);
+			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 225);
 
-			  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-			  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-
-			  HAL_Delay(8);
+			  HAL_Delay(10);
 			  break;
 		  case OP_ARRUELA:
-			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 150);
-			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 150);
+			  break;
+			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 100);
+			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 100);
 
-			  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-			  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-
-			  HAL_Delay(6);
-
-			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 210);
-			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 210);
-
-			  HAL_Delay(4);
+			  HAL_Delay(10);
 			  break;
 		  default:
 			  break;
 		  }
 
-		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
-		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
-
-		  __HAL_TIM_SET_COUNTER(&htim1, 0);
-		  __HAL_TIM_SET_COUNTER(&htim3, 0);
+		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
+		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
 
 		  HAL_Delay(2);
-
 
 		  last_trigger_check = HAL_GetTick();
 		  trigger_start = HAL_GetTick();
@@ -196,18 +188,13 @@ int main(void)
 		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
 		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
 
-		  HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-		  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
 		  triggered = 1;
 	  }
 	  // Stops trigger if gone over time
 
 	  if((HAL_GetTick() - trigger_start) > trigger_time){
-		  HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_1);
-		  HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
-
-		  __HAL_TIM_SET_COUNTER(&htim1, 0);
-		  __HAL_TIM_SET_COUNTER(&htim3, 0);
+		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
+		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
 
 		  triggered = 0;
 	  }
