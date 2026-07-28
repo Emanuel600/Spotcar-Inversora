@@ -80,7 +80,10 @@ void Error_Handler(void);
 #define D7_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
-
+#define SET_DUTY_CYCLE(__DC__) do{ \
+		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, __DC__); \
+		__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, __DC__); \
+	} while (0)
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

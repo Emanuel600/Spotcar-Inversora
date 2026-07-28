@@ -125,8 +125,7 @@ int main(void)
 
   Set_Trigger_Time(&trigger_time);
 
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
-  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
+  SET_DUTY_CYCLE(0);
 
   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
@@ -152,15 +151,13 @@ int main(void)
 
 		  switch (op_mode){
 		  case OP_ESTRELA:
-			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 225);
-			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 225);
+			  SET_DUTY_CYCLE(225);
 
 			  HAL_Delay(10);
 			  break;
 		  case OP_ARRUELA:
 			  break;
-			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 100);
-			  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 100);
+			  SET_DUTY_CYCLE(100);
 
 			  HAL_Delay(10);
 			  break;
@@ -168,8 +165,7 @@ int main(void)
 			  break;
 		  }
 
-		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
-		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
+		  SET_DUTY_CYCLE(0);
 
 		  HAL_Delay(2);
 
@@ -177,16 +173,14 @@ int main(void)
 		  trigger_start = HAL_GetTick();
 		  Pulse = Current_Get_Compare();
 
-		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
-		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
+		  SET_DUTY_CYCLE(Pulse);
 
 		  triggered = 1;
 	  }
 	  // Stops trigger if gone over time
 
 	  if((HAL_GetTick() - trigger_start) > trigger_time){
-		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
-		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
+		  SET_DUTY_CYCLE(0);
 
 		  triggered = 0;
 	  }
