@@ -36,7 +36,7 @@ static const char* Current_to_String[] = {
 
 static const char* Pulse_to_String[][5] = {
 		[OP_ESTRELA] = {"080", "100", "120", "140", "160"},
-		[OP_ARRUELA] = {"200", "220", "240", "260", "280"},
+		[OP_ARRUELA] = {"300", "350", "375", "400", "450"},
 		[OP_COBRE]   = {"400", "420", "440", "460", "480"},
 		[OP_CARVAO]  = {"420", "440", "460", "480", "500"}
     };
@@ -52,7 +52,7 @@ static const char* Operation_Modes[] = {
 static const uint32_t Operation_Times[][5] = {
 		[OP_NONE]    = {0, 0, 0, 0, 0},
 		[OP_ESTRELA] = {80, 100, 120, 140, 160},
-		[OP_ARRUELA] = {200, 220, 240, 260, 280},
+		[OP_ARRUELA] = {300, 350, 375, 400, 450},
 		[OP_COBRE]   = {400, 420, 440, 460, 480},
 		[OP_CARVAO]  = {420, 440, 460, 480, 500}
 };
