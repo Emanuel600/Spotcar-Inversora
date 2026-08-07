@@ -40,6 +40,8 @@
 #define LINE_3				0x14
 #define LINE_4				0x54
 
+typedef char HD_Char[8];
+
 typedef struct HD44780 {
 	pin_s* Data_pins; // Only 4 bits
 	pin_s* E_RS_pins; // Enable/RS pins
@@ -62,6 +64,8 @@ void HD_Write4(char data_nibble);
 void HD_Command(uint32_t command);
 
 void HD_Command4(uint32_t command_nibble);
+
+void HD_Create_Custom_Character(uint32_t slot, HD_Char custom_char);
 
 void HD_Pulse_Enable();
 

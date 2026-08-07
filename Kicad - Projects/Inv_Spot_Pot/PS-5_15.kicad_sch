@@ -1990,6 +1990,18 @@
 		(uuid "2e2596cb-8ecc-4377-bc4b-777368b2c23c")
 	)
 	(junction
+		(at 104.14 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e72b1a7-fe7d-4223-88e9-23c1b79a2b07")
+	)
+	(junction
+		(at 83.82 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36a3e45c-d72d-45fc-a111-13841915687b")
+	)
+	(junction
 		(at 104.14 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2036,12 +2048,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81b387b9-e486-45e0-8d16-84191e443407")
-	)
-	(junction
-		(at 104.14 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "824dcb0f-bd5f-43ee-9be6-4b38b23fc0b5")
 	)
 	(junction
 		(at 110.49 82.55)
@@ -2098,12 +2104,6 @@
 		(uuid "cdcc5871-b0d0-4cbd-9315-ed525a1387b6")
 	)
 	(junction
-		(at 83.82 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d060d683-d797-4e0b-94a0-d3d9edf1844a")
-	)
-	(junction
 		(at 83.82 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2155,16 +2155,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 85.09) (xy 107.95 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05498844-c067-41a6-a8a7-d4deb3826d8a")
-	)
-	(wire
-		(pts
 			(xy 62.23 125.73) (xy 62.23 96.52)
 		)
 		(stroke
@@ -2182,6 +2172,16 @@
 			(type default)
 		)
 		(uuid "172590f3-214e-4f26-a8e6-1927452d74a3")
+	)
+	(wire
+		(pts
+			(xy 104.14 71.12) (xy 110.49 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17c51832-d7d6-47d4-9831-46868862b38c")
 	)
 	(wire
 		(pts
@@ -2255,6 +2255,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 71.12) (xy 104.14 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bfda1e4-1bbf-4c41-8a2a-4db83048cd55")
+	)
+	(wire
+		(pts
 			(xy 123.19 92.71) (xy 118.11 92.71)
 		)
 		(stroke
@@ -2262,6 +2272,16 @@
 			(type default)
 		)
 		(uuid "3cea30aa-620d-4bab-8673-2e60e7c567a6")
+	)
+	(wire
+		(pts
+			(xy 104.14 80.01) (xy 104.14 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e2b0e0f-3eb8-43fb-9703-03133ae72e96")
 	)
 	(wire
 		(pts
@@ -2445,13 +2465,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 80.01) (xy 104.14 82.55)
+			(xy 93.98 85.09) (xy 107.95 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "60c947b3-35b3-4858-bf4c-4f92490103b7")
+		(uuid "620272e2-f020-47e6-92f1-4478bc17d810")
 	)
 	(wire
 		(pts
@@ -2542,26 +2562,6 @@
 			(type default)
 		)
 		(uuid "76c0cbb0-d6b5-4171-b7e7-4c857cd719e7")
-	)
-	(wire
-		(pts
-			(xy 83.82 85.09) (xy 95.25 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76ea131b-7e97-4ae6-94ee-799a8453fd18")
-	)
-	(wire
-		(pts
-			(xy 104.14 71.12) (xy 104.14 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7854b409-d30c-4fc8-bbed-ccca86596ff6")
 	)
 	(wire
 		(pts
@@ -2885,16 +2885,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 71.12) (xy 104.14 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cefe99f3-b268-4586-adc8-f399e2b2bb63")
-	)
-	(wire
-		(pts
 			(xy 110.49 82.55) (xy 110.49 85.09)
 		)
 		(stroke
@@ -3042,6 +3032,16 @@
 			(type default)
 		)
 		(uuid "ee4d92de-9247-4ef0-a9f2-79c32e999653")
+	)
+	(wire
+		(pts
+			(xy 83.82 85.09) (xy 86.36 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f034a3f5-ee72-4707-9d94-395e72184910")
 	)
 	(wire
 		(pts
@@ -3298,45 +3298,9 @@
 			)
 		)
 	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 110.49 82.55 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d2cddc5a-b2ec-4bb7-aa42-b71861ac22fc")
-		(property "Classes da rede" "HVLC"
-			(at 113.03 81.8515 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -36.83 13.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Device:C")
-		(at 99.06 85.09 270)
-		(mirror x)
+		(at 104.14 76.2 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3346,7 +3310,7 @@
 		(dnp no)
 		(uuid "19d86c70-1c05-4893-b76c-778828528d4a")
 		(property "Reference" "C13"
-			(at 100.3301 81.28 0)
+			(at 100.33 77.4701 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3357,7 +3321,7 @@
 			)
 		)
 		(property "Value" "47p"
-			(at 97.7901 81.28 0)
+			(at 100.33 74.9301 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3368,7 +3332,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D8.0mm_W5.0mm_P7.50mm"
-			(at 95.25 84.1248 0)
+			(at 103.1748 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3379,7 +3343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 85.09 0)
+			(at 104.14 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3390,7 +3354,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 99.06 85.09 0)
+			(at 104.14 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3580,8 +3544,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 104.14 76.2 0)
-		(mirror y)
+		(at 90.17 85.09 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3591,7 +3554,7 @@
 		(dnp no)
 		(uuid "276f957b-cf79-4462-be23-4ca708038b92")
 		(property "Reference" "C14"
-			(at 100.33 74.9299 0)
+			(at 93.218 83.566 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3602,7 +3565,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 100.33 77.4699 0)
+			(at 91.4399 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3614,7 +3577,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 103.1748 80.01 0)
+			(at 93.98 84.1248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3625,7 +3588,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 76.2 0)
+			(at 90.17 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3636,7 +3599,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 104.14 76.2 0)
+			(at 90.17 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

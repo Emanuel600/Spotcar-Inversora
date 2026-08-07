@@ -1354,7 +1354,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2378e8bc-20ec-4d31-b438-4108ad7d4adf")
-		(property "Reference" "D17"
+		(property "Reference" "D19"
 			(at 130.556 64.516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1427,7 +1427,7 @@
 		(instances
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
-					(reference "D17")
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -1445,7 +1445,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "602e5a5f-3d9d-4952-806b-d64afc5e9f61")
-		(property "Reference" "D16"
+		(property "Reference" "D18"
 			(at 132.588 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1532,7 +1532,7 @@
 		(instances
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
-					(reference "D16")
+					(reference "D18")
 					(unit 1)
 				)
 			)

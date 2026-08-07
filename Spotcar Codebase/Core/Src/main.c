@@ -116,9 +116,10 @@ int main(void)
 		  "   (48) 3341-8600   ");
   HAL_Delay(2000);
 
+  Create_Custom_Chars();
+
   uint32_t last_updated = HAL_GetTick();
   uint32_t last_trigger_check = HAL_GetTick();
-  uint32_t trigger_start = 0;
   uint32_t Pulse = 0;
 
   volatile uint32_t trigger_time = 100;
@@ -142,7 +143,7 @@ int main(void)
 	  // Checks if it needs to update at the start of the function
 	  Menu_Update_Display();
 	  // Trigger
-	  if(((HAL_GetTick() - last_trigger_check) > 500) & (Is_Trigger_Ready() & (triggered==0))){
+	  if(((HAL_GetTick() - last_trigger_check) > 150) & Is_Trigger_Ready()){
 	  		//ADC_Calibrate(&hadc);
 
 		  // Preaquecer a peça
@@ -170,20 +171,23 @@ int main(void)
 		  HAL_Delay(2);
 
 		  last_trigger_check = HAL_GetTick();
-		  trigger_start = HAL_GetTick();
 		  Pulse = Current_Get_Compare();
 
 		  SET_DUTY_CYCLE(Pulse);
 
-		  triggered = 1;
-	  }
-	  // Stops trigger if gone over time
+		  if((op_mode == OP_COBRE) | (op_mode == OP_CARVAO) | (op_mode == OP_PARAFIX)){
+			  Hold_Until_Trigger_Release();
+		  } else{
+			  HAL_Delay(trigger_time);
+		  }
 
-	  if((HAL_GetTick() - trigger_start) > trigger_time){
 		  SET_DUTY_CYCLE(0);
 
-		  triggered = 0;
+		  if((op_mode == OP_ESTRELA) | (op_mode == OP_ARRUELA)){
+			  Hold_Until_Trigger_Release();
+		  }
 	  }
+	  // Stops trigger if gone over time
 
 	  // Adjusts PWM for more or less current
 	  /*

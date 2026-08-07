@@ -99,6 +99,15 @@ void HD_Write4(char data_nibble){
 	HD_Pulse_Enable();
 }
 
+void HD_Create_Custom_Character(uint32_t slot, HD_Char custom_char){
+	slot &= 0x07;
+	HD_Command(SET_CGRAM | (slot << 3));
+	for(uint32_t i=0; i<8; i++){
+		HD_Write8(custom_char[i]);
+	}
+	HD_Set_Cursor(0);
+}
+
 void HD_Pulse_Enable(){
 	HAL_GPIO_WritePin(Display.E_RS_pins[0].port, Display.E_RS_pins[0].pin, GPIO_PIN_RESET);
 	delay_us(5);
