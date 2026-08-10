@@ -9,6 +9,161 @@
 		(company "Atlanta - V8 Brasil")
 	)
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -193,6 +348,146 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1046,22 +1341,28 @@
 		(uuid "0c3836e3-dedc-4134-af7e-17894ea9d9a9")
 	)
 	(junction
-		(at 139.7 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23c47e01-d6b9-43c7-a6c8-781769de5ecb")
-	)
-	(junction
 		(at 121.92 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36d82950-49fb-4f2b-80d2-e484c445efc7")
 	)
 	(junction
+		(at 139.7 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3912e860-867f-4fcc-b0bc-64b651f8e3fd")
+	)
+	(junction
 		(at 115.57 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae628cea-38d3-4337-b887-06aa360a58a9")
+	)
+	(junction
+		(at 139.7 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e26e005e-f097-4c86-8b0a-4da147d76fb3")
 	)
 	(no_connect
 		(at 138.43 91.44)
@@ -1079,7 +1380,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 69.85) (xy 139.7 74.93)
+			(xy 139.7 63.5) (xy 139.7 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1099,6 +1400,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 63.5) (xy 139.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "223f7f07-8b90-4a21-a600-d850990665b0")
+	)
+	(wire
+		(pts
 			(xy 134.62 74.93) (xy 139.7 74.93)
 		)
 		(stroke
@@ -1106,6 +1417,16 @@
 			(type default)
 		)
 		(uuid "2640e96a-9e0c-459c-8051-264fe43456c3")
+	)
+	(wire
+		(pts
+			(xy 139.7 68.58) (xy 139.7 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e178488-998b-46c9-852c-354e74f9d4d0")
 	)
 	(wire
 		(pts
@@ -1129,13 +1450,23 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 69.85) (xy 134.62 69.85)
+			(xy 121.92 68.58) (xy 121.92 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b511ef5-23ee-444f-99d4-8e2e07a9d6b8")
+		(uuid "3d53d44f-1263-49b4-871c-503328d1ce07")
+	)
+	(wire
+		(pts
+			(xy 118.11 55.88) (xy 120.65 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b2073e0-8ee1-4392-9523-ecc232091bc6")
 	)
 	(wire
 		(pts
@@ -1159,6 +1490,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 63.5) (xy 118.11 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5227a7ba-39f2-40fc-a703-a83e3c215bae")
+	)
+	(wire
+		(pts
 			(xy 138.43 96.52) (xy 151.13 96.52)
 		)
 		(stroke
@@ -1169,13 +1510,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 69.85) (xy 127 69.85)
+			(xy 127 68.58) (xy 121.92 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7773c6c8-46a5-4fe4-b347-fafee7565189")
+		(uuid "7ca01f64-25b6-4668-beb7-4a3237d5f102")
 	)
 	(wire
 		(pts
@@ -1196,6 +1537,16 @@
 			(type default)
 		)
 		(uuid "861482db-6b70-4e3d-8286-30221f6f0941")
+	)
+	(wire
+		(pts
+			(xy 134.62 68.58) (xy 139.7 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86917368-7e9a-4a4b-99eb-d7a32d83cd7b")
 	)
 	(wire
 		(pts
@@ -1229,6 +1580,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 55.88) (xy 130.81 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1439983-2207-4b67-a7d9-ddb4d52d285e")
+	)
+	(wire
+		(pts
 			(xy 121.92 83.82) (xy 121.92 74.93)
 		)
 		(stroke
@@ -1256,6 +1617,16 @@
 			(type default)
 		)
 		(uuid "ec6cdea6-95f0-4cb4-97d2-72c38c1ce86d")
+	)
+	(wire
+		(pts
+			(xy 106.68 55.88) (xy 110.49 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f085b530-75cc-436d-b087-76efd5c30be2")
 	)
 	(wire
 		(pts
@@ -1301,7 +1672,7 @@
 	)
 	(hierarchical_label "Trigger"
 		(shape input)
-		(at 106.68 69.85 180)
+		(at 106.68 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1321,6 +1692,17 @@
 		)
 		(uuid "5d62b96f-2ca7-4cba-8f5f-c4f901547a8f")
 	)
+	(hierarchical_label "Trigger"
+		(shape input)
+		(at 106.68 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c18eeb8-b894-4579-8f19-a6a94f5a36f3")
+	)
 	(hierarchical_label "~{AC{2}}"
 		(shape input)
 		(at 160.02 74.93 0)
@@ -1331,6 +1713,17 @@
 			(justify left)
 		)
 		(uuid "85e4dd40-c8e3-47ef-8f19-0b748ac8615d")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 130.81 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8fc03f7-0be7-4a92-ab00-b56ce2732eda")
 	)
 	(hierarchical_label "AC_{1}"
 		(shape input)
@@ -1344,8 +1737,8 @@
 		(uuid "ed36c10e-3ceb-45f4-bfcb-19e9b9281060")
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 130.81 69.85 180)
+		(lib_id "Device:C")
+		(at 130.81 68.58 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1353,9 +1746,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2378e8bc-20ec-4d31-b438-4108ad7d4adf")
-		(property "Reference" "D19"
-			(at 130.556 64.516 0)
+		(uuid "1e2dc331-db12-4998-8d91-a12fad3def09")
+		(property "Reference" "C24"
+			(at 135.128 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1364,8 +1757,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 130.556 67.056 0)
+		(property "Value" "100n"
+			(at 135.128 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1374,8 +1767,8 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D1.8mm_W3.3mm_H2.4mm"
-			(at 130.81 69.85 0)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 134.62 67.6148 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1386,7 +1779,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 69.85 0)
+			(at 130.81 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 130.81 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "38e59908-2ad5-4be1-836b-6fefb0ab8a67")
+		)
+		(pin "1"
+			(uuid "c25dc2ca-83cf-44d8-a99c-e1f513346a7b")
+		)
+		(instances
+			(project "Inv_Spot_Pot"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 114.3 55.88 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2378e8bc-20ec-4d31-b438-4108ad7d4adf")
+		(property "Reference" "D21"
+			(at 114.046 50.546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.046 53.086 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D1.8mm_W3.3mm_H2.4mm"
+			(at 114.3 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1397,7 +1869,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 130.81 69.85 0)
+			(at 114.3 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1408,7 +1880,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 130.81 69.85 0)
+			(at 114.3 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1427,7 +1899,7 @@
 		(instances
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
-					(reference "D19")
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -1445,7 +1917,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "602e5a5f-3d9d-4952-806b-d64afc5e9f61")
-		(property "Reference" "D18"
+		(property "Reference" "D19"
 			(at 132.588 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1532,7 +2004,191 @@
 		(instances
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
-					(reference "D18")
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 55.88 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "60cab8a0-bcd2-4bf4-aabb-cd957145af44")
+		(property "Reference" "R9"
+			(at 124.46 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2k2"
+			(at 124.46 53.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 124.46 57.658 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 124.46 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "002479d0-4c9e-4d85-ab70-2c931869e414")
+		)
+		(pin "2"
+			(uuid "deacad55-e1c3-41ad-9346-4c105ae2841e")
+		)
+		(instances
+			(project "Inv_Spot_Pot"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4007")
+		(at 121.92 63.5 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "acdf92f8-2e3d-4c0e-8f42-46cf10aa8648")
+		(property "Reference" "D20"
+			(at 123.698 61.214 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 120.6501 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 121.92 67.945 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 121.92 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
+			(at 121.92 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 121.92 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 121.92 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e754af0e-6916-44aa-b2a1-40bfd81c87c2")
+		)
+		(pin "1"
+			(uuid "643297c1-3154-4f05-9291-f765a4560369")
+		)
+		(instances
+			(project "Inv_Spot_Pot"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
+					(reference "D20")
 					(unit 1)
 				)
 			)
