@@ -3451,7 +3451,7 @@
 		)
 		(uuid "0c92be2d-ff8b-4027-9663-72ee05401fe2")
 	)
-	(hierarchical_label "5V"
+	(hierarchical_label "7V"
 		(shape input)
 		(at 187.96 69.85 0)
 		(effects

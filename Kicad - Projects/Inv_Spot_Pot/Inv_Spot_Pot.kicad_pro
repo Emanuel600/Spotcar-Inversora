@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 2.5
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -531,7 +531,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 1.0,
+        "clearance": 2.5,
         "name": "HV",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
@@ -542,7 +542,7 @@
         "via_drill": 0.8
       },
       {
-        "clearance": 1.0,
+        "clearance": 2.5,
         "name": "HVLC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
