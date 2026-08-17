@@ -542,7 +542,7 @@
         "via_drill": 0.8
       },
       {
-        "clearance": 2.5,
+        "clearance": 1.0,
         "name": "HVLC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
