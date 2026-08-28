@@ -60,24 +60,24 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define Enable_Pin GPIO_PIN_0
-#define Enable_GPIO_Port GPIOF
-#define RS_Pin GPIO_PIN_1
-#define RS_GPIO_Port GPIOF
 #define Current_Sense_Pin GPIO_PIN_0
 #define Current_Sense_GPIO_Port GPIOA
-#define Display_ADC_Pin GPIO_PIN_2
+#define Display_ADC_Pin GPIO_PIN_1
 #define Display_ADC_GPIO_Port GPIOA
-#define Trigger_Pin GPIO_PIN_4
+#define Trigger_Pin GPIO_PIN_2
 #define Trigger_GPIO_Port GPIOA
-#define D4_Pin GPIO_PIN_5
-#define D4_GPIO_Port GPIOA
-#define D5_Pin GPIO_PIN_1
-#define D5_GPIO_Port GPIOB
-#define D6_Pin GPIO_PIN_9
-#define D6_GPIO_Port GPIOA
-#define D7_Pin GPIO_PIN_10
+#define Enable_Pin GPIO_PIN_3
+#define Enable_GPIO_Port GPIOA
+#define RS_Pin GPIO_PIN_4
+#define RS_GPIO_Port GPIOA
+#define D7_Pin GPIO_PIN_5
 #define D7_GPIO_Port GPIOA
+#define D6_Pin GPIO_PIN_1
+#define D6_GPIO_Port GPIOB
+#define D5_Pin GPIO_PIN_9
+#define D5_GPIO_Port GPIOA
+#define D4_Pin GPIO_PIN_10
+#define D4_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 #define SET_DUTY_CYCLE(__DC__) do{ \
