@@ -3998,6 +3998,10 @@
 		(uuid "63f0096a-67ea-4f70-adf4-ef3361d2819b")
 	)
 	(no_connect
+		(at 143.51 38.1)
+		(uuid "6cb5f6b0-c468-4c56-b46c-5eeff841c658")
+	)
+	(no_connect
 		(at 118.11 50.8)
 		(uuid "a6188932-f600-4d06-ae54-ba1b9039b7be")
 	)
@@ -4544,16 +4548,6 @@
 			(type default)
 		)
 		(uuid "73b3d498-263c-4eb5-8709-fcce6956aff9")
-	)
-	(wire
-		(pts
-			(xy 143.51 38.1) (xy 146.05 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74dda4e2-49ce-47d7-89e6-05016e8229c8")
 	)
 	(wire
 		(pts
@@ -5697,30 +5691,6 @@
 			)
 		)
 	)
-	(global_label "Current_Sense"
-		(shape input)
-		(at 146.05 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "44ef3444-630a-4f62-a4bf-d923ec64fc68")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.5213 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "SWCLK"
 		(shape input)
 		(at 129.54 106.68 180)
@@ -6747,7 +6717,7 @@
 		(dnp no)
 		(uuid "1f4a0cd9-94a7-46b6-bb50-78c882335124")
 		(property "Reference" "C7"
-			(at 189.23 147.3199 0)
+			(at 186.182 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6758,7 +6728,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 189.23 149.8599 0)
+			(at 186.182 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

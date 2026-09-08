@@ -2125,12 +2125,6 @@
 		(uuid "2e72b1a7-fe7d-4223-88e9-23c1b79a2b07")
 	)
 	(junction
-		(at 107.95 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "31aa8640-bda9-4c0c-8a8c-5cfe78bae856")
-	)
-	(junction
 		(at 82.55 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2273,6 +2267,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc53db10-716f-44a7-825d-cac33bd77510")
+	)
+	(junction
+		(at 107.95 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdb2e77e-9ab0-4ebf-a961-5b9c979db0d4")
 	)
 	(junction
 		(at 157.48 90.17)
@@ -2802,7 +2802,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 91.44) (xy 107.95 91.44)
+			(xy 111.76 91.44) (xy 107.95 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2819,6 +2819,16 @@
 			(type default)
 		)
 		(uuid "853efd63-544b-47c5-976b-9a8649f7aafa")
+	)
+	(wire
+		(pts
+			(xy 119.38 91.44) (xy 123.19 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ce2482-2ff9-4c1a-ab9c-9c005669aae1")
 	)
 	(wire
 		(pts
@@ -3732,7 +3742,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47p"
+		(property "Value" "4.7n"
 			(at 99.06 58.4201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4150,7 +4160,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-128"
+		(property "Footprint" "Diode_SMD:D_SMB"
 			(at 149.86 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -4575,7 +4585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XA_B02B-XASK-1-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 199.39 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5381,7 +5391,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 119.38 91.44 0)
+		(at 115.57 91.44 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -5392,7 +5402,7 @@
 		(dnp no)
 		(uuid "d3b05176-22ef-4300-bbb4-fea08b1cf8d8")
 		(property "Reference" "D18"
-			(at 119.0625 97.79 0)
+			(at 115.2525 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5402,7 +5412,7 @@
 			)
 		)
 		(property "Value" "SS16"
-			(at 119.0625 95.25 0)
+			(at 115.2525 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5412,7 +5422,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-128"
-			(at 119.38 91.44 0)
+			(at 115.57 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5423,7 +5433,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 91.44 0)
+			(at 115.57 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5434,7 +5444,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 119.38 91.44 0)
+			(at 115.57 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

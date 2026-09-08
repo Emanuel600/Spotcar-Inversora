@@ -187,27 +187,6 @@ int main(void)
 			  Hold_Until_Trigger_Release();
 		  }
 	  }
-	  // Stops trigger if gone over time
-
-	  // Adjusts PWM for more or less current
-	  /*
-	   if(((HAL_GetTick() - trigger_start) > 2) & (triggered==1)){
-		   // Adjusts Current Proportionally to Current Error
-		   int32_t adjustment = 0;
-		   // Safeguard to only activate when output current > 1A
-		   if (s_current > 1000){
-		   	   adjustment = 3*((int32_t)Get_Target_Current() - (int32_t)s_current)>>12;
-		   }
-		  Pulse += adjustment;
-		  // Clamp pulse width
-		  if (Pulse > 300){
-			  Pulse = 300;
-		  } else if (Pulse < 9){
-			  Pulse = 9;
-		  }
-		  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, Pulse);
-  		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, Pulse);
-	   }*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

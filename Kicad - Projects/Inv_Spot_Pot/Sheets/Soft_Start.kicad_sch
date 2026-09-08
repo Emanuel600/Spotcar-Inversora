@@ -1846,7 +1846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D1.8mm_W3.3mm_H2.4mm"
+		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
 			(at 114.3 55.88 0)
 			(hide yes)
 			(show_name no)

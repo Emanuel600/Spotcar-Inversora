@@ -21,7 +21,7 @@ static uint32_t current;
 static uint32_t update_flag = 1;
 static uint32_t menu_scroll = 0; // 0 for TOP, 1 for BOTTOM
 
-static uint32_t* timer_ptr;
+static volatile uint32_t* timer_ptr;
 
 static uint8_t Selected_Pulse_Lenght[5] = {
 		[OP_ESTRELA] = 0,
@@ -313,10 +313,12 @@ inline uint32_t Get_Target_Current(){
 }
 
 inline uint32_t Current_Get_Compare(){
-	if (menu_state != PARAFIX_MENU){
+	if (menu_state == PARAFIX_MENU){
+		return 150;
+	} else if ((op_mode == OP_ESTRELA) | (op_mode == OP_ARRUELA)){
 		return (150 + (current*15));
 	} else{
-		return 100;
+		return (150 + (current*4));
 	}
 }
 
