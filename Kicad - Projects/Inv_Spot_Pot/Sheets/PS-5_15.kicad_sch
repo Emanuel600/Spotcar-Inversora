@@ -3712,7 +3712,7 @@
 			(uuid "0f64d4a7-8e39-4547-b033-67a837742dde")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C6")
 					(unit 1)
@@ -3793,7 +3793,7 @@
 			(uuid "854d70a6-c930-46ba-9f98-9a8b9b00e06b")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C13")
 					(unit 1)
@@ -3874,7 +3874,7 @@
 			(uuid "521074f9-e817-4e0f-a174-eca5a0d8811d")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C11")
 					(unit 1)
@@ -3956,7 +3956,7 @@
 			(uuid "e5143ead-e92a-42d7-bdd0-c0f739e4af98")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "R23")
 					(unit 1)
@@ -4038,7 +4038,7 @@
 			(uuid "697d1ca7-70ea-4114-813e-0149d9d58dd1")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "R14")
 					(unit 1)
@@ -4120,7 +4120,7 @@
 			(uuid "6df67480-35a0-4623-8ff5-b77aeebbc169")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C14")
 					(unit 1)
@@ -4200,7 +4200,7 @@
 			(uuid "ae022bce-2457-4c3e-8749-ea4ac99b62f1")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "D4")
 					(unit 1)
@@ -4283,7 +4283,7 @@
 			(uuid "7dc93e1c-1186-4fe3-8ba2-7f51a2bd50b3")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "R12")
 					(unit 1)
@@ -4364,7 +4364,7 @@
 			(uuid "fd1c82e9-d7ac-46a5-951a-4e32b45ebc66")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C12")
 					(unit 1)
@@ -4461,7 +4461,7 @@
 			(uuid "e794cce5-e730-4c62-9d77-90cb75186162")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "U1")
 					(unit 1)
@@ -4543,7 +4543,7 @@
 			(uuid "2269692b-9c1a-4924-abd7-deccc4edb0ba")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "D9")
 					(unit 1)
@@ -4585,7 +4585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 199.39 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -4626,7 +4626,7 @@
 			(uuid "6d9a2bc0-fe8c-44dc-9e2a-d3d86017a5ed")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "F2")
 					(unit 1)
@@ -4705,7 +4705,7 @@
 			(uuid "155aaa8d-da26-4b4f-b45e-a64d0560811f")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "D2")
 					(unit 1)
@@ -4787,7 +4787,7 @@
 			(uuid "c1fca540-d680-47c9-868d-46d8e4e737c1")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C9")
 					(unit 1)
@@ -4869,7 +4869,7 @@
 			(uuid "61407add-c878-4a95-a910-210908a716b7")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "CY3")
 					(unit 1)
@@ -4951,7 +4951,7 @@
 			(uuid "67c20852-1479-4338-bf21-4a040f27f992")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C8")
 					(unit 1)
@@ -5049,7 +5049,7 @@
 			(uuid "b01a5f4c-e10a-44d3-9fe6-cc227138bc2f")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "T3")
 					(unit 1)
@@ -5131,7 +5131,7 @@
 			(uuid "3cd1c7ee-417f-4127-9b85-fbfa55d4f5a8")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "R8")
 					(unit 1)
@@ -5218,7 +5218,7 @@
 			(uuid "82683e36-c021-4542-b827-43a781d1220c")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "U2")
 					(unit 1)
@@ -5249,7 +5249,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "100u"
 			(at 87.63 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5260,7 +5260,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm"
 			(at 81.28 53.6448 0)
 			(hide yes)
 			(show_name no)
@@ -5300,7 +5300,7 @@
 			(uuid "bc93766e-7e95-46c6-9c5e-2dbb0458c7b3")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C10")
 					(unit 1)
@@ -5381,7 +5381,7 @@
 			(uuid "b5e53ec7-a6f8-44b7-846d-5aac5b5da6dd")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C5")
 					(unit 1)
@@ -5461,7 +5461,7 @@
 			(uuid "ebe69762-f375-4d09-8232-54064a697972")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "D18")
 					(unit 1)
@@ -5543,7 +5543,7 @@
 			(uuid "b2abce20-1a44-432f-9dd2-3c548d904ae5")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C23")
 					(unit 1)
@@ -5625,7 +5625,7 @@
 			(uuid "e68552b9-7c22-4ad2-9243-6f653418b2db")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C7")
 					(unit 1)
@@ -5707,7 +5707,7 @@
 			(uuid "be41a5a5-a9c3-42fb-b0c7-2aac8f553e13")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "R15")
 					(unit 1)
@@ -5786,7 +5786,7 @@
 			(uuid "304cf19f-a00d-44af-b875-00d3f90d48a8")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "D6")
 					(unit 1)
@@ -5868,7 +5868,7 @@
 			(uuid "5d83e0db-30a3-4ade-94b2-4f95e2882246")
 		)
 		(instances
-			(project "Inv_Spot_Pot"
+			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "R7")
 					(unit 1)
