@@ -674,743 +674,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom_Transformers:EEL25V_6T+6T"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Custom_Transformer:EEL25V 6T+6T"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "EEL25V_6T+6T_0_1"
-				(arc
-					(start -2.5654 -3.81)
-					(mid -2.9299 -4.6901)
-					(end -3.81 -5.0546)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.5654 -6.35)
-					(mid -2.9299 -7.2301)
-					(end -3.81 -7.5946)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.5654 -8.89)
-					(mid -2.9299 -9.7701)
-					(end -3.81 -10.1346)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.5654 -15.24)
-					(mid -2.9299 -16.1201)
-					(end -3.81 -16.4846)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.5654 -17.78)
-					(mid -2.9299 -18.6601)
-					(end -3.81 -19.0246)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.5654 -20.32)
-					(mid -2.9299 -21.2001)
-					(end -3.81 -21.5646)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.5654 -26.67)
-					(mid -2.9299 -27.5501)
-					(end -3.81 -27.9146)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.5654 -29.21)
-					(mid -2.9299 -30.0901)
-					(end -3.81 -30.4546)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.5654 -31.75)
-					(mid -2.9299 -32.6301)
-					(end -3.81 -32.9946)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -2.54)
-					(mid -2.9158 -2.9085)
-					(end -2.5654 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -5.08)
-					(mid -2.9158 -5.4485)
-					(end -2.5654 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -7.62)
-					(mid -2.9158 -7.9885)
-					(end -2.5654 -8.89)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -13.97)
-					(mid -2.9158 -14.3385)
-					(end -2.5654 -15.24)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -16.51)
-					(mid -2.9158 -16.8785)
-					(end -2.5654 -17.78)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -19.05)
-					(mid -2.9158 -19.4185)
-					(end -2.5654 -20.32)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -25.4)
-					(mid -2.9158 -25.7685)
-					(end -2.5654 -26.67)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -27.94)
-					(mid -2.9158 -28.3085)
-					(end -2.5654 -29.21)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.81 -30.48)
-					(mid -2.9158 -30.8485)
-					(end -2.5654 -31.75)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 -33.274) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -2.54) (xy 0.508 -33.274)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -3.81)
-					(mid 2.9157 -2.9083)
-					(end 3.81 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -6.35)
-					(mid 2.9157 -5.4483)
-					(end 3.81 -5.08)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -8.89)
-					(mid 2.9157 -7.9883)
-					(end 3.81 -7.62)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -15.24)
-					(mid 2.9158 -14.3385)
-					(end 3.81 -13.97)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -17.78)
-					(mid 2.9158 -16.8785)
-					(end 3.81 -16.51)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -20.32)
-					(mid 2.9158 -19.4185)
-					(end 3.81 -19.05)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -26.67)
-					(mid 2.9158 -25.7685)
-					(end 3.81 -25.4)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -29.21)
-					(mid 2.9158 -28.3085)
-					(end 3.81 -27.94)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.5654 -31.75)
-					(mid 2.9158 -30.8485)
-					(end 3.81 -30.48)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -5.0546)
-					(mid 2.9299 -4.6901)
-					(end 2.5654 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -7.5946)
-					(mid 2.9299 -7.2301)
-					(end 2.5654 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -10.1346)
-					(mid 2.9299 -9.7701)
-					(end 2.5654 -8.89)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -16.4846)
-					(mid 2.9299 -16.1201)
-					(end 2.5654 -15.24)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -19.0246)
-					(mid 2.9299 -18.6601)
-					(end 2.5654 -17.78)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -21.5646)
-					(mid 2.9299 -21.2001)
-					(end 2.5654 -20.32)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -27.9146)
-					(mid 2.9299 -27.5501)
-					(end 2.5654 -26.67)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -30.4546)
-					(mid 2.9299 -30.0901)
-					(end 2.5654 -29.21)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 3.81 -32.9946)
-					(mid 2.9299 -32.6301)
-					(end 2.5654 -31.75)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "EEL25V_6T+6T_1_1"
-				(pin passive line
-					(at -11.43 -2.54 0)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -11.43 -10.16 0)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -11.43 -13.97 0)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -11.43 -21.59 0)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -11.43 -25.4 0)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -11.43 -33.02 0)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 11.43 -2.54 180)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 11.43 -10.16 180)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 11.43 -13.97 180)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 11.43 -21.59 180)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 11.43 -25.4 180)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 11.43 -33.02 180)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Custom_Transformers:Pulse_Transformer-4_Windings"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -11652,7 +10915,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21adfc15-d434-429d-8144-126d02f6f01e")
-		(property "Reference" "D15"
+		(property "Reference" "D16"
 			(at 258.826 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11718,7 +10981,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D15")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -12296,7 +11559,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "45636007-3616-43e3-8593-7916c5e5dc1b")
-		(property "Reference" "D10"
+		(property "Reference" "D11"
 			(at 259.334 50.038 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12362,7 +11625,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D10")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -14128,7 +13391,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c1e852c-da43-4995-9203-cb261461903a")
-		(property "Reference" "D14"
+		(property "Reference" "D15"
 			(at 259.08 108.712 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14194,7 +13457,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D14")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -14370,7 +13633,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "844019e6-11ad-4dde-a1c0-4055b48feb62")
-		(property "Reference" "D17"
+		(property "Reference" "D18"
 			(at 258.826 136.144 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14436,7 +13699,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D17")
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -14777,7 +14040,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d75a07f-077c-4132-960c-6ff5397f750c")
-		(property "Reference" "D12"
+		(property "Reference" "D13"
 			(at 258.826 69.342 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14843,7 +14106,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D12")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -14861,7 +14124,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e554f3e-7303-4680-91e5-1b3fcaede79a")
-		(property "Reference" "D13"
+		(property "Reference" "D14"
 			(at 259.588 83.312 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14927,7 +14190,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D13")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -15104,7 +14367,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "925f271e-eecf-4ee2-afc0-2c935288d856")
-		(property "Reference" "D3"
+		(property "Reference" "D9"
 			(at 164.7825 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15166,7 +14429,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D3")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -15828,7 +15091,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5285587-25eb-4546-b564-3ba3794cb3c9")
-		(property "Reference" "D11"
+		(property "Reference" "D12"
 			(at 259.08 59.182 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15894,7 +15157,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D11")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -16387,116 +15650,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Transformers:EEL25V_6T+6T")
-		(at 177.8 58.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c7b49fe8-78b6-4079-a2f2-6912db1fa0fa")
-		(property "Reference" "U3"
-			(at 177.8 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 177.8 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Custom_Transformer:EEL25V 6T+6T"
-			(at 177.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "8b580531-3de4-4c5f-820c-be09d434a114")
-		)
-		(pin "9"
-			(uuid "e2096f6f-538b-46b4-9a2a-75e8bf4cdb7a")
-		)
-		(pin "2"
-			(uuid "68ae4054-d59d-44ff-abae-39667f4fa7dc")
-		)
-		(pin "5"
-			(uuid "c271f920-da4f-4e03-a552-7512d0dc9f22")
-		)
-		(pin "12"
-			(uuid "34a97fc3-4349-4ca8-868f-5a2692c13af2")
-		)
-		(pin "11"
-			(uuid "b13c251d-909c-48a9-8b80-d20956ab6c2a")
-		)
-		(pin "1"
-			(uuid "eb60ddf1-65ae-4c2c-929e-0bda87113832")
-		)
-		(pin "6"
-			(uuid "6e6d0e7e-839e-469f-af95-64145adbc957")
-		)
-		(pin "7"
-			(uuid "a2f5b9fd-1a9c-4586-b957-96ff4ae7f0ad")
-		)
-		(pin "8"
-			(uuid "42d015a1-74e0-43a2-8a45-fb5d5096ae1f")
-		)
-		(pin "4"
-			(uuid "a96d1275-9ac7-4b7f-b53b-5ed6ca864465")
-		)
-		(pin "10"
-			(uuid "4b46ed00-5ac6-4592-8cef-3302db96fe0a")
-		)
-		(instances
-			(project "Inv_Spot_Pot - A"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 93.98 177.8 0)
 		(mirror y)
@@ -16586,7 +15739,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "caa2d61e-96fe-4875-a446-31b7d72d4368")
-		(property "Reference" "D5"
+		(property "Reference" "D10"
 			(at 164.7825 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16648,7 +15801,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D5")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -17490,7 +16643,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e5a0ab28-4558-407c-88c2-e28d032d0db6")
-		(property "Reference" "D16"
+		(property "Reference" "D17"
 			(at 258.826 127.254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17556,7 +16709,7 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
-					(reference "D16")
+					(reference "D17")
 					(unit 1)
 				)
 			)

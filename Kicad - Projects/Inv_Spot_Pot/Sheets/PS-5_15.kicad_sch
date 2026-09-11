@@ -1130,172 +1130,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Schottky"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Schottky diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_Schottky_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Schottky_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:Polyfuse"
 			(pin_numbers
 				(hide yes)
@@ -1766,6 +1600,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:US1M"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "US1M"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Ultra Fast"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "US1M_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "US1M_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Isolator:LTV-817S"
 			(pin_names
 				(offset 1.016)
@@ -2119,16 +2140,10 @@
 		(uuid "2e2596cb-8ecc-4377-bc4b-777368b2c23c")
 	)
 	(junction
-		(at 102.87 54.61)
+		(at 82.55 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2e72b1a7-fe7d-4223-88e9-23c1b79a2b07")
-	)
-	(junction
-		(at 82.55 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36a3e45c-d72d-45fc-a111-13841915687b")
+		(uuid "3206fb03-2ded-494c-b1ad-e91d445a1480")
 	)
 	(junction
 		(at 102.87 77.47)
@@ -2143,10 +2158,16 @@
 		(uuid "39ca514f-849b-4fda-ad38-2ad2e374d2f9")
 	)
 	(junction
-		(at 109.22 78.74)
+		(at 116.84 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5a8c53af-6837-4f58-87f9-93a741ac656a")
+		(uuid "3c908a9a-a24a-44a3-8582-cb29302aae80")
+	)
+	(junction
+		(at 109.22 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5be3965a-c84a-4046-a974-4928fbec439d")
 	)
 	(junction
 		(at 201.93 100.33)
@@ -2185,28 +2206,10 @@
 		(uuid "94ee5558-286c-4b38-b4de-2557e157af17")
 	)
 	(junction
-		(at 109.22 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a634e0f0-6e26-4e90-bbf7-a5662069709d")
-	)
-	(junction
 		(at 157.48 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac8a68ae-482c-46c8-8ad5-9f248b842538")
-	)
-	(junction
-		(at 161.29 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad25ab8d-93e1-47bd-9d8a-c5b4b103f208")
-	)
-	(junction
-		(at 106.68 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "afb699e2-140d-4964-b9a1-81dc1c8b2532")
 	)
 	(junction
 		(at 161.29 90.17)
@@ -2227,6 +2230,12 @@
 		(uuid "bff7a010-24a6-4359-aa9d-f1172063c4f5")
 	)
 	(junction
+		(at 90.17 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cce79960-368d-493d-a854-26b2da65c666")
+	)
+	(junction
 		(at 184.15 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2239,10 +2248,10 @@
 		(uuid "d081a479-8e45-4bd3-82cc-1fb890ec09c2")
 	)
 	(junction
-		(at 82.55 74.93)
+		(at 110.49 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d80d0bfa-8bdb-43bf-aa99-87a85f093665")
+		(uuid "d89cfecf-7505-4df6-b760-6433f4e2d41a")
 	)
 	(junction
 		(at 67.31 92.71)
@@ -2292,16 +2301,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 68.58) (xy 82.55 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04357805-d563-44ee-8485-43067807ffef")
-	)
-	(wire
-		(pts
 			(xy 96.52 100.33) (xy 96.52 102.87)
 		)
 		(stroke
@@ -2319,6 +2318,16 @@
 			(type default)
 		)
 		(uuid "0ea7875f-53c1-490e-8521-bc79163815d2")
+	)
+	(wire
+		(pts
+			(xy 90.17 54.61) (xy 78.74 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10fe4d1c-dbbd-48db-9117-c308bdc24ddf")
 	)
 	(wire
 		(pts
@@ -2372,7 +2381,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 113.03) (xy 143.51 113.03)
+			(xy 201.93 113.03) (xy 203.2 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2402,7 +2411,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 54.61) (xy 109.22 46.99)
+			(xy 109.22 54.61) (xy 109.22 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2429,16 +2438,6 @@
 			(type default)
 		)
 		(uuid "30db661c-0eef-4e0d-bfb5-7d7bbd9ac7a0")
-	)
-	(wire
-		(pts
-			(xy 82.55 68.58) (xy 82.55 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3541a91c-42f3-4e79-ad9d-eb3941334070")
 	)
 	(wire
 		(pts
@@ -2472,7 +2471,17 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 63.5) (xy 102.87 66.04)
+			(xy 90.17 41.91) (xy 90.17 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dcfd4a4-5088-410a-b237-70881044c686")
+	)
+	(wire
+		(pts
+			(xy 102.87 63.5) (xy 102.87 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2542,7 +2551,17 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 102.87) (xy 144.78 100.33)
+			(xy 90.17 41.91) (xy 109.22 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "491d9f36-cf6d-48ec-b948-8ac65abbfb25")
+	)
+	(wire
+		(pts
+			(xy 201.93 102.87) (xy 201.93 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2592,26 +2611,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 54.61) (xy 80.01 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57f3f522-1e2f-4b28-ac3d-e425cbf307e7")
-	)
-	(wire
-		(pts
-			(xy 109.22 63.5) (xy 109.22 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d8fc2fe-ff2f-4368-8ca6-52ebea2acc38")
-	)
-	(wire
-		(pts
 			(xy 143.51 69.85) (xy 146.05 69.85)
 		)
 		(stroke
@@ -2642,16 +2641,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 54.61) (xy 102.87 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60329903-0e5d-4654-9f05-380c389297d3")
-	)
-	(wire
-		(pts
 			(xy 201.93 100.33) (xy 205.74 100.33)
 		)
 		(stroke
@@ -2659,16 +2648,6 @@
 			(type default)
 		)
 		(uuid "60b167de-02f6-436b-939e-28d89d89d11d")
-	)
-	(wire
-		(pts
-			(xy 92.71 68.58) (xy 106.68 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "620272e2-f020-47e6-92f1-4478bc17d810")
 	)
 	(wire
 		(pts
@@ -2702,17 +2681,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 78.74) (xy 106.68 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65be91df-9a17-458c-bd6f-25b5de73631f")
-	)
-	(wire
-		(pts
-			(xy 82.55 77.47) (xy 82.55 74.93)
+			(xy 82.55 77.47) (xy 82.55 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2732,16 +2701,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 76.2) (xy 109.22 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b20a255-4f82-4ecc-99eb-b8991251e313")
-	)
-	(wire
-		(pts
 			(xy 140.97 124.46) (xy 154.94 124.46)
 		)
 		(stroke
@@ -2749,6 +2708,16 @@
 			(type default)
 		)
 		(uuid "6cbe8387-15bd-4032-91c5-05e7bb1e12e3")
+	)
+	(wire
+		(pts
+			(xy 80.01 76.2) (xy 82.55 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f68b31f-c239-4a44-bc26-134230749d5a")
 	)
 	(wire
 		(pts
@@ -2769,16 +2738,6 @@
 			(type default)
 		)
 		(uuid "75c58126-6c52-42e5-b31e-b6cdec225e99")
-	)
-	(wire
-		(pts
-			(xy 144.78 100.33) (xy 161.29 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76c0cbb0-d6b5-4171-b7e7-4c857cd719e7")
 	)
 	(wire
 		(pts
@@ -2832,7 +2791,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 46.99) (xy 109.22 46.99)
+			(xy 80.01 41.91) (xy 90.17 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3022,16 +2981,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 78.74) (xy 102.87 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9117c45-fad0-4110-b80b-7d26fc84825a")
-	)
-	(wire
-		(pts
 			(xy 67.31 92.71) (xy 67.31 99.06)
 		)
 		(stroke
@@ -3042,7 +2991,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 66.04) (xy 109.22 66.04)
+			(xy 102.87 68.58) (xy 109.22 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3069,6 +3018,16 @@
 			(type default)
 		)
 		(uuid "ba22c0d7-cb6c-4142-ab16-2b6c669cacc7")
+	)
+	(wire
+		(pts
+			(xy 110.49 77.47) (xy 110.49 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbae7f98-99dc-45a3-a8dc-e2f587105945")
 	)
 	(wire
 		(pts
@@ -3172,7 +3131,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 110.49) (xy 144.78 113.03)
+			(xy 201.93 110.49) (xy 201.93 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3182,7 +3141,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 66.04) (xy 109.22 68.58)
+			(xy 109.22 63.5) (xy 109.22 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3192,7 +3151,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 78.74) (xy 123.19 78.74)
+			(xy 102.87 78.74) (xy 110.49 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3342,23 +3301,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 68.58) (xy 106.68 78.74)
+			(xy 90.17 52.07) (xy 90.17 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ee4d92de-9247-4ef0-a9f2-79c32e999653")
-	)
-	(wire
-		(pts
-			(xy 82.55 68.58) (xy 85.09 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f034a3f5-ee72-4707-9d94-395e72184910")
+		(uuid "ed19429e-5c2b-48bb-94e3-a2b7a9091c7e")
 	)
 	(wire
 		(pts
@@ -3369,6 +3318,16 @@
 			(type default)
 		)
 		(uuid "f19aa6cd-b5a7-431d-b91f-20d43206b43c")
+	)
+	(wire
+		(pts
+			(xy 82.55 76.2) (xy 82.55 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1e7046c-cc64-4e6c-91cf-24a1d473215a")
 	)
 	(wire
 		(pts
@@ -3442,6 +3401,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 78.74) (xy 123.19 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff98bcde-282c-4312-a68d-fe882b731cbd")
+	)
+	(wire
+		(pts
 			(xy 184.15 99.06) (xy 184.15 100.33)
 		)
 		(stroke
@@ -3452,12 +3421,12 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 143.51 113.03 180)
+		(at 203.2 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "0c92be2d-ff8b-4027-9663-72ee05401fe2")
 	)
@@ -3474,7 +3443,7 @@
 	)
 	(hierarchical_label "310V"
 		(shape input)
-		(at 80.01 46.99 180)
+		(at 80.01 41.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3507,7 +3476,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 78.74 68.58 180)
+		(at 80.01 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3518,7 +3487,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 80.01 54.61 180)
+		(at 78.74 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3607,7 +3576,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 110.49 78.74 0)
+		(at 110.49 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3617,7 +3586,7 @@
 		)
 		(uuid "0405e7cf-378e-4398-9ca8-5cec6e3ef452")
 		(property "Classes da rede" "HVLC"
-			(at 111.1885 76.2 0)
+			(at 111.1885 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3628,7 +3597,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -36.83 10.16 0)
+			(at -36.83 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4047,168 +4016,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 88.9 68.58 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "276f957b-cf79-4462-be23-4ca708038b92")
-		(property "Reference" "C14"
-			(at 91.948 67.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 90.1699 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 92.71 67.6148 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 88.9 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7192d229-be08-4e5c-92ec-2646189a79de")
-		)
-		(pin "1"
-			(uuid "6df67480-35a0-4623-8ff5-b77aeebbc169")
-		)
-		(instances
-			(project "Inv_Spot_Pot - A"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 149.86 69.85 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "28d25de6-e265-4016-b8cd-a38dea276709")
-		(property "Reference" "D4"
-			(at 150.1775 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS16"
-			(at 150.1775 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 149.86 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 149.86 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b0bbb93a-b6f4-4fb3-958c-c12df9d8352e")
-		)
-		(pin "2"
-			(uuid "ae022bce-2457-4c3e-8749-ea4ac99b62f1")
-		)
-		(instances
-			(project "Inv_Spot_Pot - A"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 109.22 59.69 0)
 		(unit 1)
@@ -4481,7 +4288,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5516a349-18ee-4ed7-9615-12251d290909")
-		(property "Reference" "D9"
+		(property "Reference" "D6"
 			(at 154.94 114.2999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4545,7 +4352,108 @@
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
-					(reference "D9")
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US1M")
+		(at 113.03 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "628dec24-b96f-4517-ad89-ac8493f0a2d5")
+		(property "Reference" "D5"
+			(at 113.03 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "US1M"
+			(at 113.03 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 113.03 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
+			(at 113.03 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 113.03 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 113.03 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 113.03 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "071f8158-9509-4a11-a7dd-bee01732fdd3")
+		)
+		(pin "2"
+			(uuid "993da8b6-e91c-437f-a848-81cc9e79680b")
+		)
+		(instances
+			(project "Inv_Spot_Pot - A"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -4635,8 +4543,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 109.22 72.39 270)
+		(lib_id "Diode:US1M")
+		(at 115.57 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4644,9 +4552,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "68188538-5a8c-42c8-96f3-acbabcf9ed42")
-		(property "Reference" "D2"
-			(at 115.57 72.0725 0)
+		(uuid "6f3873a0-cb40-4450-a978-1d3888adbb2c")
+		(property "Reference" "D4"
+			(at 115.57 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4655,8 +4563,8 @@
 				)
 			)
 		)
-		(property "Value" "K7"
-			(at 113.03 72.0725 0)
+		(property "Value" "US1M"
+			(at 115.57 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4665,8 +4573,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 109.22 72.39 0)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 115.57 95.885 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4676,8 +4584,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 109.22 72.39 0)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
+			(at 115.57 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4687,8 +4595,30 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
-			(at 109.22 72.39 0)
+		(property "Description" "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 115.57 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 115.57 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 115.57 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4699,15 +4629,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0133d4d0-f5e8-42ec-8ddc-57ae4015ff0e")
+			(uuid "34fb36bc-3c3f-4a2f-8ecb-a4380fb88f29")
 		)
 		(pin "2"
-			(uuid "155aaa8d-da26-4b4f-b45e-a64d0560811f")
+			(uuid "e90f7d4c-f415-4825-bcb2-f707c791b389")
 		)
 		(instances
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
-					(reference "D2")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -4797,7 +4727,8 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 144.78 106.68 0)
+		(at 201.93 106.68 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4807,7 +4738,7 @@
 		(dnp no)
 		(uuid "7c951d8c-0241-4a6e-85dd-658b30a68326")
 		(property "Reference" "CY3"
-			(at 141.732 107.696 0)
+			(at 204.978 107.696 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4818,7 +4749,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 140.97 107.9499 0)
+			(at 205.74 107.9499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4830,7 +4761,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P10.00mm"
-			(at 145.7452 110.49 0)
+			(at 200.9648 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4841,7 +4772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 106.68 0)
+			(at 201.93 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4852,7 +4783,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 144.78 106.68 0)
+			(at 201.93 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5228,8 +5159,8 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 85.09 54.61 270)
-		(mirror x)
+		(at 90.17 48.26 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5239,7 +5170,7 @@
 		(dnp no)
 		(uuid "b34575c8-2a68-41e6-8fa3-fe7698cbcf27")
 		(property "Reference" "C10"
-			(at 90.17 57.15 0)
+			(at 93.218 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5250,7 +5181,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 87.63 57.15 0)
+			(at 93.218 49.276 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5261,7 +5192,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm"
-			(at 81.28 53.6448 0)
+			(at 89.2048 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5272,7 +5203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 54.61 0)
+			(at 90.17 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5283,7 +5214,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 85.09 54.61 0)
+			(at 90.17 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5303,6 +5234,212 @@
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US1M")
+		(at 149.86 69.85 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b85bcfc6-1ce5-4bc6-a483-50c04629e1b7")
+		(property "Reference" "D2"
+			(at 149.86 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "US1M"
+			(at 149.86 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 149.86 74.295 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
+			(at 149.86 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 149.86 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 149.86 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 149.86 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91535b04-eab0-48e9-bb7f-b1b3e6f528ca")
+		)
+		(pin "2"
+			(uuid "5893c5d7-81e7-4e70-8136-7c8844044fa1")
+		)
+		(instances
+			(project "Inv_Spot_Pot - A"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US1M")
+		(at 149.86 90.17 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c65391bb-ff14-41f9-bacd-3e08ca46807e")
+		(property "Reference" "D3"
+			(at 149.86 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "US1M"
+			(at 149.86 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 149.86 94.615 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
+			(at 149.86 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)"
+			(at 149.86 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 149.86 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 149.86 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "940ca902-c5c9-4457-af15-195351e87254")
+		)
+		(pin "2"
+			(uuid "55fc96d6-9b23-4c66-8a3d-bd6238e5f962")
+		)
+		(instances
+			(project "Inv_Spot_Pot - A"
+				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5384,86 +5521,6 @@
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 115.57 91.44 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d3b05176-22ef-4300-bbb4-fea08b1cf8d8")
-		(property "Reference" "D18"
-			(at 115.2525 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS16"
-			(at 115.2525 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-128"
-			(at 115.57 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 115.57 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e4d8f6c4-4c70-4452-95cb-3996699c88da")
-		)
-		(pin "2"
-			(uuid "ebe69762-f375-4d09-8232-54064a697972")
-		)
-		(instances
-			(project "Inv_Spot_Pot - A"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
-					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -5710,85 +5767,6 @@
 			(project "Inv_Spot_Pot - A"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 149.86 90.17 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ef429c00-dc70-4f83-883e-7c750528e1a2")
-		(property "Reference" "D6"
-			(at 150.1775 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS16"
-			(at 150.1775 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-128"
-			(at 149.86 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 149.86 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "54364cca-bc4c-4a91-9ffb-0020c229b596")
-		)
-		(pin "2"
-			(uuid "304cf19f-a00d-44af-b875-00d3f90d48a8")
-		)
-		(instances
-			(project "Inv_Spot_Pot - A"
-				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/d2713cc2-b69d-489c-ab73-ea3982f94a63"
-					(reference "D6")
 					(unit 1)
 				)
 			)
