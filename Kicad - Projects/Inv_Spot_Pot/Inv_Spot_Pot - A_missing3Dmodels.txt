@@ -1,0 +1,20 @@
+### Missing 3D models - created on 2026-09-14 10:01
+### Printed by checking_3D_models plugin
+Board file: C:/Users/emanuel.staub/Documents/Spotcar Inversora/Kicad - Projects/Inv_Spot_Pot/Inv_Spot_Pot - A.kicad_pcb
+3D missing models written to:
+C:\Users\emanuel.staub\Documents\Spotcar Inversora\Kicad - Projects\Inv_Spot_Pot\Inv_Spot_Pot - A_missing3Dmodels.txt
+-------
+('Cx2', '${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L24.0mm_W8.6mm_P22.50mm_MKT.step')
+('R4', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step')
+('K1', 'C:\\Users\\emanuel.staub\\AppData\\Local\\Programs\\KiCad\\10.0\\share\\kicad\\3dmodels\\Relay_THT.3dshapes\\Relay_SPDT_RAYEX-L90.step')
+('Q1', '${KICAD9_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-247-3_Vertical.step')
+('Cx1', '${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L24.0mm_W8.6mm_P22.50mm_MKT.step')
+('Q2', '${KICAD9_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-247-3_Vertical.step')
+('R2', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step')
+('R5', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step')
+('R1', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step')
+('R6', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step')
+('R3', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step')
+-------
+NUM of 3D missing models:11
+checked extensions ['.stp', '.step', '.stpZ']

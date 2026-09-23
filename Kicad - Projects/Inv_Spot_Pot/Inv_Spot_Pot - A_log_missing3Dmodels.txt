@@ -1,0 +1,21 @@
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L24.0mm_W8.6mm_P22.50mm_MKT.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-247-3_Vertical.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L24.0mm_W8.6mm_P22.50mm_MKT.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-247-3_Vertical.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step
+[('Cx2', '${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L24.0mm_W8.6mm_P22.50mm_MKT.step'), ('R4', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step'), ('K1', 'C:\\Users\\emanuel.staub\\AppData\\Local\\Programs\\KiCad\\10.0\\share\\kicad\\3dmodels\\Relay_THT.3dshapes\\Relay_SPDT_RAYEX-L90.step'), ('Q1', '${KICAD9_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-247-3_Vertical.step'), ('Cx1', '${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L24.0mm_W8.6mm_P22.50mm_MKT.step'), ('Q2', '${KICAD9_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-247-3_Vertical.step'), ('R2', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step'), ('R5', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step'), ('R1', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step'), ('R6', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step'), ('R3', '${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1206_3216Metric.step')]
