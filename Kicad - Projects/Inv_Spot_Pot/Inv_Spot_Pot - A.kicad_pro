@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "height": 1.6,
+          "width": 1.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -53,7 +53,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -94,9 +100,9 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "error",
+        "npth_inside_courtyard": "ignore",
         "padstack": "warning",
-        "pth_inside_courtyard": "error",
+        "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -124,9 +130,9 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_clearance": 0.3,
+        "min_connection": 0.5,
+        "min_copper_edge_clearance": 1.0,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -137,10 +143,10 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.5,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -187,7 +193,17 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.0,
+        0.6,
+        1.0,
+        1.5,
+        1.95,
+        2.0,
+        2.5,
+        3.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -214,8 +230,25 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
-      "zones_allow_external_fillets": false
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.8
+        },
+        {
+          "diameter": 1.6,
+          "drill": 0.82
+        },
+        {
+          "diameter": 3.0,
+          "drill": 1.6
+        }
+      ],
+      "zones_allow_external_fillets": true
     },
     "ipc2581": {
       "bom_rev": "",
@@ -433,6 +466,7 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
+      "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -495,6 +529,50 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 2.5,
+        "name": "HV",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "tuning_profile": "",
+        "via_diameter": 1.0,
+        "via_drill": 0.8
+      },
+      {
+        "clearance": 1.0,
+        "name": "HVLC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "tuning_profile": "",
+        "via_diameter": 1.0,
+        "via_drill": 0.8
+      },
+      {
+        "clearance": 2.0,
+        "name": "MV",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "tuning_profile": "",
+        "via_diameter": 1.0,
+        "via_drill": 0.8
+      },
+      {
+        "clearance": 1.5,
+        "name": "MVLC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 7.0,
+        "tuning_profile": "",
+        "via_diameter": 1.0,
+        "via_drill": 0.8
       }
     ],
     "meta": {
@@ -502,8 +580,56 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/Driver/Gate": [
+        "MVI"
+      ],
       "310V": [
         "HVLC"
+      ],
+      "Gate": [
+        "MVI"
+      ],
+      "Net-(CY1-Pad1)": [
+        "HV"
+      ],
+      "Net-(CY2-Pad2)": [
+        "HV"
+      ],
+      "Net-(Cx1-Pad1)": [
+        "HV"
+      ],
+      "Net-(Cx2-Pad1)": [
+        "HV"
+      ],
+      "Net-(Cx2-Pad2)": [
+        "HV"
+      ],
+      "Net-(D2-A)": [
+        "HVLC"
+      ],
+      "Net-(D2-K)": [
+        "HVLC"
+      ],
+      "Net-(J1-Pin_1)": [
+        "HV"
+      ],
+      "Net-(J1-Pin_2)": [
+        "HVLC"
+      ],
+      "Net-(J1-Pin_3)": [
+        "HV"
+      ],
+      "Net-(Q1-G)": [
+        "MVI"
+      ],
+      "Net-(T1-AA)": [
+        "HVLC"
+      ],
+      "Net-(T1-AB)": [
+        "HVLC"
+      ],
+      "PWM": [
+        "MVI"
       ],
       "T+": [
         "HVLC"
@@ -512,14 +638,23 @@
         "HVLC"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "T-"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
+      "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Production",
+      "pos_files": "",
       "specctra_dsn": "",
+      "step": "",
+      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -533,13 +668,13 @@
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
-      "field_delimiter": ",",
+      "field_delimiter": ";",
       "keep_line_breaks": false,
       "keep_tabs": false,
-      "name": "CSV",
+      "name": "Semicolons",
       "ref_delimiter": ",",
       "ref_range_delimiter": "",
-      "string_delimiter": "\""
+      "string_delimiter": "'"
     },
     "bom_presets": [],
     "bom_settings": {
@@ -567,19 +702,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -591,15 +726,57 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Library",
+          "name": "Sim.Library",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Name",
+          "name": "Sim.Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Params",
+          "name": "Sim.Params",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "${EXCLUDE_FROM_BOM}"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -630,15 +807,23 @@
     "meta": {
       "version": 1
     },
+    "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
+    "space_save_all_events": true,
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Inv_Spot_Pot - A.kicad_sch",
-        "name": "Inv_Spot_Pot - A",
+        "filename": "Inv_Spot_Pot.kicad_sch",
+        "name": "Inv_Spot_Pot",
         "uuid": "e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
       }
     ],
@@ -648,7 +833,7 @@
   "sheets": [
     [
       "e27abe51-96c0-4fdf-ba00-b5a281cd0e9c",
-      "Inv_Spot_Pot - A"
+      "Inv_Spot_Pot"
     ],
     [
       "e145c09c-6e3a-499a-ba55-638447bfd84b",

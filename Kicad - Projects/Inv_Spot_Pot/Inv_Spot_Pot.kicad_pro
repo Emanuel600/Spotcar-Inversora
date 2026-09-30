@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 1.0
         }
       },
       "diff_pair_dimensions": [
@@ -531,7 +531,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 2.5,
+        "clearance": 1.0,
         "name": "HV",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
@@ -827,7 +827,7 @@
         "uuid": "e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
       }
     ],
-    "used_designators": "T4,U3",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
