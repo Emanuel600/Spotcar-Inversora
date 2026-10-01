@@ -13,51 +13,49 @@
 #include "HD44780.h"
 
 static Button_State button_state;
-static Menu_State menu_state = TOP_SELECT_MENU;
+static Menu_State menu_state = SELECT_MENU;
 static Operation_Mode op_mode = OP_NONE;
 static pin_s Trigger;
 
 static uint32_t current;
 static uint32_t update_flag = 1;
-static uint32_t menu_scroll = 0; // 0 for TOP, 1 for BOTTOM
 
 static volatile uint32_t* timer_ptr;
 
-static uint8_t Selected_Pulse_Lenght[5] = {
+static const uint32_t lines[4] = {LINE_1, LINE_2, LINE_3, LINE_4};
+
+static uint8_t Selector = 0;
+
+static uint8_t Selected_Pulse_Lenght[2] = {
+		[OP_ESTRELA] = 0,
+		[OP_ARRUELA] = 0
+};
+
+static uint8_t Selected_Current[3] = {
 		[OP_ESTRELA] = 0,
 		[OP_ARRUELA] = 0,
-		[OP_COBRE]   = 0,
-		[OP_CARVAO]  = 0
+		[OP_AQUECIMENTO] = 0
 };
 
 static const char* Current_to_String[] = {
 	  // 30%,   40%,   50%,   60%,   70%,   80%,   90%,   100%
 	  // 150,   165,   180,   195,   210,   225,   240,   255,   270,   285,   300
-        "030", "040", "050", "060", "070", "080", "090", "100", "110", "120", "130"
+        "030", "040", "050", "060", "070", "080", "090", "100"
     };
 
-static const char* Pulse_to_String[][5] = {
-		[OP_ESTRELA] = {"080", "120", "160", "200", "240"},
-		[OP_ARRUELA] = {"300", "350", "375", "400", "450"},
-		[OP_COBRE]   = {"400", "420", "440", "460", "480"},
-		[OP_CARVAO]  = {"420", "440", "460", "480", "500"}
-    };
+static const char* Pulse_to_String[5] = {"Minimo", "Curto ", "Medio ", "Longo ", "Maximo"};
 
 static const char* Operation_Modes[] = {
-		[OP_NONE]    = "",
-		[OP_ESTRELA] = "Estrela",
-		[OP_ARRUELA] = "Arruela",
-		[OP_COBRE]   = "Cobre",
-		[OP_CARVAO]  = "Carvao",
-		[OP_PARAFIX] = "Parafix"
+		[OP_NONE]        = "",
+		[OP_ESTRELA]     = "Estrela",
+		[OP_ARRUELA] 	 = "Arruela",
+		[OP_AQUECIMENTO] = "Aquecimento",
+		[OP_PARAFIX]     = "Parafix"
 };
 
 static const uint32_t Operation_Times[][5] = {
-		[OP_NONE]    = {0, 0, 0, 0, 0},
 		[OP_ESTRELA] = {80, 120, 160, 200, 240},
-		[OP_ARRUELA] = {300, 350, 375, 400, 450},
-		[OP_COBRE]   = {400, 420, 440, 460, 480},
-		[OP_CARVAO]  = {420, 440, 460, 480, 500}
+		[OP_ARRUELA] = {300, 350, 375, 400, 450}
 };
 
 void Read_Button_State(uint32_t ADC_reading){
@@ -77,30 +75,46 @@ void Read_Button_State(uint32_t ADC_reading){
 
 void Menu_Logic_Handler(){
 	switch (menu_state){
-	case TOP_SELECT_MENU:
+	case SELECT_MENU:
 		current = 0;
 		switch (button_state){
 		case BUTTON_1:
-			op_mode = OP_ESTRELA;
-			menu_state = CURRENT_MENU;
-			*timer_ptr = Operation_Times[OP_ESTRELA][0];
 			update_flag = 1;
+			switch (Selector){
+			case 0:
+				op_mode = OP_ESTRELA;
+				menu_state = CURRENT_MENU;
+				*timer_ptr = Operation_Times[OP_ESTRELA][0];
+				break;
+			case 1:
+				op_mode = OP_ARRUELA;
+				menu_state = CURRENT_MENU;
+				*timer_ptr = Operation_Times[OP_ARRUELA][0];
+				break;
+			case 2:
+				op_mode = OP_AQUECIMENTO;
+				menu_state = CURRENT_MENU;
+				*timer_ptr = Operation_Times[OP_AQUECIMENTO][0];
+				break;
+			case 3:
+				op_mode = OP_PARAFIX;
+				menu_state = PARAFIX_MENU;
+				break;
+			default:
+				break;
+			}
 			break;
 		case BUTTON_2:
-			op_mode = OP_ARRUELA;
-			menu_state = CURRENT_MENU;
-			*timer_ptr = Operation_Times[OP_ARRUELA][0];
+			Move_Selector(0);
 			update_flag = 1;
 			break;
 		case BUTTON_3:
-			op_mode = OP_COBRE;
-			menu_state = CURRENT_MENU;
-			*timer_ptr = Operation_Times[OP_COBRE][0];
+			Move_Selector(1);
 			update_flag = 1;
 			break;
 		case BUTTON_4:
-			menu_scroll = 1;
-			menu_state = BOTTOM_SELECT_MENU;
+			menu_state  = SELECT_MENU;
+			Selector    = 0;
 			update_flag = 1;
 			break;
 		default:
@@ -108,36 +122,10 @@ void Menu_Logic_Handler(){
 			break;
 			}
 		break;
-	case BOTTOM_SELECT_MENU:
-		current = 0;
-		switch (button_state){
-		case BUTTON_1:
-			menu_scroll = 0;
-			menu_state = TOP_SELECT_MENU;
-			update_flag = 1;
-			break;
-		case BUTTON_2:
-			op_mode = OP_CARVAO;
-			menu_state = CURRENT_MENU;
-			*timer_ptr = Operation_Times[OP_CARVAO][0];
-			update_flag = 1;
-			break;
-		case BUTTON_3:
-			op_mode = OP_PARAFIX;
-			menu_state = PARAFIX_MENU;
-			update_flag = 1;
-			break;
-		case BUTTON_4:
-			//
-		default:
-			update_flag = 0;
-			break;
-		}
-		break;
 	case CURRENT_MENU:
 		switch (button_state){
 		case BUTTON_1:
-			if ((op_mode == OP_COBRE) | (op_mode == OP_CARVAO)){
+			if (op_mode == OP_AQUECIMENTO){
 				update_flag = 0;
 			} else{
 				menu_state = ADJUST_T_MENU;
@@ -155,7 +143,7 @@ void Menu_Logic_Handler(){
 			update_flag = 1;
 			break;
 		case BUTTON_4:
-			menu_state = TOP_SELECT_MENU;
+			menu_state = SELECT_MENU;
 			update_flag = 1;
 			break;
 		default:
@@ -166,8 +154,12 @@ void Menu_Logic_Handler(){
 		case ADJUST_I_MENU:
 				switch (button_state){
 				case BUTTON_1:
-					menu_state = ADJUST_T_MENU;
-					update_flag = 1;
+					if (op_mode == OP_AQUECIMENTO){
+						update_flag = 0;
+					} else{
+						menu_state = ADJUST_T_MENU;
+						update_flag = 1;
+					}
 					break;
 				case BUTTON_2:
 					Increase_Current();
@@ -178,7 +170,7 @@ void Menu_Logic_Handler(){
 					update_flag = 1;
 					break;
 				case BUTTON_4:
-					menu_state = TOP_SELECT_MENU;
+					menu_state = SELECT_MENU;
 					update_flag = 1;
 					break;
 				default:
@@ -202,7 +194,7 @@ void Menu_Logic_Handler(){
 					update_flag = 1;
 					break;
 				case BUTTON_4:
-					menu_state = TOP_SELECT_MENU;
+					menu_state = SELECT_MENU;
 					update_flag = 1;
 					break;
 				default:
@@ -215,7 +207,7 @@ void Menu_Logic_Handler(){
 		case PARAFIX_MENU:
 			switch(button_state){
 			case BUTTON_4:
-				menu_state   = TOP_SELECT_MENU;
+				menu_state   = SELECT_MENU;
 				update_flag  = 1;
 				break;
 			default:
@@ -229,20 +221,21 @@ void Menu_Logic_Handler(){
 void Menu_Update_Display(){
 	if (update_flag){
 		switch (menu_state){
-		case TOP_SELECT_MENU:
-			HD_Write_4_Lines("Estrela", "Arruela", "Ponteira de Cobre", "\x01");
-			break;
-		case BOTTOM_SELECT_MENU:
-			HD_Write_4_Lines("\x02", "Carvao", "Parafix", "");
+		case SELECT_MENU:
+			HD_Write_4_Lines("  Estrela", "  Arruela", "  Aquecimento", "  Parafix");
+			HD_Set_Cursor(lines[Selector]);
+			HD_Write("\x7E");
 			break;
 		case CURRENT_MENU:
-			if((op_mode == OP_COBRE) | (op_mode == OP_CARVAO)){
-				HD_Write_4_Lines(Operation_Modes[op_mode], "\x7E P = 030 \%       +", "", "Cancelar");
+			if(op_mode == OP_AQUECIMENTO){
+				HD_Write_4_Lines(Operation_Modes[op_mode], "\x7E P = 030 \%       +", "                  -", "Cancelar");
 			} else{
-				HD_Write_4_Lines(Operation_Modes[op_mode], "\x7E P = 030 \%       +", "  t = 075 ms      -", "Cancelar");
+				HD_Write_4_Lines(Operation_Modes[op_mode], "\x7E P = 030 \%       +", "  t -             -", "Cancelar");
 				HD_Set_Cursor(LINE_3 + 6);
-				HD_Write(Pulse_to_String[op_mode][Selected_Pulse_Lenght[op_mode]]);
+				HD_Write(Pulse_to_String[Selected_Pulse_Lenght[op_mode]]);
 			}
+			HD_Set_Cursor(LINE_2 + 6);
+			HD_Write(Current_to_String[Selected_Current[op_mode]]);
 			break;
 		case ADJUST_I_MENU:
 			HD_Set_Cursor(LINE_2);
@@ -258,7 +251,7 @@ void Menu_Update_Display(){
 			HD_Set_Cursor(LINE_2);
 			HD_Write(" ");
 			HD_Set_Cursor(LINE_3 + 6);
-			HD_Write(Pulse_to_String[op_mode][Selected_Pulse_Lenght[op_mode]]);
+			HD_Write(Pulse_to_String[Selected_Pulse_Lenght[op_mode]]);
 			break;
 		case PARAFIX_MENU:
 			HD_Write_4_Lines(Operation_Modes[op_mode], "", "", "Cancelar");
@@ -300,12 +293,15 @@ inline void Increase_Current(){
 	if(current < 7){
 		current ++;
 	}
+	Selected_Current[op_mode] = current;
+
 }
 
 inline void Decrease_Current(){
 	if(current > 0){
 		current --;
 	}
+	Selected_Current[op_mode] = current;
 }
 
 inline uint32_t Get_Target_Current(){
@@ -322,9 +318,26 @@ inline uint32_t Current_Get_Compare(){
 	}
 }
 
+inline void Move_Selector(uint32_t up){
+	if (up > 0){
+		if (Selector < 3){
+			Selector++;
+		}
+	} else{
+		if (Selector != 0){
+			Selector--;
+		}
+	}
+	return;
+}
+
+inline void Write_Selector(){
+	HD_Set_Cursor(lines[Selector]);
+	HD_Write("\x7E");
+}
 
 inline uint32_t Is_Trigger_Ready(){
-	return ((!((menu_state == TOP_SELECT_MENU) | (menu_state == BOTTOM_SELECT_MENU))) & (HAL_GPIO_ReadPin(Trigger.port, Trigger.pin) == GPIO_PIN_RESET));
+	return ((!(menu_state == SELECT_MENU)) & (HAL_GPIO_ReadPin(Trigger.port, Trigger.pin) == GPIO_PIN_RESET));
 }
 
 void Hold_Until_Trigger_Release(){

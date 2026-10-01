@@ -27,8 +27,7 @@ typedef enum Button_State {
 } Button_State;
 
 typedef enum Menu_State {
-	TOP_SELECT_MENU,
-	BOTTOM_SELECT_MENU,
+	SELECT_MENU,
 	CURRENT_MENU,
 	ADJUST_I_MENU,
 	ADJUST_T_MENU,
@@ -36,12 +35,11 @@ typedef enum Menu_State {
 } Menu_State;
 
 typedef enum Operation_Mode {
-	OP_NONE,		// Menu
 	OP_ESTRELA,
 	OP_ARRUELA,
-	OP_COBRE,
-	OP_CARVAO,
-	OP_PARAFIX
+	OP_AQUECIMENTO,
+	OP_PARAFIX,
+	OP_NONE 		// Menu
 } Operation_Mode;
 
 void Set_Trigger_Pin(uint16_t pin, GPIO_TypeDef* port);
@@ -62,13 +60,15 @@ void Hold_Until_Trigger_Release();
 
 void Create_Custom_Chars();
 
+void Move_Selector(uint32_t up);
+
+void Write_Selector();
+
 uint32_t Get_Target_Current();
 
 uint32_t Get_Target_Time();
 
 uint32_t Current_Get_Compare();
-
-uint32_t Test_Trigger_Time(uint32_t time);
 
 uint32_t Is_Trigger_Ready();
 

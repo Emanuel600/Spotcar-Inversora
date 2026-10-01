@@ -175,7 +175,7 @@ int main(void)
 
 		  SET_DUTY_CYCLE(Pulse);
 
-		  if((op_mode == OP_COBRE) | (op_mode == OP_CARVAO) | (op_mode == OP_PARAFIX)){
+		  if((op_mode == OP_AQUECIMENTO) | (op_mode == OP_PARAFIX)){
 			  Hold_Until_Trigger_Release();
 		  } else{
 			  HAL_Delay(trigger_time);
