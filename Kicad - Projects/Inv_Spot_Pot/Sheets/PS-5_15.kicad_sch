@@ -255,7 +255,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Custom_Transformer:EE25V-8T"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -697,7 +697,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -715,7 +715,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -733,7 +733,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -751,7 +751,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -769,7 +769,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -787,7 +787,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2364,13 +2364,13 @@
 		(uuid "406f718e-fdeb-43a6-b31c-8063f0acc1bd")
 	)
 	(junction
-		(at 246.38 104.14)
+		(at 209.55 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5be67c9b-9662-40d9-af0c-df250b2cb69a")
 	)
 	(junction
-		(at 238.76 104.14)
+		(at 201.93 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69046017-d27d-4337-9d14-6703fea486cb")
@@ -2478,7 +2478,7 @@
 		(uuid "e12f3828-50b1-4ea3-9898-6a3c8486f186")
 	)
 	(junction
-		(at 238.76 115.57)
+		(at 201.93 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f906221a-91e3-4b6e-9696-33fbfe55068e")
@@ -2593,7 +2593,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 104.14) (xy 228.6 104.14)
+			(xy 189.23 130.81) (xy 191.77 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2643,7 +2643,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 104.14) (xy 238.76 105.41)
+			(xy 201.93 130.81) (xy 201.93 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2653,7 +2653,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 113.03) (xy 246.38 115.57)
+			(xy 209.55 139.7) (xy 209.55 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2873,7 +2873,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 104.14) (xy 246.38 104.14)
+			(xy 201.93 130.81) (xy 209.55 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2883,7 +2883,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 104.14) (xy 238.76 104.14)
+			(xy 199.39 130.81) (xy 201.93 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3033,7 +3033,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 115.57) (xy 238.76 115.57)
+			(xy 189.23 142.24) (xy 201.93 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3093,7 +3093,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 115.57) (xy 238.76 113.03)
+			(xy 201.93 142.24) (xy 201.93 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3243,7 +3243,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 104.14) (xy 250.19 104.14)
+			(xy 209.55 130.81) (xy 213.36 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3423,7 +3423,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 104.14) (xy 246.38 105.41)
+			(xy 209.55 130.81) (xy 209.55 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3663,7 +3663,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 115.57) (xy 238.76 115.57)
+			(xy 209.55 142.24) (xy 201.93 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3783,7 +3783,7 @@
 	)
 	(hierarchical_label "GND_{24V}"
 		(shape input)
-		(at 226.06 115.57 180)
+		(at 189.23 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3827,7 +3827,7 @@
 	)
 	(hierarchical_label "24V"
 		(shape input)
-		(at 226.06 104.14 180)
+		(at 189.23 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3937,7 +3937,7 @@
 	)
 	(hierarchical_label "24V-Cooler"
 		(shape input)
-		(at 250.19 104.14 0)
+		(at 213.36 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4433,9 +4433,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "2k2"
 			(at 109.22 60.9599 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5121,7 +5120,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 238.76 109.22 0)
+		(at 201.93 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5131,7 +5130,7 @@
 		(dnp no)
 		(uuid "7377741d-e53c-411c-b673-bd5556a2976d")
 		(property "Reference" "C14"
-			(at 236.982 107.188 0)
+			(at 200.152 133.858 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5142,7 +5141,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 237.236 111.506 0)
+			(at 200.406 138.176 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5153,7 +5152,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 239.7252 113.03 0)
+			(at 202.8952 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5164,7 +5163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 109.22 0)
+			(at 201.93 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5175,7 +5174,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 238.76 109.22 0)
+			(at 201.93 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5235,7 +5234,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P10.00mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P7.50mm"
 			(at 193.3448 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -5397,7 +5396,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Transformer_THT:Transformer_Breve_TEZ-28x33"
+		(property "Footprint" "Custom_Transformer:EE25V-8T"
 			(at 133.35 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5451,7 +5450,7 @@
 		(pin "6"
 			(uuid "458cf802-c104-4729-a7d7-cc92433c5ff7")
 		)
-		(pin "9"
+		(pin "3"
 			(uuid "b01a5f4c-e10a-44d3-9fe6-cc227138bc2f")
 		)
 		(instances
@@ -5486,7 +5485,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "2k2"
 			(at 162.56 128.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6003,7 +6002,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 246.38 109.22 0)
+		(at 209.55 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6014,7 +6013,7 @@
 		(fields_autoplaced yes)
 		(uuid "d818b053-6f20-4313-961d-4b5dec5d18a1")
 		(property "Reference" "C25"
-			(at 250.19 107.9499 0)
+			(at 213.36 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6025,7 +6024,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 250.19 110.4899 0)
+			(at 213.36 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6036,7 +6035,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 247.3452 113.03 0)
+			(at 210.5152 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6047,7 +6046,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 109.22 0)
+			(at 209.55 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6058,7 +6057,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 246.38 109.22 0)
+			(at 209.55 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6167,7 +6166,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 232.41 104.14 0)
+		(at 195.58 130.81 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6179,7 +6178,7 @@
 		(fields_autoplaced yes)
 		(uuid "df535ebc-b059-4f0f-aafd-03417b6258ce")
 		(property "Reference" "D25"
-			(at 232.41 97.79 0)
+			(at 195.58 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6189,7 +6188,7 @@
 			)
 		)
 		(property "Value" "M7"
-			(at 232.41 100.33 0)
+			(at 195.58 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6199,7 +6198,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 232.41 104.14 0)
+			(at 195.58 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6210,7 +6209,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 104.14 0)
+			(at 195.58 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6221,7 +6220,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 232.41 104.14 0)
+			(at 195.58 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6232,7 +6231,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 232.41 104.14 0)
+			(at 195.58 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6243,7 +6242,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 232.41 104.14 0)
+			(at 195.58 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

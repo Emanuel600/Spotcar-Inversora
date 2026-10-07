@@ -116,8 +116,6 @@ int main(void)
 		  "   (48) 3341-8600   ");
   HAL_Delay(2000);
 
-  Create_Custom_Chars();
-
   uint32_t last_updated = HAL_GetTick();
   uint32_t last_trigger_check = HAL_GetTick();
   uint32_t Pulse = 0;
@@ -133,6 +131,21 @@ int main(void)
 
   while (1)
   {
+	  /*
+	  while(!(HAL_GPIO_ReadPin(Thermal_GPIO_Port, Thermal_Pin))){
+		  HD_Write_4_Lines("  PROTECAO TERMICA", "      ATIVADA", "", "   RESFRIANDO   ");
+		  HAL_Delay(500);
+		  HD_Set_Cursor(LINE_4 + 13);
+		  HD_Write(".");
+		  HAL_Delay(500);
+		  HD_Write(".");
+		  HAL_Delay(500);
+		  HD_Write(".");
+		  HAL_Delay(500);
+		  HD_Set_Cursor(LINE_4 + 13);
+		  HD_Write("   ");
+	  }
+*/
 	  if ((HAL_GetTick() - last_updated) > 200){
 		  Read_Button_State(ADC_Readouts[1]);
 		  Menu_Logic_Handler();

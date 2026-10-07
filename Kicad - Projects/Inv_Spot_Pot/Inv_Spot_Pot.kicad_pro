@@ -531,7 +531,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 1.0,
+        "clearance": 2.5,
         "name": "HV",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
@@ -542,7 +542,7 @@
         "via_drill": 0.8
       },
       {
-        "clearance": 1.0,
+        "clearance": 2.5,
         "name": "HVLC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
@@ -564,7 +564,7 @@
         "via_drill": 0.8
       },
       {
-        "clearance": 1.5,
+        "clearance": 2.0,
         "name": "MVLC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
@@ -827,7 +827,7 @@
         "uuid": "e27abe51-96c0-4fdf-ba00-b5a281cd0e9c"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J6,H5-11",
     "variants": []
   },
   "sheets": [

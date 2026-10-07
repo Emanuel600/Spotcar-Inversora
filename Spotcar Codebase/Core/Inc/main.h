@@ -60,8 +60,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define Current_Sense_Pin GPIO_PIN_0
-#define Current_Sense_GPIO_Port GPIOA
+#define Thermal_Pin GPIO_PIN_1
+#define Thermal_GPIO_Port GPIOF
 #define Display_ADC_Pin GPIO_PIN_1
 #define Display_ADC_GPIO_Port GPIOA
 #define Trigger_Pin GPIO_PIN_2
