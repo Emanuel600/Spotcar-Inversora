@@ -15064,7 +15064,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P7.50mm"
+		(property "Footprint" "Custom_Capacitors:C_Disc_D7.0mm_W2.5mm_P7.50mm"
 			(at 275.8948 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -16047,7 +16047,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P7.50mm"
+		(property "Footprint" "Custom_Capacitors:C_Disc_D7.0mm_W2.5mm_P7.50mm"
 			(at 127.9652 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -16446,7 +16446,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P7.50mm"
+		(property "Footprint" "Custom_Capacitors:C_Disc_D7.0mm_W2.5mm_P7.50mm"
 			(at 127.9652 36.83 0)
 			(hide yes)
 			(show_name no)

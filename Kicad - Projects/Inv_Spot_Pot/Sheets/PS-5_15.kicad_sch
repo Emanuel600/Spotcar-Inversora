@@ -2328,6 +2328,12 @@
 		(uuid "2610149f-2624-4b30-89a0-6314c08f80c1")
 	)
 	(junction
+		(at 115.57 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26f73be0-2476-42fd-a8c6-57dc088494ad")
+	)
+	(junction
 		(at 69.85 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2530,6 +2536,16 @@
 			(type default)
 		)
 		(uuid "0ea7875f-53c1-490e-8521-bc79163815d2")
+	)
+	(wire
+		(pts
+			(xy 115.57 40.64) (xy 115.57 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f9ddaa2-f143-46a1-912b-da8454b751b1")
 	)
 	(wire
 		(pts
@@ -4003,6 +4019,41 @@
 			)
 		)
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 115.57 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c76662d-795d-49fd-8d7e-f3e04da8669a")
+		(property "Classes da rede" "HVLC"
+			(at 116.2685 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -31.75 -27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 92.71 97.79 0)
@@ -4693,7 +4744,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BZV55B15"
+		(property "Value" "BZV55B12"
 			(at 154.94 116.8399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5234,7 +5285,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P7.50mm"
+		(property "Footprint" "Custom_Capacitors:C_Disc_D7.0mm_W2.5mm_P7.50mm"
 			(at 193.3448 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -6454,7 +6505,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "510"
+		(property "Value" "2k7"
 			(at 160.02 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
