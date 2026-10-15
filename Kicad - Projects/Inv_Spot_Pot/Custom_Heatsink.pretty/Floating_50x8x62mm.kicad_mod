@@ -1,0 +1,134 @@
+(footprint "Floating_50x8x62mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f94f5c43-fd36-4b08-ad24-ba9c8367e210")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Floating_50x8x62mm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2eb48e59-0579-4afd-a178-51e86fcef14c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f375eb08-4cfc-4f86-bbac-7506eda01166")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2fc3b113-7453-44a4-a6fc-85b7a31a3b3b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -25 17.575)
+		(end 25 25.575)
+		(stroke
+			(width 0.098627)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "84bc7c05-bb34-4591-834d-bb4e4a99f87c")
+	)
+	(fp_rect
+		(start -25 5.075)
+		(end 25 38.075)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill hatch)
+		(layer "Eco1.User")
+		(uuid "1b43bda7-70bd-4561-a9a3-7f634581e6e3")
+	)
+	(fp_line
+		(start -13.5 17.625)
+		(end -13.5 25.6)
+		(stroke
+			(width 0.2)
+			(type dot)
+		)
+		(layer "Eco2.User")
+		(uuid "6952eaeb-1b3b-4b05-a9cb-7ccb517ab389")
+	)
+	(fp_line
+		(start 0 17.625)
+		(end 0 26.075)
+		(stroke
+			(width 0.2)
+			(type dot)
+		)
+		(layer "Eco2.User")
+		(uuid "3b72dcb3-5d8a-41b8-aa07-0f3f327e2588")
+	)
+	(fp_line
+		(start 13.5 17.6)
+		(end 13.5 25.65)
+		(stroke
+			(width 0.2)
+			(type dot)
+		)
+		(layer "Eco2.User")
+		(uuid "c721bad5-2290-4650-bfc0-22ee5f52374e")
+	)
+	(fp_rect
+		(start -25.15 17.575)
+		(end 25.2 25.575)
+		(stroke
+			(width 0.098627)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6f4cae5d-29fd-4423-a3a5-f117481492ce")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "11b834a9-548b-4e13-8ce2-3f530eee8023")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

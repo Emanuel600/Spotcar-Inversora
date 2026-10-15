@@ -1,0 +1,155 @@
+(footprint "Floating_69x33x62mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1571b7ae-4d42-4f6f-925c-08c43dac635e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Floating_69x33x62mm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bc036899-2b7b-49eb-91c6-72d63f3f94b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc99fcf6-5ac5-434e-a4e0-9b7360c22088")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ff443711-20e7-4e58-b144-d2a7dce3b401")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -34.5 17)
+		(end 34.5 25)
+		(stroke
+			(width 0.098627)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "6b84762a-2482-4016-9042-aacc91593815")
+	)
+	(fp_rect
+		(start -34.5 4.5)
+		(end 34.5 37.5)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill hatch)
+		(layer "Eco1.User")
+		(uuid "016c7a24-3ad6-41ec-8910-2bc50547434c")
+	)
+	(fp_line
+		(start -25.05 17)
+		(end -25.05 25)
+		(stroke
+			(width 0.2)
+			(type dot)
+		)
+		(layer "Eco2.User")
+		(uuid "748a3cf6-1b1f-4537-86c6-2844ffcaa3d7")
+	)
+	(fp_line
+		(start -8.35 17)
+		(end -8.35 25)
+		(stroke
+			(width 0.2)
+			(type dot)
+		)
+		(layer "Eco2.User")
+		(uuid "28d563e4-46c6-4d10-a72e-5271244ba97c")
+	)
+	(fp_line
+		(start 8.4 17)
+		(end 8.4 25)
+		(stroke
+			(width 0.2)
+			(type dot)
+		)
+		(layer "Eco2.User")
+		(uuid "686fb4f2-0c4a-4095-bad5-8eff8210ce33")
+	)
+	(fp_line
+		(start 25.05 17)
+		(end 25.05 25)
+		(stroke
+			(width 0.2)
+			(type dot)
+		)
+		(layer "Eco2.User")
+		(uuid "bcc19e4b-1e42-4c2f-a8e9-bc21d75fbd4a")
+	)
+	(fp_rect
+		(start -34.65 17)
+		(end 34.85 25)
+		(stroke
+			(width 0.098627)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b2364438-163b-471f-b9db-d7d55b481ec4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5bacdeb5-326c-4cb3-9ceb-376ca99b7112")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "C:/Users/emanuel.staub/Documents/Spotcar Inversora/Custom-3D_Models/Dissipador.STEP"
+		(offset
+			(xyz 34 -21 8.5)
+		)
+		(scale
+			(xyz 1.05 1 0.9)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

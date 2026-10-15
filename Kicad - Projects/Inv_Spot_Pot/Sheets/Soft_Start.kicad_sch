@@ -1826,7 +1826,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2378e8bc-20ec-4d31-b438-4108ad7d4adf")
-		(property "Reference" "D21"
+		(property "Reference" "D24"
 			(at 114.046 50.546 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1846,7 +1846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D1.8mm_W3.3mm_H2.4mm"
+		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
 			(at 114.3 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -1899,7 +1899,7 @@
 		(instances
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
-					(reference "D21")
+					(reference "D24")
 					(unit 1)
 				)
 			)
@@ -1917,7 +1917,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "602e5a5f-3d9d-4952-806b-d64afc5e9f61")
-		(property "Reference" "D19"
+		(property "Reference" "D22"
 			(at 132.588 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1928,7 +1928,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "M7"
 			(at 129.5401 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -2004,7 +2004,7 @@
 		(instances
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
-					(reference "D19")
+					(reference "D22")
 					(unit 1)
 				)
 			)
@@ -2101,7 +2101,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "acdf92f8-2e3d-4c0e-8f42-46cf10aa8648")
-		(property "Reference" "D20"
+		(property "Reference" "D23"
 			(at 123.698 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2112,7 +2112,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "M7"
 			(at 120.6501 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -2188,7 +2188,7 @@
 		(instances
 			(project "Inv_Spot_Pot"
 				(path "/e27abe51-96c0-4fdf-ba00-b5a281cd0e9c/e145c09c-6e3a-499a-ba55-638447bfd84b"
-					(reference "D20")
+					(reference "D23")
 					(unit 1)
 				)
 			)
