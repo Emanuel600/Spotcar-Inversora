@@ -7090,7 +7090,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 183.8452 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -10573,25 +10573,23 @@
 		(fields_autoplaced yes)
 		(uuid "841f7bcc-102f-4cd0-91aa-bf6bf6c6f14f")
 		(property "Reference" "C1"
-			(at 225.5138 118.11 0)
+			(at 226.7839 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "33u"
-			(at 228.0538 118.11 0)
+		(property "Value" "100u"
+			(at 226.7839 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
@@ -10664,7 +10662,7 @@
 				)
 			)
 		)
-		(property "Value" "1k5"
+		(property "Value" "2k2"
 			(at 261.62 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11227,7 +11225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 232.7148 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13000,7 +12998,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 209.2452 152.4 0)
 			(hide yes)
 			(show_name no)

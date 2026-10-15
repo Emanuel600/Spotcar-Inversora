@@ -4795,16 +4795,16 @@
 		(uuid "bf9715d2-8369-4e83-a081-7b13f10e4573")
 	)
 	(junction
-		(at 106.68 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c6fdc314-53f7-4ca1-bb72-8fb6da561a3a")
-	)
-	(junction
 		(at 276.86 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c98ad0a3-b3c5-4af6-8680-52a70daff9de")
+	)
+	(junction
+		(at 106.68 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca76249b-ac13-467d-9e5b-4349da3e7292")
 	)
 	(junction
 		(at 247.65 113.03)
@@ -5310,16 +5310,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 26.67) (xy 116.84 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c7c5890-7509-4745-a3e6-47d2ef919e37")
-	)
-	(wire
-		(pts
 			(xy 127 26.67) (xy 127 27.94)
 		)
 		(stroke
@@ -5407,16 +5397,6 @@
 			(type default)
 		)
 		(uuid "1f7ec67e-0d83-4e73-b087-a89884cbf19f")
-	)
-	(wire
-		(pts
-			(xy 106.68 33.02) (xy 109.22 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "211f86b5-cd7c-4c5d-b3a9-72283e4da72e")
 	)
 	(wire
 		(pts
@@ -5600,7 +5580,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 24.13) (xy 106.68 24.13)
+			(xy 106.68 24.13) (xy 116.84 24.13)
 		)
 		(stroke
 			(width 0)
@@ -5767,16 +5747,6 @@
 			(type default)
 		)
 		(uuid "3e3cdfe4-2d3a-4a91-8d33-23a2c92b9314")
-	)
-	(wire
-		(pts
-			(xy 109.22 31.75) (xy 116.84 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e853141-fe60-4a0c-b1ec-7d3638771b64")
 	)
 	(wire
 		(pts
@@ -6560,6 +6530,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 34.29) (xy 116.84 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81f5ce3b-85ff-4c13-a146-2a32bc3af6d0")
+	)
+	(wire
+		(pts
 			(xy 87.63 123.19) (xy 87.63 124.46)
 		)
 		(stroke
@@ -7310,7 +7290,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 26.67) (xy 116.84 17.78)
+			(xy 116.84 24.13) (xy 116.84 17.78)
 		)
 		(stroke
 			(width 0)
@@ -7467,16 +7447,6 @@
 			(type default)
 		)
 		(uuid "c69a7f0a-a187-4c92-adc1-f60f17800200")
-	)
-	(wire
-		(pts
-			(xy 109.22 26.67) (xy 109.22 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6decca1-cc36-45b6-b867-49ae570ca7ae")
 	)
 	(wire
 		(pts
@@ -7637,16 +7607,6 @@
 			(type default)
 		)
 		(uuid "ceb1502e-f292-4aa2-b24f-9c57019615e3")
-	)
-	(wire
-		(pts
-			(xy 109.22 31.75) (xy 109.22 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0629193-efda-485b-ad2f-468ec5f7ba5d")
 	)
 	(wire
 		(pts
@@ -8100,7 +8060,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 38.1) (xy 116.84 31.75)
+			(xy 116.84 38.1) (xy 116.84 34.29)
 		)
 		(stroke
 			(width 0)
@@ -9354,7 +9314,7 @@
 				)
 			)
 		)
-		(property "Value" "15"
+		(property "Value" "20"
 			(at 156.21 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11087,6 +11047,17 @@
 				)
 			)
 		)
+		(property "Partnumber" "CK45-B3AD102KYNNA"
+			(at 33.02 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8a84c04f-ecf4-4424-b11a-d1b228b63802")
 		)
@@ -11924,7 +11895,7 @@
 				)
 			)
 		)
-		(property "Value" "15"
+		(property "Value" "20"
 			(at 199.39 163.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12170,7 +12141,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-128"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 208.28 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -12436,6 +12407,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 30.48 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "CK45-B3AD102KYNNA"
+			(at 30.48 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13158,6 +13140,17 @@
 				)
 			)
 		)
+		(property "Partnumber" "CK45-B3AD102KYNNA"
+			(at 92.71 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "35c85b07-44d8-4a2f-bc93-e2db24172d8e")
 		)
@@ -13531,7 +13524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 208.28 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -14501,7 +14494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 165.1 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -14605,6 +14598,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 99.06 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Partnumber" "CK45-B3AD102KYNNA"
+			(at 99.06 119.38 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16285,7 +16289,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 165.1 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -16775,7 +16779,7 @@
 				)
 			)
 		)
-		(property "Value" "15"
+		(property "Value" "20"
 			(at 199.39 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16855,7 +16859,7 @@
 				)
 			)
 		)
-		(property "Value" "15"
+		(property "Value" "20"
 			(at 156.21 163.83 90)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1928,7 +1928,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "M7"
 			(at 129.5401 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -2112,7 +2112,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "M7"
 			(at 120.6501 60.96 90)
 			(hide yes)
 			(show_name no)
