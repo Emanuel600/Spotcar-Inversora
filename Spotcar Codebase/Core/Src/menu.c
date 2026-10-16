@@ -19,6 +19,7 @@ static pin_s Trigger;
 
 static uint32_t current;
 static uint32_t update_flag = 1;
+static uint32_t small_update_flag = 0;
 
 static volatile uint32_t* timer_ptr;
 
@@ -106,16 +107,11 @@ void Menu_Logic_Handler(){
 			break;
 		case BUTTON_2:
 			Move_Selector(0);
-			update_flag = 1;
+			small_update_flag = 1;
 			break;
 		case BUTTON_3:
 			Move_Selector(1);
-			update_flag = 1;
-			break;
-		case BUTTON_4:
-			menu_state  = SELECT_MENU;
-			Selector    = 0;
-			update_flag = 1;
+			small_update_flag = 1;
 			break;
 		default:
 			update_flag = 0;
@@ -219,12 +215,15 @@ void Menu_Logic_Handler(){
 }
 
 void Menu_Update_Display(){
-	if (update_flag){
+	if (update_flag | small_update_flag){
 		switch (menu_state){
 		case SELECT_MENU:
-			HD_Write_4_Lines("  Estrela", "  Arruela", "  Aquecimento", "  Parafix");
+			if (update_flag){
+				HD_Write_4_Lines("  Estrela", "  Arruela", "  Aquecimento", "  Parafix");
+			}
 			HD_Set_Cursor(lines[Selector]);
 			HD_Write("\x7E");
+			small_update_flag = 0;
 			break;
 		case CURRENT_MENU:
 			if(op_mode == OP_AQUECIMENTO){
@@ -334,6 +333,24 @@ inline void Move_Selector(uint32_t up){
 inline void Write_Selector(){
 	HD_Set_Cursor(lines[Selector]);
 	HD_Write("\x7E");
+	switch (Selector){
+	case 0:
+		HD_Set_Cursor(lines[1]);
+		HD_Write(" ");
+		break;
+	case 3:
+		HD_Set_Cursor(lines[2]);
+		HD_Write(" ");
+		break;
+	default:
+		if (Selector>3) return;
+		HD_Set_Cursor(lines[Selector+1]);
+		HD_Write(" ");
+		HD_Set_Cursor(lines[Selector-1]);
+		HD_Write(" ");
+		break;
+	}
+	return;
 }
 
 inline uint32_t Is_Trigger_Ready(){

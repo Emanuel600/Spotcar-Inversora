@@ -133,7 +133,7 @@ int main(void)
   {
 	  /*
 	  while(!(HAL_GPIO_ReadPin(Thermal_GPIO_Port, Thermal_Pin))){
-		  HD_Write_4_Lines("  PROTECAO TERMICA", "      ATIVADA", "", "   RESFRIANDO   ");
+		  HD_Write_4_Lines("  PROTECAO TERMICA", "      ATIVADA", "", "   RESFRIANDO");
 		  HAL_Delay(500);
 		  HD_Set_Cursor(LINE_4 + 13);
 		  HD_Write(".");
