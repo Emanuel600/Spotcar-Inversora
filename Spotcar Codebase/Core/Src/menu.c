@@ -17,7 +17,6 @@ static Menu_State menu_state = SELECT_MENU;
 static Operation_Mode op_mode = OP_NONE;
 static pin_s Trigger;
 
-static uint32_t current;
 static uint32_t update_flag = 1;
 static uint32_t small_update_flag = 0;
 
@@ -46,7 +45,7 @@ static const char* Current_to_String[] = {
 
 static const char* Pulse_to_String[5] = {"Minimo", "Curto ", "Medio ", "Longo ", "Maximo"};
 
-static const char* Operation_Modes[] = {
+static const char* Op_Mode_to_String[] = {
 		[OP_NONE]        = "",
 		[OP_ESTRELA]     = "Estrela",
 		[OP_ARRUELA] 	 = "Arruela",
@@ -77,33 +76,16 @@ void Read_Button_State(uint32_t ADC_reading){
 void Menu_Logic_Handler(){
 	switch (menu_state){
 	case SELECT_MENU:
-		current = 0;
 		switch (button_state){
 		case BUTTON_1:
 			update_flag = 1;
-			switch (Selector){
-			case 0:
-				op_mode = OP_ESTRELA;
+			op_mode = Selector;
+			if (Selector < 3){
 				menu_state = CURRENT_MENU;
-				*timer_ptr = Operation_Times[OP_ESTRELA][0];
-				break;
-			case 1:
-				op_mode = OP_ARRUELA;
-				menu_state = CURRENT_MENU;
-				*timer_ptr = Operation_Times[OP_ARRUELA][0];
-				break;
-			case 2:
-				op_mode = OP_AQUECIMENTO;
-				menu_state = CURRENT_MENU;
-				*timer_ptr = Operation_Times[OP_AQUECIMENTO][0];
-				break;
-			case 3:
-				op_mode = OP_PARAFIX;
+			} else{
 				menu_state = PARAFIX_MENU;
-				break;
-			default:
-				break;
 			}
+			*timer_ptr = Operation_Times[Selector][0];
 			break;
 		case BUTTON_2:
 			Move_Selector(0);
@@ -221,15 +203,14 @@ void Menu_Update_Display(){
 			if (update_flag){
 				HD_Write_4_Lines("  Estrela", "  Arruela", "  Aquecimento", "  Parafix");
 			}
-			HD_Set_Cursor(lines[Selector]);
-			HD_Write("\x7E");
+			Write_Selector();
 			small_update_flag = 0;
 			break;
 		case CURRENT_MENU:
 			if(op_mode == OP_AQUECIMENTO){
-				HD_Write_4_Lines(Operation_Modes[op_mode], "\x7E P = 030 \%       +", "                  -", "Cancelar");
+				HD_Write_4_Lines(Op_Mode_to_String[op_mode], "\x7E P = 030 \%       +", "                  -", "Cancelar");
 			} else{
-				HD_Write_4_Lines(Operation_Modes[op_mode], "\x7E P = 030 \%       +", "  t -             -", "Cancelar");
+				HD_Write_4_Lines(Op_Mode_to_String[op_mode], "\x7E P = 030 \%       +", "  t -             -", "Cancelar");
 				HD_Set_Cursor(LINE_3 + 6);
 				HD_Write(Pulse_to_String[Selected_Pulse_Lenght[op_mode]]);
 			}
@@ -242,7 +223,7 @@ void Menu_Update_Display(){
 			HD_Set_Cursor(LINE_3);
 			HD_Write(" ");
 			HD_Set_Cursor(LINE_2 + 6);
-			HD_Write(Current_to_String[current]);
+			HD_Write(Current_to_String[Selected_Current[op_mode]]);
 			break;
 		case ADJUST_T_MENU:
 			HD_Set_Cursor(LINE_3);
@@ -253,7 +234,7 @@ void Menu_Update_Display(){
 			HD_Write(Pulse_to_String[Selected_Pulse_Lenght[op_mode]]);
 			break;
 		case PARAFIX_MENU:
-			HD_Write_4_Lines(Operation_Modes[op_mode], "", "", "Cancelar");
+			HD_Write_4_Lines(Op_Mode_to_String[op_mode], "", "", "Cancelar");
 			break;
 		default:
 			break;
@@ -289,31 +270,28 @@ void Create_Custom_Chars(){
 }
 
 inline void Increase_Current(){
-	if(current < 7){
-		current ++;
+	if(Selected_Current[op_mode] < 7){
+		Selected_Current[op_mode] ++;
 	}
-	Selected_Current[op_mode] = current;
-
 }
 
 inline void Decrease_Current(){
-	if(current > 0){
-		current --;
+	if(Selected_Current[op_mode] > 0){
+		Selected_Current[op_mode] --;
 	}
-	Selected_Current[op_mode] = current;
 }
 
 inline uint32_t Get_Target_Current(){
-	return current;
+	return Selected_Current[op_mode];
 }
 
 inline uint32_t Current_Get_Compare(){
 	if (menu_state == PARAFIX_MENU){
 		return 150;
 	} else if ((op_mode == OP_ESTRELA) | (op_mode == OP_ARRUELA)){
-		return (150 + (current*15));
+		return (150 + (Selected_Current[op_mode]*15));
 	} else{
-		return (150 + (current*4));
+		return (150 + (Selected_Current[op_mode]*4));
 	}
 }
 
