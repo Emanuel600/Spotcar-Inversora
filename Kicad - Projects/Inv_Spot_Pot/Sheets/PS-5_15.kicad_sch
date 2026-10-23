@@ -255,7 +255,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Custom_Transformer:EE25V-8T"
+			(property "Footprint" "Transformer_THT:Transformer_Breve_TEZ-28x33"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -697,7 +697,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -715,7 +715,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -733,24 +733,6 @@
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -8.89 180)
-					(length 7.62)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
 					(number "6"
 						(effects
 							(font
@@ -760,7 +742,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -21.59 180)
+					(at 10.16 -8.89 180)
 					(length 7.62)
 					(name ""
 						(effects
@@ -787,7 +769,25 @@
 							)
 						)
 					)
-					(number "8"
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -21.59 180)
+					(length 7.62)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5458,7 +5458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Custom_Transformer:EE25V-8T"
+		(property "Footprint" "Transformer_THT:Transformer_Breve_TEZ-28x33"
 			(at 133.35 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5497,7 +5497,7 @@
 		(pin "5"
 			(uuid "25c131f9-6083-478f-a6ba-6363ee3fcec8")
 		)
-		(pin "8"
+		(pin "10"
 			(uuid "e3936764-6600-411c-9477-0e5081f15ea9")
 		)
 		(pin "1"
@@ -5512,7 +5512,7 @@
 		(pin "6"
 			(uuid "458cf802-c104-4729-a7d7-cc92433c5ff7")
 		)
-		(pin "3"
+		(pin "9"
 			(uuid "b01a5f4c-e10a-44d3-9fe6-cc227138bc2f")
 		)
 		(instances

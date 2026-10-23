@@ -82,10 +82,10 @@ void Menu_Logic_Handler(){
 			op_mode = Selector;
 			if (Selector < 3){
 				menu_state = CURRENT_MENU;
+				*timer_ptr = Operation_Times[Selector][0];
 			} else{
 				menu_state = PARAFIX_MENU;
 			}
-			*timer_ptr = Operation_Times[Selector][0];
 			break;
 		case BUTTON_2:
 			Move_Selector(0);
