@@ -4634,6 +4634,12 @@
 		(uuid "3d12496c-50a0-460d-b0df-d70650eada94")
 	)
 	(junction
+		(at 222.25 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46c2ff33-2991-40ac-b06f-eebeb1754ec2")
+	)
+	(junction
 		(at 222.25 17.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4704,12 +4710,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75fd3e68-2721-4b1a-b81b-0f4dac323679")
-	)
-	(junction
-		(at 222.25 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7785f5ee-8deb-4b5a-af89-87d8ff843e6f")
 	)
 	(junction
 		(at 247.65 64.77)
@@ -8906,7 +8906,7 @@
 			(justify left bottom)
 		)
 		(uuid "3616c9ca-e770-45de-8600-9ee2523be2be")
-		(property "Classes da rede" "HV"
+		(property "Classes da rede" "HVLC"
 			(at 222.9485 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)

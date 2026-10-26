@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 9.0,
-          "height": 13.0,
-          "width": 13.0
+          "drill": 1.5,
+          "height": 4.5,
+          "width": 2.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 1.5
+          "min_clearance": 1.0
         }
       },
       "diff_pair_dimensions": [
@@ -652,8 +652,16 @@
     },
     "netclass_patterns": [
       {
-        "netclass": "Default",
+        "netclass": "HV",
         "pattern": "T-"
+      },
+      {
+        "netclass": "HVLC",
+        "pattern": "310_{Aux}"
+      },
+      {
+        "netclass": "HVLC",
+        "pattern": "Net-(D3-A)"
       }
     ]
   },
