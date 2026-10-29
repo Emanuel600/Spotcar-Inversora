@@ -118,6 +118,7 @@ int main(void)
 
   uint32_t last_updated = HAL_GetTick();
   uint32_t last_trigger_check = HAL_GetTick();
+  uint32_t last_heating_trigger = HAL_GetTick();
   uint32_t Pulse = 0;
 
   volatile uint32_t trigger_time = 100;
@@ -131,7 +132,6 @@ int main(void)
 
   while (1)
   {
-	  /*
 	  while(!(HAL_GPIO_ReadPin(Thermal_GPIO_Port, Thermal_Pin))){
 		  HD_Write_4_Lines("  PROTECAO TERMICA", "      ATIVADA", "", "   RESFRIANDO");
 		  HAL_Delay(500);
@@ -145,7 +145,7 @@ int main(void)
 		  HD_Set_Cursor(LINE_4 + 13);
 		  HD_Write("   ");
 	  }
-*/
+
 	  if ((HAL_GetTick() - last_updated) > 200){
 		  Read_Button_State(ADC_Readouts[1]);
 		  Menu_Logic_Handler();
@@ -189,14 +189,18 @@ int main(void)
 		  SET_DUTY_CYCLE(Pulse);
 
 		  if((op_mode == OP_AQUECIMENTO) | (op_mode == OP_PARAFIX)){
-			  Hold_Until_Trigger_Release();
+			  last_heating_trigger = HAL_GetTick();
+			  while ((HAL_GPIO_ReadPin(Trigger_GPIO_Port, Trigger_Pin) == GPIO_PIN_RESET) & ((HAL_GetTick() - last_heating_trigger) < 5000)){
+			  		__NOP();
+			  	}
+
 		  } else{
 			  HAL_Delay(trigger_time);
 		  }
 
 		  SET_DUTY_CYCLE(0);
 
-		  if((op_mode == OP_ESTRELA) | (op_mode == OP_ARRUELA)){
+		  if((op_mode == OP_ESTRELA) | (op_mode == OP_ARRUELA) | (op_mode == OP_AQUECIMENTO)){
 			  Hold_Until_Trigger_Release();
 		  }
 	  }
