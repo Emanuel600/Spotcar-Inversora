@@ -64,6 +64,8 @@ void Move_Selector(uint32_t up);
 
 void Write_Selector();
 
+void Write_Intro();
+
 uint32_t Get_Target_Current();
 
 uint32_t Get_Target_Time();

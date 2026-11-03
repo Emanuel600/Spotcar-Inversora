@@ -109,12 +109,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  HD_Write_4_Lines(\
-		  " Spotcar Inversora ", \
-		  "     V8 Brasil     ", \
-		  "  @V8BrasilOficial  ", \
-		  "   (48) 3341-8600   ");
-  HAL_Delay(2000);
+  Write_Intro();
 
   uint32_t last_updated = HAL_GetTick();
   uint32_t last_trigger_check = HAL_GetTick();

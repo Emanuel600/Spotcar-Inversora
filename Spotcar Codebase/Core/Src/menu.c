@@ -281,6 +281,22 @@ inline void Decrease_Current(){
 	}
 }
 
+void Write_Intro(){
+	const char* machine_name = "Spotcar 5000 Evolution";
+
+	HD_Write_4_Lines(\
+			machine_name, \
+			"     V8 Brasil     ", \
+			"  @V8BrasilOficial  ", \
+			"   (48) 3341-8600   ");
+	for(uint32_t i=0; i<(strlen(machine_name) - 19); i++){
+		HAL_Delay(500);
+		HD_Set_Cursor(LINE_1);
+		HD_Write(&machine_name[i]);
+	}
+	HAL_Delay(1000);
+}
+
 inline uint32_t Get_Target_Current(){
 	return Selected_Current[op_mode];
 }
