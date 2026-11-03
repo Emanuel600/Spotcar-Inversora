@@ -55604,7 +55604,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "7V"
+	(gr_text "9V"
 		(at 188.73 18.089065 0)
 		(layer "F.SilkS")
 		(uuid "e16102ca-9b0c-4330-b06c-b69cf4f752f4")
@@ -55649,7 +55649,7 @@
 			)
 		)
 	)
-	(gr_text "Spotcar Inversora\nPlaca de Potência\nRev 28/10/2026 - V1.1.1"
+	(gr_text "Spotcar Inversora\nPlaca de Potência\nRev 03/11/2026 - V1.1.2"
 		(at 141.9 171.15 0)
 		(layer "F.SilkS")
 		(uuid "d8f2d4f2-6624-4b77-868e-fe9af662b89c")
