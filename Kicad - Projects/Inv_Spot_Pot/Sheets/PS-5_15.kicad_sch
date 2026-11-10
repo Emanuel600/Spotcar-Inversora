@@ -4715,7 +4715,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "Custom_Diode_SMD:Universal-Zener"
 			(at 161.925 115.57 0)
 			(hide yes)
 			(show_name no)
