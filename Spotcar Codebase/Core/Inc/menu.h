@@ -66,6 +66,8 @@ void Write_Selector();
 
 void Write_Intro();
 
+void Set_Thermal_Flag();
+
 uint32_t Get_Target_Current();
 
 uint32_t Get_Target_Time();

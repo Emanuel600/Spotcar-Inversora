@@ -2,4 +2,6 @@
 	(version 7)
 	(lib (name "Custom_Heatsink") (type "KiCad") (uri "${KIPRJMOD}/Custom_Heatsink.pretty") (options "") (descr ""))
 	(lib (name "Custom_Capacitors") (type "KiCad") (uri "${KIPRJMOD}/Custom_Capacitors.pretty") (options "") (descr ""))
+	(lib (name "THT_Wires") (type "KiCad") (uri "${KICAD10_CUSTOM_LIBRARIES}/THT_Wires.pretty") (options "") (descr ""))
+	(lib (name "THT_Wires") (type "KiCad") (uri "${KICAD10_CUSTOM_LIBRARIES}/THT_Wires.pretty") (options "") (descr ""))
 )

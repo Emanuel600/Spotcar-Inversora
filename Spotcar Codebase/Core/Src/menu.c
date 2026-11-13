@@ -18,6 +18,7 @@ static Operation_Mode op_mode = OP_NONE;
 static pin_s Trigger;
 
 static uint32_t update_flag = 1;
+static uint32_t thermal_flag = 0;
 static uint32_t small_update_flag = 0;
 
 static volatile uint32_t* timer_ptr;
@@ -192,6 +193,17 @@ void Menu_Logic_Handler(){
 				update_flag = 0;
 				break;
 			}
+	} if (thermal_flag){
+		update_flag = 1;
+		thermal_flag = 0;
+		switch (menu_state){
+		case ADJUST_I_MENU:
+		case ADJUST_T_MENU:
+			menu_state = CURRENT_MENU;
+			break;
+		default:
+			break;
+		}
 	}
 	button_state = NO_BUTTON;
 }
@@ -345,6 +357,10 @@ inline void Write_Selector(){
 		break;
 	}
 	return;
+}
+
+void Set_Thermal_Flag(){
+	thermal_flag = 1;
 }
 
 inline uint32_t Is_Trigger_Ready(){

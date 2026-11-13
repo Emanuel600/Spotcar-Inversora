@@ -7317,7 +7317,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "104"
+		(property "Value" "100n"
 			(at 67.31 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7554,8 +7554,9 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "Push_Button"
 			(at 25.4 58.4199 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7883,8 +7884,9 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4"
+		(property "Value" "Push_Button"
 			(at 59.69 58.4199 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9054,7 +9056,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "104"
+		(property "Value" "100n"
 			(at 123.19 133.3501 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10343,7 +10345,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "104"
+		(property "Value" "100n"
 			(at 254.508 145.034 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11132,7 +11134,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "104"
+		(property "Value" "100n"
 			(at 245.11 144.526 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12189,8 +12191,9 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2"
+		(property "Value" "Push_Button"
 			(at 34.29 58.4199 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12585,7 +12588,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "104"
+		(property "Value" "100n"
 			(at 264.668 145.034 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12666,7 +12669,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "104"
+		(property "Value" "100n"
 			(at 274.574 144.272 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13381,8 +13384,9 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3"
+		(property "Value" "Push_Button"
 			(at 50.8 58.4199 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

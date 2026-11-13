@@ -127,8 +127,8 @@ int main(void)
 
   while (1)
   {
-	  /*
-	  while(!(HAL_GPIO_ReadPin(Thermal_GPIO_Port, Thermal_Pin))){
+
+	  while(HAL_GPIO_ReadPin(Thermal_GPIO_Port, Thermal_Pin)){
 		  HD_Write_4_Lines("  PROTECAO TERMICA", "      ATIVADA", "", "   RESFRIANDO");
 		  HAL_Delay(500);
 		  HD_Set_Cursor(LINE_4 + 13);
@@ -140,8 +140,8 @@ int main(void)
 		  HAL_Delay(500);
 		  HD_Set_Cursor(LINE_4 + 13);
 		  HD_Write("   ");
+		  Set_Thermal_Flag();
 	  }
-	  */
 
 	  if ((HAL_GetTick() - last_updated) > 200){
 		  Read_Button_State(ADC_Readouts[1]);
